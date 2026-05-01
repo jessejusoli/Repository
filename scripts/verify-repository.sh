@@ -43,6 +43,7 @@ required_files=(
   "catalog/projects.yml"
   "catalog/owners.yml"
   "catalog/pillars.yml"
+  "catalog/pillar-items.yml"
   "catalog/repository-self-assessment.yml"
   "contracts/README.md"
   "contracts/openapi/README.md"
@@ -53,6 +54,7 @@ required_files=(
   "AI_AGENTS/registry.yml"
   "scripts/verify-repository.sh"
   "scripts/verify-pillar-coverage.sh"
+  "scripts/verify-pillar-docs.sh"
   "scripts/verify-contracts.sh"
   "scripts/verify-agents.sh"
   "docs/architecture/monorepo.md"
@@ -69,6 +71,7 @@ required_files=(
   "docs/automation/ci-cd.md"
   "docs/automation/ai-agents.md"
   "docs/checklists/universal-project-readiness.md"
+  "docs/pillars/README.md"
 )
 
 required_dirs=(
@@ -83,6 +86,7 @@ required_dirs=(
   "AI_AGENTS"
   "docs"
   "docs/diagrams"
+  "docs/pillars"
   "scripts"
   ".github"
 )
@@ -125,6 +129,7 @@ info "validando catalogos"
 grep -q '^schema_version: 1$' "$ROOT_DIR/catalog/projects.yml" || fail "catalog/projects.yml sem schema_version 1"
 grep -q '^schema_version: 1$' "$ROOT_DIR/catalog/owners.yml" || fail "catalog/owners.yml sem schema_version 1"
 grep -q '^schema_version: 1$' "$ROOT_DIR/catalog/pillars.yml" || fail "catalog/pillars.yml sem schema_version 1"
+grep -q '^schema_version: 1$' "$ROOT_DIR/catalog/pillar-items.yml" || fail "catalog/pillar-items.yml sem schema_version 1"
 grep -q '^schema_version: 1$' "$ROOT_DIR/catalog/repository-self-assessment.yml" || fail "catalog/repository-self-assessment.yml sem schema_version 1"
 
 pillar_count="$(grep -c '^  - id:' "$ROOT_DIR/catalog/pillars.yml")"

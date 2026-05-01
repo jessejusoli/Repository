@@ -11,8 +11,10 @@ evitar pontos cegos quando um projeto nasce, cresce ou entra em producao.
 
 ## Fonte de referencia
 
-`references.md` e a versao extensa da arquitetura. `catalog/pillars.yml` e a
-versao estruturada para automacao, inventario e checklists.
+`references.md` e a versao conceitual extensa da arquitetura. `catalog/pillars.yml`
+e a versao estruturada dos 13 pilares. `catalog/pillar-items.yml` e a versao
+estruturada dos 260 itens. `docs/pillars/` e a versao operacional e navegavel,
+com orientacao de como seguir cada item.
 
 ## Pilares
 
@@ -39,7 +41,8 @@ versao estruturada para automacao, inventario e checklists.
 2. Liste linguagens, runtimes e ambientes suportados.
 3. Marque pilares aplicaveis no README do projeto.
 4. Registre os mesmos pilares em `catalog/projects.yml`.
-5. Use `docs/checklists/universal-project-readiness.md` para decidir o minimo
+5. Consulte os itens aplicaveis em `docs/pillars/`.
+6. Use `docs/checklists/universal-project-readiness.md` para decidir o minimo
    necessario antes do primeiro PR, primeiro release e primeira producao.
 
 ## Regra de ouro

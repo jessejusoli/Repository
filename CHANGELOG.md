@@ -11,3 +11,4 @@ existir artefato versionado.
 - Documentacao de governanca, automacao, seguranca e operacao.
 - Workflow de saude do repositorio e configuracao inicial do Dependabot.
 - CI/CD readiness, contratos universais, AGENTS.md e autoavaliacao dos 13 pilares.
+- Documentacao mestre em `docs/pillars/` com 13 pilares e 260 guias item a item.

@@ -1,12 +1,15 @@
-.PHONY: verify verify-repository verify-pillars verify-contracts verify-agents
+.PHONY: verify verify-repository verify-pillars verify-pillar-docs verify-contracts verify-agents
 
-verify: verify-repository verify-pillars verify-contracts verify-agents
+verify: verify-repository verify-pillars verify-pillar-docs verify-contracts verify-agents
 
 verify-repository:
 	bash scripts/verify-repository.sh
 
 verify-pillars:
 	bash scripts/verify-pillar-coverage.sh
+
+verify-pillar-docs:
+	bash scripts/verify-pillar-docs.sh
 
 verify-contracts:
 	bash scripts/verify-contracts.sh

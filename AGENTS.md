@@ -14,6 +14,7 @@ assumption unless a project under `apps/`, `packages/`, `services/`, `infra/`,
 ## Source Of Truth
 
 - Universal pillars: `references.md` and `catalog/pillars.yml`.
+- Operational pillar item docs: `docs/pillars/` and `catalog/pillar-items.yml`.
 - Repository self-assessment: `catalog/repository-self-assessment.yml`.
 - Project inventory: `catalog/projects.yml`.
 - Owners: `catalog/owners.yml`.
@@ -30,6 +31,7 @@ before finishing a repository-level change.
 make verify
 make verify-repository
 make verify-pillars
+make verify-pillar-docs
 make verify-contracts
 make verify-agents
 ```
@@ -38,6 +40,7 @@ make verify-agents
 
 - Keep the template universal.
 - Preserve the 13-pillar model unless the user explicitly changes it.
+- Keep `references.md`, `catalog/pillar-items.yml` and `docs/pillars/` synchronized.
 - Add evidence when adding a new governance rule, contract type or automation.
 - Prefer simple shell checks over language-specific tooling at the root.
 - Do not commit secrets, tokens, real credentials or private endpoints.

@@ -3,6 +3,9 @@
 Use este checklist para qualquer projeto, de qualquer linguagem ou ambiente.
 Marque cada item como `Done`, `Planned` ou `N/A`.
 
+Para decisoes detalhadas, consulte tambem `docs/pillars/`, que documenta os
+260 itens derivados de `references.md`.
+
 ## Identidade
 
 - Nome, objetivo e publico-alvo definidos.
@@ -10,6 +13,7 @@ Marque cada item como `Done`, `Planned` ou `N/A`.
 - Owner registrado em `catalog/owners.yml`.
 - Linguagens, runtimes e ambientes documentados.
 - Pilares aplicaveis listados no README do projeto.
+- Itens aplicaveis consultados em `docs/pillars/`.
 
 ## Pilares
 

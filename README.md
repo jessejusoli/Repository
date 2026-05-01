@@ -34,6 +34,7 @@ padrao de qualidade, automacao e rastreabilidade.
 |-- contracts/            # Contratos OpenAPI, Postman, MCP e RAG.
 |-- AI_AGENTS/            # Modos, subagentes, skills e politicas para IA.
 |-- docs/                 # Arquitetura, governanca, automacao e templates.
+|   `-- pillars/          # 13 pilares e 260 guias operacionais item a item.
 |-- scripts/              # Automacoes locais e scripts usados pelo CI.
 |-- AGENTS.md             # Instrucoes padrao para agentes de codigo.
 `-- .github/              # Workflows, templates, CODEOWNERS e Dependabot.
@@ -83,6 +84,7 @@ bash scripts/verify-repository.sh
 
 - [Arquitetura do monorepo](docs/architecture/monorepo.md)
 - [Modelo universal de projetos](docs/architecture/universal-project-model.md)
+- [Pilares operacionais](docs/pillars/README.md)
 - [Contratos de API e integracao](docs/architecture/api-contracts.md)
 - [Sistemas de IA, MCP e RAG](docs/architecture/ai-systems.md)
 - [CI/CD](docs/automation/ci-cd.md)

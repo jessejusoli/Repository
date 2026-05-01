@@ -3,6 +3,12 @@ subject:
   id: repository
   name: Repository
   type: monorepo-template
+item_coverage:
+  source: catalog/pillar-items.yml
+  docs_root: docs/pillars
+  expected_pillars: 13
+  expected_items: 260
+  status: documented
 coverage:
   - pillar: front_end
     status: applied

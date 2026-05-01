@@ -10,12 +10,16 @@ Esta pasta concentra a memoria operacional do repositorio.
 - `checklists/`: listas de verificacao para operacoes recorrentes.
 - `templates/`: modelos para documentos criados durante a evolucao do repo.
 - `diagrams/`: diagramas textuais versionaveis.
+- `pillars/`: guias operacionais dos 13 pilares e seus 260 itens.
 
 ## Pilares universais
 
 O arquivo raiz `references.md` contem a versao extensa dos 13 pilares. O resumo
 operacional esta em `docs/architecture/universal-project-model.md`, e o catalogo
 estruturado fica em `catalog/pillars.yml`.
+
+Os guias item a item ficam em `docs/pillars/`, com rastreabilidade em
+`catalog/pillar-items.yml`.
 
 ## Contratos e IA
 

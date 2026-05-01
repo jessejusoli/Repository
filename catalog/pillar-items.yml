@@ -1,0 +1,2086 @@
+schema_version: 1
+source: references.md
+docs_root: docs/pillars
+expected_pillars: 13
+expected_items: 260
+items:
+  - id: front_end.implementacao-de-ui-basica
+    pillar: front_end
+    name: "Implementacao de UI Basica"
+    source: references.md
+    doc_path: docs/pillars/front-end/implementacao-de-ui-basica.md
+    status: documented
+    evidence:
+      - docs/pillars/front-end/implementacao-de-ui-basica.md
+  - id: front_end.gerenciamento-de-estado
+    pillar: front_end
+    name: "Gerenciamento de Estado"
+    source: references.md
+    doc_path: docs/pillars/front-end/gerenciamento-de-estado.md
+    status: documented
+    evidence:
+      - docs/pillars/front-end/gerenciamento-de-estado.md
+  - id: front_end.roteamento-e-navegacao
+    pillar: front_end
+    name: "Roteamento e Navegacao"
+    source: references.md
+    doc_path: docs/pillars/front-end/roteamento-e-navegacao.md
+    status: documented
+    evidence:
+      - docs/pillars/front-end/roteamento-e-navegacao.md
+  - id: front_end.integracao-com-apis
+    pillar: front_end
+    name: "Integracao com APIs"
+    source: references.md
+    doc_path: docs/pillars/front-end/integracao-com-apis.md
+    status: documented
+    evidence:
+      - docs/pillars/front-end/integracao-com-apis.md
+  - id: front_end.design-responsivo
+    pillar: front_end
+    name: "Design Responsivo"
+    source: references.md
+    doc_path: docs/pillars/front-end/design-responsivo.md
+    status: documented
+    evidence:
+      - docs/pillars/front-end/design-responsivo.md
+  - id: front_end.biblioteca-de-componentes
+    pillar: front_end
+    name: "Biblioteca de Componentes"
+    source: references.md
+    doc_path: docs/pillars/front-end/biblioteca-de-componentes.md
+    status: documented
+    evidence:
+      - docs/pillars/front-end/biblioteca-de-componentes.md
+  - id: front_end.otimizacao-de-performance
+    pillar: front_end
+    name: "Otimizacao de Performance"
+    source: references.md
+    doc_path: docs/pillars/front-end/otimizacao-de-performance.md
+    status: documented
+    evidence:
+      - docs/pillars/front-end/otimizacao-de-performance.md
+  - id: front_end.acessibilidade-a11y
+    pillar: front_end
+    name: "Acessibilidade (A11y)"
+    source: references.md
+    doc_path: docs/pillars/front-end/acessibilidade-a11y.md
+    status: documented
+    evidence:
+      - docs/pillars/front-end/acessibilidade-a11y.md
+  - id: front_end.internacionalizacao-i18n
+    pillar: front_end
+    name: "Internacionalizacao (i18n)"
+    source: references.md
+    doc_path: docs/pillars/front-end/internacionalizacao-i18n.md
+    status: documented
+    evidence:
+      - docs/pillars/front-end/internacionalizacao-i18n.md
+  - id: front_end.animacoes-e-transicoes
+    pillar: front_end
+    name: "Animacoes e Transicoes"
+    source: references.md
+    doc_path: docs/pillars/front-end/animacoes-e-transicoes.md
+    status: documented
+    evidence:
+      - docs/pillars/front-end/animacoes-e-transicoes.md
+  - id: front_end.manipulacao-de-formularios
+    pillar: front_end
+    name: "Manipulacao de Formularios"
+    source: references.md
+    doc_path: docs/pillars/front-end/manipulacao-de-formularios.md
+    status: documented
+    evidence:
+      - docs/pillars/front-end/manipulacao-de-formularios.md
+  - id: front_end.integracao-com-temas-estilos
+    pillar: front_end
+    name: "Integracao com Temas/Estilos"
+    source: references.md
+    doc_path: docs/pillars/front-end/integracao-com-temas-estilos.md
+    status: documented
+    evidence:
+      - docs/pillars/front-end/integracao-com-temas-estilos.md
+  - id: front_end.testes-unitarios-e-de-integracao
+    pillar: front_end
+    name: "Testes Unitarios e de Integracao"
+    source: references.md
+    doc_path: docs/pillars/front-end/testes-unitarios-e-de-integracao.md
+    status: documented
+    evidence:
+      - docs/pillars/front-end/testes-unitarios-e-de-integracao.md
+  - id: front_end.ferramentas-de-build-e-bundling
+    pillar: front_end
+    name: "Ferramentas de Build e Bundling"
+    source: references.md
+    doc_path: docs/pillars/front-end/ferramentas-de-build-e-bundling.md
+    status: documented
+    evidence:
+      - docs/pillars/front-end/ferramentas-de-build-e-bundling.md
+  - id: front_end.seguranca-no-front-end
+    pillar: front_end
+    name: "Seguranca no Front-end"
+    source: references.md
+    doc_path: docs/pillars/front-end/seguranca-no-front-end.md
+    status: documented
+    evidence:
+      - docs/pillars/front-end/seguranca-no-front-end.md
+  - id: front_end.monitoramento-e-logging
+    pillar: front_end
+    name: "Monitoramento e Logging"
+    source: references.md
+    doc_path: docs/pillars/front-end/monitoramento-e-logging.md
+    status: documented
+    evidence:
+      - docs/pillars/front-end/monitoramento-e-logging.md
+  - id: front_end.progressive-web-apps-pwa
+    pillar: front_end
+    name: "Progressive Web Apps (PWA)"
+    source: references.md
+    doc_path: docs/pillars/front-end/progressive-web-apps-pwa.md
+    status: documented
+    evidence:
+      - docs/pillars/front-end/progressive-web-apps-pwa.md
+  - id: front_end.integracao-com-websockets
+    pillar: front_end
+    name: "Integracao com WebSockets"
+    source: references.md
+    doc_path: docs/pillars/front-end/integracao-com-websockets.md
+    status: documented
+    evidence:
+      - docs/pillars/front-end/integracao-com-websockets.md
+  - id: front_end.seo-e-metatags
+    pillar: front_end
+    name: "SEO e Metatags"
+    source: references.md
+    doc_path: docs/pillars/front-end/seo-e-metatags.md
+    status: documented
+    evidence:
+      - docs/pillars/front-end/seo-e-metatags.md
+  - id: front_end.mobile-specific-features
+    pillar: front_end
+    name: "Mobile-Specific Features"
+    source: references.md
+    doc_path: docs/pillars/front-end/mobile-specific-features.md
+    status: documented
+    evidence:
+      - docs/pillars/front-end/mobile-specific-features.md
+  - id: back_end.desenvolvimento-de-apis
+    pillar: back_end
+    name: "Desenvolvimento de APIs"
+    source: references.md
+    doc_path: docs/pillars/back-end/desenvolvimento-de-apis.md
+    status: documented
+    evidence:
+      - docs/pillars/back-end/desenvolvimento-de-apis.md
+  - id: back_end.modelagem-de-banco-de-dados
+    pillar: back_end
+    name: "Modelagem de Banco de Dados"
+    source: references.md
+    doc_path: docs/pillars/back-end/modelagem-de-banco-de-dados.md
+    status: documented
+    evidence:
+      - docs/pillars/back-end/modelagem-de-banco-de-dados.md
+  - id: back_end.autenticacao-e-autorizacao
+    pillar: back_end
+    name: "Autenticacao e Autorizacao"
+    source: references.md
+    doc_path: docs/pillars/back-end/autenticacao-e-autorizacao.md
+    status: documented
+    evidence:
+      - docs/pillars/back-end/autenticacao-e-autorizacao.md
+  - id: back_end.validacao-de-dados
+    pillar: back_end
+    name: "Validacao de Dados"
+    source: references.md
+    doc_path: docs/pillars/back-end/validacao-de-dados.md
+    status: documented
+    evidence:
+      - docs/pillars/back-end/validacao-de-dados.md
+  - id: back_end.tratamento-de-erros
+    pillar: back_end
+    name: "Tratamento de Erros"
+    source: references.md
+    doc_path: docs/pillars/back-end/tratamento-de-erros.md
+    status: documented
+    evidence:
+      - docs/pillars/back-end/tratamento-de-erros.md
+  - id: back_end.logging-e-monitoramento
+    pillar: back_end
+    name: "Logging e Monitoramento"
+    source: references.md
+    doc_path: docs/pillars/back-end/logging-e-monitoramento.md
+    status: documented
+    evidence:
+      - docs/pillars/back-end/logging-e-monitoramento.md
+  - id: back_end.caching
+    pillar: back_end
+    name: "Caching"
+    source: references.md
+    doc_path: docs/pillars/back-end/caching.md
+    status: documented
+    evidence:
+      - docs/pillars/back-end/caching.md
+  - id: back_end.filas-e-jobs-em-background
+    pillar: back_end
+    name: "Filas e Jobs em Background"
+    source: references.md
+    doc_path: docs/pillars/back-end/filas-e-jobs-em-background.md
+    status: documented
+    evidence:
+      - docs/pillars/back-end/filas-e-jobs-em-background.md
+  - id: back_end.integracao-com-servicos-terceiros
+    pillar: back_end
+    name: "Integracao com Servicos Terceiros"
+    source: references.md
+    doc_path: docs/pillars/back-end/integracao-com-servicos-terceiros.md
+    status: documented
+    evidence:
+      - docs/pillars/back-end/integracao-com-servicos-terceiros.md
+  - id: back_end.medidas-de-seguranca
+    pillar: back_end
+    name: "Medidas de Seguranca"
+    source: references.md
+    doc_path: docs/pillars/back-end/medidas-de-seguranca.md
+    status: documented
+    evidence:
+      - docs/pillars/back-end/medidas-de-seguranca.md
+  - id: back_end.otimizacao-de-performance
+    pillar: back_end
+    name: "Otimizacao de Performance"
+    source: references.md
+    doc_path: docs/pillars/back-end/otimizacao-de-performance.md
+    status: documented
+    evidence:
+      - docs/pillars/back-end/otimizacao-de-performance.md
+  - id: back_end.testes-unitarios-e-de-integracao
+    pillar: back_end
+    name: "Testes Unitarios e de Integracao"
+    source: references.md
+    doc_path: docs/pillars/back-end/testes-unitarios-e-de-integracao.md
+    status: documented
+    evidence:
+      - docs/pillars/back-end/testes-unitarios-e-de-integracao.md
+  - id: back_end.configuracao-de-deploy
+    pillar: back_end
+    name: "Configuracao de Deploy"
+    source: references.md
+    doc_path: docs/pillars/back-end/configuracao-de-deploy.md
+    status: documented
+    evidence:
+      - docs/pillars/back-end/configuracao-de-deploy.md
+  - id: back_end.escalabilidade
+    pillar: back_end
+    name: "Escalabilidade"
+    source: references.md
+    doc_path: docs/pillars/back-end/escalabilidade.md
+    status: documented
+    evidence:
+      - docs/pillars/back-end/escalabilidade.md
+  - id: back_end.uso-de-orm-odm
+    pillar: back_end
+    name: "Uso de ORM/ODM"
+    source: references.md
+    doc_path: docs/pillars/back-end/uso-de-orm-odm.md
+    status: documented
+    evidence:
+      - docs/pillars/back-end/uso-de-orm-odm.md
+  - id: back_end.websockets-para-real-time
+    pillar: back_end
+    name: "WebSockets para Real-time"
+    source: references.md
+    doc_path: docs/pillars/back-end/websockets-para-real-time.md
+    status: documented
+    evidence:
+      - docs/pillars/back-end/websockets-para-real-time.md
+  - id: back_end.manipulacao-de-arquivos-e-storage
+    pillar: back_end
+    name: "Manipulacao de Arquivos e Storage"
+    source: references.md
+    doc_path: docs/pillars/back-end/manipulacao-de-arquivos-e-storage.md
+    status: documented
+    evidence:
+      - docs/pillars/back-end/manipulacao-de-arquivos-e-storage.md
+  - id: back_end.gerenciamento-de-sessoes
+    pillar: back_end
+    name: "Gerenciamento de Sessoes"
+    source: references.md
+    doc_path: docs/pillars/back-end/gerenciamento-de-sessoes.md
+    status: documented
+    evidence:
+      - docs/pillars/back-end/gerenciamento-de-sessoes.md
+  - id: back_end.internacionalizacao-e-localizacao
+    pillar: back_end
+    name: "Internacionalizacao e Localizacao"
+    source: references.md
+    doc_path: docs/pillars/back-end/internacionalizacao-e-localizacao.md
+    status: documented
+    evidence:
+      - docs/pillars/back-end/internacionalizacao-e-localizacao.md
+  - id: back_end.auditoria-e-compliance
+    pillar: back_end
+    name: "Auditoria e Compliance"
+    source: references.md
+    doc_path: docs/pillars/back-end/auditoria-e-compliance.md
+    status: documented
+    evidence:
+      - docs/pillars/back-end/auditoria-e-compliance.md
+  - id: infrastructure.provisionamento-de-recursos-em-nuvem
+    pillar: infrastructure
+    name: "Provisionamento de Recursos em Nuvem"
+    source: references.md
+    doc_path: docs/pillars/infrastructure/provisionamento-de-recursos-em-nuvem.md
+    status: documented
+    evidence:
+      - docs/pillars/infrastructure/provisionamento-de-recursos-em-nuvem.md
+  - id: infrastructure.gerenciamento-de-instancias-e-vms
+    pillar: infrastructure
+    name: "Gerenciamento de Instancias e VMs"
+    source: references.md
+    doc_path: docs/pillars/infrastructure/gerenciamento-de-instancias-e-vms.md
+    status: documented
+    evidence:
+      - docs/pillars/infrastructure/gerenciamento-de-instancias-e-vms.md
+  - id: infrastructure.solucoes-de-armazenamento
+    pillar: infrastructure
+    name: "Solucoes de Armazenamento"
+    source: references.md
+    doc_path: docs/pillars/infrastructure/solucoes-de-armazenamento.md
+    status: documented
+    evidence:
+      - docs/pillars/infrastructure/solucoes-de-armazenamento.md
+  - id: infrastructure.configuracao-de-redes
+    pillar: infrastructure
+    name: "Configuracao de Redes"
+    source: references.md
+    doc_path: docs/pillars/infrastructure/configuracao-de-redes.md
+    status: documented
+    evidence:
+      - docs/pillars/infrastructure/configuracao-de-redes.md
+  - id: infrastructure.balanceamento-de-carga
+    pillar: infrastructure
+    name: "Balanceamento de Carga"
+    source: references.md
+    doc_path: docs/pillars/infrastructure/balanceamento-de-carga.md
+    status: documented
+    evidence:
+      - docs/pillars/infrastructure/balanceamento-de-carga.md
+  - id: infrastructure.auto-escalabilidade
+    pillar: infrastructure
+    name: "Auto-escalabilidade"
+    source: references.md
+    doc_path: docs/pillars/infrastructure/auto-escalabilidade.md
+    status: documented
+    evidence:
+      - docs/pillars/infrastructure/auto-escalabilidade.md
+  - id: infrastructure.infraestrutura-de-bancos-de-dados
+    pillar: infrastructure
+    name: "Infraestrutura de Bancos de Dados"
+    source: references.md
+    doc_path: docs/pillars/infrastructure/infraestrutura-de-bancos-de-dados.md
+    status: documented
+    evidence:
+      - docs/pillars/infrastructure/infraestrutura-de-bancos-de-dados.md
+  - id: infrastructure.grupos-de-seguranca-e-firewalls
+    pillar: infrastructure
+    name: "Grupos de Seguranca e Firewalls"
+    source: references.md
+    doc_path: docs/pillars/infrastructure/grupos-de-seguranca-e-firewalls.md
+    status: documented
+    evidence:
+      - docs/pillars/infrastructure/grupos-de-seguranca-e-firewalls.md
+  - id: infrastructure.backup-e-recuperacao-de-desastres
+    pillar: infrastructure
+    name: "Backup e Recuperacao de Desastres"
+    source: references.md
+    doc_path: docs/pillars/infrastructure/backup-e-recuperacao-de-desastres.md
+    status: documented
+    evidence:
+      - docs/pillars/infrastructure/backup-e-recuperacao-de-desastres.md
+  - id: infrastructure.monitoramento-de-recursos
+    pillar: infrastructure
+    name: "Monitoramento de Recursos"
+    source: references.md
+    doc_path: docs/pillars/infrastructure/monitoramento-de-recursos.md
+    status: documented
+    evidence:
+      - docs/pillars/infrastructure/monitoramento-de-recursos.md
+  - id: infrastructure.sistemas-de-logging-centralizado
+    pillar: infrastructure
+    name: "Sistemas de Logging Centralizado"
+    source: references.md
+    doc_path: docs/pillars/infrastructure/sistemas-de-logging-centralizado.md
+    status: documented
+    evidence:
+      - docs/pillars/infrastructure/sistemas-de-logging-centralizado.md
+  - id: infrastructure.infraestrutura-como-codigo-iac
+    pillar: infrastructure
+    name: "Infraestrutura como Codigo (IaC)"
+    source: references.md
+    doc_path: docs/pillars/infrastructure/infraestrutura-como-codigo-iac.md
+    status: documented
+    evidence:
+      - docs/pillars/infrastructure/infraestrutura-como-codigo-iac.md
+  - id: infrastructure.containerizacao
+    pillar: infrastructure
+    name: "Containerizacao"
+    source: references.md
+    doc_path: docs/pillars/infrastructure/containerizacao.md
+    status: documented
+    evidence:
+      - docs/pillars/infrastructure/containerizacao.md
+  - id: infrastructure.orquestracao-de-containers
+    pillar: infrastructure
+    name: "Orquestracao de Containers"
+    source: references.md
+    doc_path: docs/pillars/infrastructure/orquestracao-de-containers.md
+    status: documented
+    evidence:
+      - docs/pillars/infrastructure/orquestracao-de-containers.md
+  - id: infrastructure.integracao-com-cdn
+    pillar: infrastructure
+    name: "Integracao com CDN"
+    source: references.md
+    doc_path: docs/pillars/infrastructure/integracao-com-cdn.md
+    status: documented
+    evidence:
+      - docs/pillars/infrastructure/integracao-com-cdn.md
+  - id: infrastructure.gerenciamento-de-custos
+    pillar: infrastructure
+    name: "Gerenciamento de Custos"
+    source: references.md
+    doc_path: docs/pillars/infrastructure/gerenciamento-de-custos.md
+    status: documented
+    evidence:
+      - docs/pillars/infrastructure/gerenciamento-de-custos.md
+  - id: infrastructure.conformidade-e-auditoria
+    pillar: infrastructure
+    name: "Conformidade e Auditoria"
+    source: references.md
+    doc_path: docs/pillars/infrastructure/conformidade-e-auditoria.md
+    status: documented
+    evidence:
+      - docs/pillars/infrastructure/conformidade-e-auditoria.md
+  - id: infrastructure.gerenciamento-de-ambientes
+    pillar: infrastructure
+    name: "Gerenciamento de Ambientes"
+    source: references.md
+    doc_path: docs/pillars/infrastructure/gerenciamento-de-ambientes.md
+    status: documented
+    evidence:
+      - docs/pillars/infrastructure/gerenciamento-de-ambientes.md
+  - id: infrastructure.gerenciamento-de-segredos
+    pillar: infrastructure
+    name: "Gerenciamento de Segredos"
+    source: references.md
+    doc_path: docs/pillars/infrastructure/gerenciamento-de-segredos.md
+    status: documented
+    evidence:
+      - docs/pillars/infrastructure/gerenciamento-de-segredos.md
+  - id: infrastructure.otimizacao-de-performance-e-energia
+    pillar: infrastructure
+    name: "Otimizacao de Performance e Energia"
+    source: references.md
+    doc_path: docs/pillars/infrastructure/otimizacao-de-performance-e-energia.md
+    status: documented
+    evidence:
+      - docs/pillars/infrastructure/otimizacao-de-performance-e-energia.md
+  - id: devops.configuracao-de-pipelines-ci-cd
+    pillar: devops
+    name: "Configuracao de Pipelines CI/CD"
+    source: references.md
+    doc_path: docs/pillars/devops/configuracao-de-pipelines-ci-cd.md
+    status: documented
+    evidence:
+      - docs/pillars/devops/configuracao-de-pipelines-ci-cd.md
+  - id: devops.automacao-de-builds
+    pillar: devops
+    name: "Automacao de Builds"
+    source: references.md
+    doc_path: docs/pillars/devops/automacao-de-builds.md
+    status: documented
+    evidence:
+      - docs/pillars/devops/automacao-de-builds.md
+  - id: devops.testes-automatizados-no-pipeline
+    pillar: devops
+    name: "Testes Automatizados no Pipeline"
+    source: references.md
+    doc_path: docs/pillars/devops/testes-automatizados-no-pipeline.md
+    status: documented
+    evidence:
+      - docs/pillars/devops/testes-automatizados-no-pipeline.md
+  - id: devops.deploy-continuo
+    pillar: devops
+    name: "Deploy Continuo"
+    source: references.md
+    doc_path: docs/pillars/devops/deploy-continuo.md
+    status: documented
+    evidence:
+      - docs/pillars/devops/deploy-continuo.md
+  - id: devops.gerenciamento-de-configuracoes
+    pillar: devops
+    name: "Gerenciamento de Configuracoes"
+    source: references.md
+    doc_path: docs/pillars/devops/gerenciamento-de-configuracoes.md
+    status: documented
+    evidence:
+      - docs/pillars/devops/gerenciamento-de-configuracoes.md
+  - id: devops.monitoramento-de-aplicacoes
+    pillar: devops
+    name: "Monitoramento de Aplicacoes"
+    source: references.md
+    doc_path: docs/pillars/devops/monitoramento-de-aplicacoes.md
+    status: documented
+    evidence:
+      - docs/pillars/devops/monitoramento-de-aplicacoes.md
+  - id: devops.alertas-e-notificacoes
+    pillar: devops
+    name: "Alertas e Notificacoes"
+    source: references.md
+    doc_path: docs/pillars/devops/alertas-e-notificacoes.md
+    status: documented
+    evidence:
+      - docs/pillars/devops/alertas-e-notificacoes.md
+  - id: devops.logging-centralizado
+    pillar: devops
+    name: "Logging Centralizado"
+    source: references.md
+    doc_path: docs/pillars/devops/logging-centralizado.md
+    status: documented
+    evidence:
+      - docs/pillars/devops/logging-centralizado.md
+  - id: devops.otimizacao-de-desempenho
+    pillar: devops
+    name: "Otimizacao de Desempenho"
+    source: references.md
+    doc_path: docs/pillars/devops/otimizacao-de-desempenho.md
+    status: documented
+    evidence:
+      - docs/pillars/devops/otimizacao-de-desempenho.md
+  - id: devops.seguranca-no-pipeline-devsecops
+    pillar: devops
+    name: "Seguranca no Pipeline (DevSecOps)"
+    source: references.md
+    doc_path: docs/pillars/devops/seguranca-no-pipeline-devsecops.md
+    status: documented
+    evidence:
+      - docs/pillars/devops/seguranca-no-pipeline-devsecops.md
+  - id: devops.gerenciamento-de-ambientes
+    pillar: devops
+    name: "Gerenciamento de Ambientes"
+    source: references.md
+    doc_path: docs/pillars/devops/gerenciamento-de-ambientes.md
+    status: documented
+    evidence:
+      - docs/pillars/devops/gerenciamento-de-ambientes.md
+  - id: devops.containerizacao-e-orquestracao
+    pillar: devops
+    name: "Containerizacao e Orquestracao"
+    source: references.md
+    doc_path: docs/pillars/devops/containerizacao-e-orquestracao.md
+    status: documented
+    evidence:
+      - docs/pillars/devops/containerizacao-e-orquestracao.md
+  - id: devops.infraestrutura-como-codigo-iac
+    pillar: devops
+    name: "Infraestrutura como Codigo (IaC)"
+    source: references.md
+    doc_path: docs/pillars/devops/infraestrutura-como-codigo-iac.md
+    status: documented
+    evidence:
+      - docs/pillars/devops/infraestrutura-como-codigo-iac.md
+  - id: devops.colaboracao-e-versionamento
+    pillar: devops
+    name: "Colaboracao e Versionamento"
+    source: references.md
+    doc_path: docs/pillars/devops/colaboracao-e-versionamento.md
+    status: documented
+    evidence:
+      - docs/pillars/devops/colaboracao-e-versionamento.md
+  - id: devops.backup-e-recuperacao-automatizados
+    pillar: devops
+    name: "Backup e Recuperacao Automatizados"
+    source: references.md
+    doc_path: docs/pillars/devops/backup-e-recuperacao-automatizados.md
+    status: documented
+    evidence:
+      - docs/pillars/devops/backup-e-recuperacao-automatizados.md
+  - id: devops.analise-de-metricas-de-devops
+    pillar: devops
+    name: "Analise de Metricas de DevOps"
+    source: references.md
+    doc_path: docs/pillars/devops/analise-de-metricas-de-devops.md
+    status: documented
+    evidence:
+      - docs/pillars/devops/analise-de-metricas-de-devops.md
+  - id: devops.integracao-com-ferramentas-de-colaboracao
+    pillar: devops
+    name: "Integracao com Ferramentas de Colaboracao"
+    source: references.md
+    doc_path: docs/pillars/devops/integracao-com-ferramentas-de-colaboracao.md
+    status: documented
+    evidence:
+      - docs/pillars/devops/integracao-com-ferramentas-de-colaboracao.md
+  - id: devops.escalabilidade-de-pipelines
+    pillar: devops
+    name: "Escalabilidade de Pipelines"
+    source: references.md
+    doc_path: docs/pillars/devops/escalabilidade-de-pipelines.md
+    status: documented
+    evidence:
+      - docs/pillars/devops/escalabilidade-de-pipelines.md
+  - id: devops.auditoria-e-compliance
+    pillar: devops
+    name: "Auditoria e Compliance"
+    source: references.md
+    doc_path: docs/pillars/devops/auditoria-e-compliance.md
+    status: documented
+    evidence:
+      - docs/pillars/devops/auditoria-e-compliance.md
+  - id: devops.reducao-de-toil-e-post-mortems
+    pillar: devops
+    name: "Reducao de Toil e Post-Mortems"
+    source: references.md
+    doc_path: docs/pillars/devops/reducao-de-toil-e-post-mortems.md
+    status: documented
+    evidence:
+      - docs/pillars/devops/reducao-de-toil-e-post-mortems.md
+  - id: security.implementacao-de-autenticacao
+    pillar: security
+    name: "Implementacao de Autenticacao"
+    source: references.md
+    doc_path: docs/pillars/security/implementacao-de-autenticacao.md
+    status: documented
+    evidence:
+      - docs/pillars/security/implementacao-de-autenticacao.md
+  - id: security.gerenciamento-de-autorizacao
+    pillar: security
+    name: "Gerenciamento de Autorizacao"
+    source: references.md
+    doc_path: docs/pillars/security/gerenciamento-de-autorizacao.md
+    status: documented
+    evidence:
+      - docs/pillars/security/gerenciamento-de-autorizacao.md
+  - id: security.criptografia-de-dados-em-transito
+    pillar: security
+    name: "Criptografia de Dados em Transito"
+    source: references.md
+    doc_path: docs/pillars/security/criptografia-de-dados-em-transito.md
+    status: documented
+    evidence:
+      - docs/pillars/security/criptografia-de-dados-em-transito.md
+  - id: security.criptografia-de-dados-em-repouso
+    pillar: security
+    name: "Criptografia de Dados em Repouso"
+    source: references.md
+    doc_path: docs/pillars/security/criptografia-de-dados-em-repouso.md
+    status: documented
+    evidence:
+      - docs/pillars/security/criptografia-de-dados-em-repouso.md
+  - id: security.protecao-contra-injecoes
+    pillar: security
+    name: "Protecao contra Injecoes"
+    source: references.md
+    doc_path: docs/pillars/security/protecao-contra-injecoes.md
+    status: documented
+    evidence:
+      - docs/pillars/security/protecao-contra-injecoes.md
+  - id: security.scans-de-vulnerabilidades-estaticas-sast
+    pillar: security
+    name: "Scans de Vulnerabilidades Estaticas (SAST)"
+    source: references.md
+    doc_path: docs/pillars/security/scans-de-vulnerabilidades-estaticas-sast.md
+    status: documented
+    evidence:
+      - docs/pillars/security/scans-de-vulnerabilidades-estaticas-sast.md
+  - id: security.scans-de-vulnerabilidades-dinamicas-dast
+    pillar: security
+    name: "Scans de Vulnerabilidades Dinamicas (DAST)"
+    source: references.md
+    doc_path: docs/pillars/security/scans-de-vulnerabilidades-dinamicas-dast.md
+    status: documented
+    evidence:
+      - docs/pillars/security/scans-de-vulnerabilidades-dinamicas-dast.md
+  - id: security.testes-de-penetracao-pentests
+    pillar: security
+    name: "Testes de Penetracao (Pentests)"
+    source: references.md
+    doc_path: docs/pillars/security/testes-de-penetracao-pentests.md
+    status: documented
+    evidence:
+      - docs/pillars/security/testes-de-penetracao-pentests.md
+  - id: security.monitoramento-de-seguranca-siem
+    pillar: security
+    name: "Monitoramento de Seguranca (SIEM)"
+    source: references.md
+    doc_path: docs/pillars/security/monitoramento-de-seguranca-siem.md
+    status: documented
+    evidence:
+      - docs/pillars/security/monitoramento-de-seguranca-siem.md
+  - id: security.gerenciamento-de-segredos
+    pillar: security
+    name: "Gerenciamento de Segredos"
+    source: references.md
+    doc_path: docs/pillars/security/gerenciamento-de-segredos.md
+    status: documented
+    evidence:
+      - docs/pillars/security/gerenciamento-de-segredos.md
+  - id: security.conformidade-e-auditorias
+    pillar: security
+    name: "Conformidade e Auditorias"
+    source: references.md
+    doc_path: docs/pillars/security/conformidade-e-auditorias.md
+    status: documented
+    evidence:
+      - docs/pillars/security/conformidade-e-auditorias.md
+  - id: security.protecao-contra-ataques-ddos
+    pillar: security
+    name: "Protecao contra Ataques DDoS"
+    source: references.md
+    doc_path: docs/pillars/security/protecao-contra-ataques-ddos.md
+    status: documented
+    evidence:
+      - docs/pillars/security/protecao-contra-ataques-ddos.md
+  - id: security.firewalls-e-waf
+    pillar: security
+    name: "Firewalls e WAF"
+    source: references.md
+    doc_path: docs/pillars/security/firewalls-e-waf.md
+    status: documented
+    evidence:
+      - docs/pillars/security/firewalls-e-waf.md
+  - id: security.praticas-de-codificacao-segura
+    pillar: security
+    name: "Praticas de Codificacao Segura"
+    source: references.md
+    doc_path: docs/pillars/security/praticas-de-codificacao-segura.md
+    status: documented
+    evidence:
+      - docs/pillars/security/praticas-de-codificacao-segura.md
+  - id: security.resposta-a-incidentes
+    pillar: security
+    name: "Resposta a Incidentes"
+    source: references.md
+    doc_path: docs/pillars/security/resposta-a-incidentes.md
+    status: documented
+    evidence:
+      - docs/pillars/security/resposta-a-incidentes.md
+  - id: security.autenticacao-multi-fator-mfa
+    pillar: security
+    name: "Autenticacao Multi-Fator (MFA)"
+    source: references.md
+    doc_path: docs/pillars/security/autenticacao-multi-fator-mfa.md
+    status: documented
+    evidence:
+      - docs/pillars/security/autenticacao-multi-fator-mfa.md
+  - id: security.gerenciamento-de-vulnerabilidades
+    pillar: security
+    name: "Gerenciamento de Vulnerabilidades"
+    source: references.md
+    doc_path: docs/pillars/security/gerenciamento-de-vulnerabilidades.md
+    status: documented
+    evidence:
+      - docs/pillars/security/gerenciamento-de-vulnerabilidades.md
+  - id: security.treinamento-de-seguranca
+    pillar: security
+    name: "Treinamento de Seguranca"
+    source: references.md
+    doc_path: docs/pillars/security/treinamento-de-seguranca.md
+    status: documented
+    evidence:
+      - docs/pillars/security/treinamento-de-seguranca.md
+  - id: security.seguranca-de-apis
+    pillar: security
+    name: "Seguranca de APIs"
+    source: references.md
+    doc_path: docs/pillars/security/seguranca-de-apis.md
+    status: documented
+    evidence:
+      - docs/pillars/security/seguranca-de-apis.md
+  - id: security.configuracoes-de-seguranca-em-nuvem
+    pillar: security
+    name: "Configuracoes de Seguranca em Nuvem"
+    source: references.md
+    doc_path: docs/pillars/security/configuracoes-de-seguranca-em-nuvem.md
+    status: documented
+    evidence:
+      - docs/pillars/security/configuracoes-de-seguranca-em-nuvem.md
+  - id: quality_assurance.planejamento-de-estrategia-de-testes
+    pillar: quality_assurance
+    name: "Planejamento de Estrategia de Testes"
+    source: references.md
+    doc_path: docs/pillars/quality-assurance/planejamento-de-estrategia-de-testes.md
+    status: documented
+    evidence:
+      - docs/pillars/quality-assurance/planejamento-de-estrategia-de-testes.md
+  - id: quality_assurance.criacao-de-casos-de-teste
+    pillar: quality_assurance
+    name: "Criacao de Casos de Teste"
+    source: references.md
+    doc_path: docs/pillars/quality-assurance/criacao-de-casos-de-teste.md
+    status: documented
+    evidence:
+      - docs/pillars/quality-assurance/criacao-de-casos-de-teste.md
+  - id: quality_assurance.testes-unitarios
+    pillar: quality_assurance
+    name: "Testes Unitarios"
+    source: references.md
+    doc_path: docs/pillars/quality-assurance/testes-unitarios.md
+    status: documented
+    evidence:
+      - docs/pillars/quality-assurance/testes-unitarios.md
+  - id: quality_assurance.testes-de-integracao
+    pillar: quality_assurance
+    name: "Testes de Integracao"
+    source: references.md
+    doc_path: docs/pillars/quality-assurance/testes-de-integracao.md
+    status: documented
+    evidence:
+      - docs/pillars/quality-assurance/testes-de-integracao.md
+  - id: quality_assurance.testes-de-sistema-end-to-end-e2e
+    pillar: quality_assurance
+    name: "Testes de Sistema/End-to-End (E2E)"
+    source: references.md
+    doc_path: docs/pillars/quality-assurance/testes-de-sistema-end-to-end-e2e.md
+    status: documented
+    evidence:
+      - docs/pillars/quality-assurance/testes-de-sistema-end-to-end-e2e.md
+  - id: quality_assurance.testes-de-performance
+    pillar: quality_assurance
+    name: "Testes de Performance"
+    source: references.md
+    doc_path: docs/pillars/quality-assurance/testes-de-performance.md
+    status: documented
+    evidence:
+      - docs/pillars/quality-assurance/testes-de-performance.md
+  - id: quality_assurance.testes-de-regressao
+    pillar: quality_assurance
+    name: "Testes de Regressao"
+    source: references.md
+    doc_path: docs/pillars/quality-assurance/testes-de-regressao.md
+    status: documented
+    evidence:
+      - docs/pillars/quality-assurance/testes-de-regressao.md
+  - id: quality_assurance.testes-exploratorios-manuais
+    pillar: quality_assurance
+    name: "Testes Exploratorios/Manuais"
+    source: references.md
+    doc_path: docs/pillars/quality-assurance/testes-exploratorios-manuais.md
+    status: documented
+    evidence:
+      - docs/pillars/quality-assurance/testes-exploratorios-manuais.md
+  - id: quality_assurance.automacao-de-testes
+    pillar: quality_assurance
+    name: "Automacao de Testes"
+    source: references.md
+    doc_path: docs/pillars/quality-assurance/automacao-de-testes.md
+    status: documented
+    evidence:
+      - docs/pillars/quality-assurance/automacao-de-testes.md
+  - id: quality_assurance.gerenciamento-de-defeitos
+    pillar: quality_assurance
+    name: "Gerenciamento de Defeitos"
+    source: references.md
+    doc_path: docs/pillars/quality-assurance/gerenciamento-de-defeitos.md
+    status: documented
+    evidence:
+      - docs/pillars/quality-assurance/gerenciamento-de-defeitos.md
+  - id: quality_assurance.cobertura-de-codigo
+    pillar: quality_assurance
+    name: "Cobertura de Codigo"
+    source: references.md
+    doc_path: docs/pillars/quality-assurance/cobertura-de-codigo.md
+    status: documented
+    evidence:
+      - docs/pillars/quality-assurance/cobertura-de-codigo.md
+  - id: quality_assurance.testes-de-usabilidade-ux
+    pillar: quality_assurance
+    name: "Testes de Usabilidade/UX"
+    source: references.md
+    doc_path: docs/pillars/quality-assurance/testes-de-usabilidade-ux.md
+    status: documented
+    evidence:
+      - docs/pillars/quality-assurance/testes-de-usabilidade-ux.md
+  - id: quality_assurance.testes-de-acessibilidade
+    pillar: quality_assurance
+    name: "Testes de Acessibilidade"
+    source: references.md
+    doc_path: docs/pillars/quality-assurance/testes-de-acessibilidade.md
+    status: documented
+    evidence:
+      - docs/pillars/quality-assurance/testes-de-acessibilidade.md
+  - id: quality_assurance.testes-de-compatibilidade
+    pillar: quality_assurance
+    name: "Testes de Compatibilidade"
+    source: references.md
+    doc_path: docs/pillars/quality-assurance/testes-de-compatibilidade.md
+    status: documented
+    evidence:
+      - docs/pillars/quality-assurance/testes-de-compatibilidade.md
+  - id: quality_assurance.mocking-e-stubbing
+    pillar: quality_assurance
+    name: "Mocking e Stubbing"
+    source: references.md
+    doc_path: docs/pillars/quality-assurance/mocking-e-stubbing.md
+    status: documented
+    evidence:
+      - docs/pillars/quality-assurance/mocking-e-stubbing.md
+  - id: quality_assurance.relatorios-e-metricas-de-qualidade
+    pillar: quality_assurance
+    name: "Relatorios e Metricas de Qualidade"
+    source: references.md
+    doc_path: docs/pillars/quality-assurance/relatorios-e-metricas-de-qualidade.md
+    status: documented
+    evidence:
+      - docs/pillars/quality-assurance/relatorios-e-metricas-de-qualidade.md
+  - id: quality_assurance.integracao-com-ci-cd
+    pillar: quality_assurance
+    name: "Integracao com CI/CD"
+    source: references.md
+    doc_path: docs/pillars/quality-assurance/integracao-com-ci-cd.md
+    status: documented
+    evidence:
+      - docs/pillars/quality-assurance/integracao-com-ci-cd.md
+  - id: quality_assurance.testes-de-seguranca-basicos-appsec
+    pillar: quality_assurance
+    name: "Testes de Seguranca Basicos (AppSec)"
+    source: references.md
+    doc_path: docs/pillars/quality-assurance/testes-de-seguranca-basicos-appsec.md
+    status: documented
+    evidence:
+      - docs/pillars/quality-assurance/testes-de-seguranca-basicos-appsec.md
+  - id: quality_assurance.auditoria-de-processos-de-qa
+    pillar: quality_assurance
+    name: "Auditoria de Processos de QA"
+    source: references.md
+    doc_path: docs/pillars/quality-assurance/auditoria-de-processos-de-qa.md
+    status: documented
+    evidence:
+      - docs/pillars/quality-assurance/auditoria-de-processos-de-qa.md
+  - id: quality_assurance.treinamento-e-colaboracao
+    pillar: quality_assurance
+    name: "Treinamento e Colaboracao"
+    source: references.md
+    doc_path: docs/pillars/quality-assurance/treinamento-e-colaboracao.md
+    status: documented
+    evidence:
+      - docs/pillars/quality-assurance/treinamento-e-colaboracao.md
+  - id: data.modelagem-de-dados
+    pillar: data
+    name: "Modelagem de Dados"
+    source: references.md
+    doc_path: docs/pillars/data/modelagem-de-dados.md
+    status: documented
+    evidence:
+      - docs/pillars/data/modelagem-de-dados.md
+  - id: data.processos-etl-elt
+    pillar: data
+    name: "Processos ETL/ELT"
+    source: references.md
+    doc_path: docs/pillars/data/processos-etl-elt.md
+    status: documented
+    evidence:
+      - docs/pillars/data/processos-etl-elt.md
+  - id: data.armazenamento-de-dados
+    pillar: data
+    name: "Armazenamento de Dados"
+    source: references.md
+    doc_path: docs/pillars/data/armazenamento-de-dados.md
+    status: documented
+    evidence:
+      - docs/pillars/data/armazenamento-de-dados.md
+  - id: data.gerenciamento-de-big-data
+    pillar: data
+    name: "Gerenciamento de Big Data"
+    source: references.md
+    doc_path: docs/pillars/data/gerenciamento-de-big-data.md
+    status: documented
+    evidence:
+      - docs/pillars/data/gerenciamento-de-big-data.md
+  - id: data.analise-de-dados-exploratoria-eda
+    pillar: data
+    name: "Analise de Dados Exploratoria (EDA)"
+    source: references.md
+    doc_path: docs/pillars/data/analise-de-dados-exploratoria-eda.md
+    status: documented
+    evidence:
+      - docs/pillars/data/analise-de-dados-exploratoria-eda.md
+  - id: data.visualizacao-de-dados
+    pillar: data
+    name: "Visualizacao de Dados"
+    source: references.md
+    doc_path: docs/pillars/data/visualizacao-de-dados.md
+    status: documented
+    evidence:
+      - docs/pillars/data/visualizacao-de-dados.md
+  - id: data.business-intelligence-bi
+    pillar: data
+    name: "Business Intelligence (BI)"
+    source: references.md
+    doc_path: docs/pillars/data/business-intelligence-bi.md
+    status: documented
+    evidence:
+      - docs/pillars/data/business-intelligence-bi.md
+  - id: data.machine-learning-pipelines
+    pillar: data
+    name: "Machine Learning Pipelines"
+    source: references.md
+    doc_path: docs/pillars/data/machine-learning-pipelines.md
+    status: documented
+    evidence:
+      - docs/pillars/data/machine-learning-pipelines.md
+  - id: data.feature-engineering
+    pillar: data
+    name: "Feature Engineering"
+    source: references.md
+    doc_path: docs/pillars/data/feature-engineering.md
+    status: documented
+    evidence:
+      - docs/pillars/data/feature-engineering.md
+  - id: data.modelos-de-previsao
+    pillar: data
+    name: "Modelos de Previsao"
+    source: references.md
+    doc_path: docs/pillars/data/modelos-de-previsao.md
+    status: documented
+    evidence:
+      - docs/pillars/data/modelos-de-previsao.md
+  - id: data.integracao-de-ia
+    pillar: data
+    name: "Integracao de IA"
+    source: references.md
+    doc_path: docs/pillars/data/integracao-de-ia.md
+    status: documented
+    evidence:
+      - docs/pillars/data/integracao-de-ia.md
+  - id: data.governanca-de-dados
+    pillar: data
+    name: "Governanca de Dados"
+    source: references.md
+    doc_path: docs/pillars/data/governanca-de-dados.md
+    status: documented
+    evidence:
+      - docs/pillars/data/governanca-de-dados.md
+  - id: data.seguranca-de-dados
+    pillar: data
+    name: "Seguranca de Dados"
+    source: references.md
+    doc_path: docs/pillars/data/seguranca-de-dados.md
+    status: documented
+    evidence:
+      - docs/pillars/data/seguranca-de-dados.md
+  - id: data.otimizacao-de-queries
+    pillar: data
+    name: "Otimizacao de Queries"
+    source: references.md
+    doc_path: docs/pillars/data/otimizacao-de-queries.md
+    status: documented
+    evidence:
+      - docs/pillars/data/otimizacao-de-queries.md
+  - id: data.data-streaming-em-tempo-real
+    pillar: data
+    name: "Data Streaming em Tempo Real"
+    source: references.md
+    doc_path: docs/pillars/data/data-streaming-em-tempo-real.md
+    status: documented
+    evidence:
+      - docs/pillars/data/data-streaming-em-tempo-real.md
+  - id: data.testes-de-dados
+    pillar: data
+    name: "Testes de Dados"
+    source: references.md
+    doc_path: docs/pillars/data/testes-de-dados.md
+    status: documented
+    evidence:
+      - docs/pillars/data/testes-de-dados.md
+  - id: data.monitoramento-de-dados
+    pillar: data
+    name: "Monitoramento de Dados"
+    source: references.md
+    doc_path: docs/pillars/data/monitoramento-de-dados.md
+    status: documented
+    evidence:
+      - docs/pillars/data/monitoramento-de-dados.md
+  - id: data.integracao-com-ferramentas-externas
+    pillar: data
+    name: "Integracao com Ferramentas Externas"
+    source: references.md
+    doc_path: docs/pillars/data/integracao-com-ferramentas-externas.md
+    status: documented
+    evidence:
+      - docs/pillars/data/integracao-com-ferramentas-externas.md
+  - id: data.escalabilidade-de-sistemas-de-dados
+    pillar: data
+    name: "Escalabilidade de Sistemas de Dados"
+    source: references.md
+    doc_path: docs/pillars/data/escalabilidade-de-sistemas-de-dados.md
+    status: documented
+    evidence:
+      - docs/pillars/data/escalabilidade-de-sistemas-de-dados.md
+  - id: data.auditoria-e-relatorios-de-dados
+    pillar: data
+    name: "Auditoria e Relatorios de Dados"
+    source: references.md
+    doc_path: docs/pillars/data/auditoria-e-relatorios-de-dados.md
+    status: documented
+    evidence:
+      - docs/pillars/data/auditoria-e-relatorios-de-dados.md
+  - id: product_ux.pesquisa-de-usuario
+    pillar: product_ux
+    name: "Pesquisa de Usuario"
+    source: references.md
+    doc_path: docs/pillars/product-ux/pesquisa-de-usuario.md
+    status: documented
+    evidence:
+      - docs/pillars/product-ux/pesquisa-de-usuario.md
+  - id: product_ux.criacao-de-personas
+    pillar: product_ux
+    name: "Criacao de Personas"
+    source: references.md
+    doc_path: docs/pillars/product-ux/criacao-de-personas.md
+    status: documented
+    evidence:
+      - docs/pillars/product-ux/criacao-de-personas.md
+  - id: product_ux.mapeamento-de-jornada-do-usuario
+    pillar: product_ux
+    name: "Mapeamento de Jornada do Usuario"
+    source: references.md
+    doc_path: docs/pillars/product-ux/mapeamento-de-jornada-do-usuario.md
+    status: documented
+    evidence:
+      - docs/pillars/product-ux/mapeamento-de-jornada-do-usuario.md
+  - id: product_ux.definicao-de-requisitos-de-produto
+    pillar: product_ux
+    name: "Definicao de Requisitos de Produto"
+    source: references.md
+    doc_path: docs/pillars/product-ux/definicao-de-requisitos-de-produto.md
+    status: documented
+    evidence:
+      - docs/pillars/product-ux/definicao-de-requisitos-de-produto.md
+  - id: product_ux.wireframing
+    pillar: product_ux
+    name: "Wireframing"
+    source: references.md
+    doc_path: docs/pillars/product-ux/wireframing.md
+    status: documented
+    evidence:
+      - docs/pillars/product-ux/wireframing.md
+  - id: product_ux.prototipos-interativos
+    pillar: product_ux
+    name: "Prototipos Interativos"
+    source: references.md
+    doc_path: docs/pillars/product-ux/prototipos-interativos.md
+    status: documented
+    evidence:
+      - docs/pillars/product-ux/prototipos-interativos.md
+  - id: product_ux.testes-de-usabilidade
+    pillar: product_ux
+    name: "Testes de Usabilidade"
+    source: references.md
+    doc_path: docs/pillars/product-ux/testes-de-usabilidade.md
+    status: documented
+    evidence:
+      - docs/pillars/product-ux/testes-de-usabilidade.md
+  - id: product_ux.design-de-interface-ui
+    pillar: product_ux
+    name: "Design de Interface (UI)"
+    source: references.md
+    doc_path: docs/pillars/product-ux/design-de-interface-ui.md
+    status: documented
+    evidence:
+      - docs/pillars/product-ux/design-de-interface-ui.md
+  - id: product_ux.design-responsivo
+    pillar: product_ux
+    name: "Design Responsivo"
+    source: references.md
+    doc_path: docs/pillars/product-ux/design-responsivo.md
+    status: documented
+    evidence:
+      - docs/pillars/product-ux/design-responsivo.md
+  - id: product_ux.acessibilidade-no-design
+    pillar: product_ux
+    name: "Acessibilidade no Design"
+    source: references.md
+    doc_path: docs/pillars/product-ux/acessibilidade-no-design.md
+    status: documented
+    evidence:
+      - docs/pillars/product-ux/acessibilidade-no-design.md
+  - id: product_ux.colaboracao-com-devs
+    pillar: product_ux
+    name: "Colaboracao com Devs"
+    source: references.md
+    doc_path: docs/pillars/product-ux/colaboracao-com-devs.md
+    status: documented
+    evidence:
+      - docs/pillars/product-ux/colaboracao-com-devs.md
+  - id: product_ux.iteracao-baseada-em-feedback
+    pillar: product_ux
+    name: "Iteracao Baseada em Feedback"
+    source: references.md
+    doc_path: docs/pillars/product-ux/iteracao-baseada-em-feedback.md
+    status: documented
+    evidence:
+      - docs/pillars/product-ux/iteracao-baseada-em-feedback.md
+  - id: product_ux.gerenciamento-de-produto
+    pillar: product_ux
+    name: "Gerenciamento de Produto"
+    source: references.md
+    doc_path: docs/pillars/product-ux/gerenciamento-de-produto.md
+    status: documented
+    evidence:
+      - docs/pillars/product-ux/gerenciamento-de-produto.md
+  - id: product_ux.analise-de-metricas-de-ux
+    pillar: product_ux
+    name: "Analise de Metricas de UX"
+    source: references.md
+    doc_path: docs/pillars/product-ux/analise-de-metricas-de-ux.md
+    status: documented
+    evidence:
+      - docs/pillars/product-ux/analise-de-metricas-de-ux.md
+  - id: product_ux.design-thinking-workshops
+    pillar: product_ux
+    name: "Design Thinking Workshops"
+    source: references.md
+    doc_path: docs/pillars/product-ux/design-thinking-workshops.md
+    status: documented
+    evidence:
+      - docs/pillars/product-ux/design-thinking-workshops.md
+  - id: product_ux.integracao-de-brand-guidelines
+    pillar: product_ux
+    name: "Integracao de Brand Guidelines"
+    source: references.md
+    doc_path: docs/pillars/product-ux/integracao-de-brand-guidelines.md
+    status: documented
+    evidence:
+      - docs/pillars/product-ux/integracao-de-brand-guidelines.md
+  - id: product_ux.pesquisa-competitiva
+    pillar: product_ux
+    name: "Pesquisa Competitiva"
+    source: references.md
+    doc_path: docs/pillars/product-ux/pesquisa-competitiva.md
+    status: documented
+    evidence:
+      - docs/pillars/product-ux/pesquisa-competitiva.md
+  - id: product_ux.storyboarding
+    pillar: product_ux
+    name: "Storyboarding"
+    source: references.md
+    doc_path: docs/pillars/product-ux/storyboarding.md
+    status: documented
+    evidence:
+      - docs/pillars/product-ux/storyboarding.md
+  - id: product_ux.ferramentas-de-colaboracao
+    pillar: product_ux
+    name: "Ferramentas de Colaboracao"
+    source: references.md
+    doc_path: docs/pillars/product-ux/ferramentas-de-colaboracao.md
+    status: documented
+    evidence:
+      - docs/pillars/product-ux/ferramentas-de-colaboracao.md
+  - id: product_ux.auditoria-de-ux-existente
+    pillar: product_ux
+    name: "Auditoria de UX Existente"
+    source: references.md
+    doc_path: docs/pillars/product-ux/auditoria-de-ux-existente.md
+    status: documented
+    evidence:
+      - docs/pillars/product-ux/auditoria-de-ux-existente.md
+  - id: architecture.analise-de-requisitos-arquiteturais
+    pillar: architecture
+    name: "Analise de Requisitos Arquiteturais"
+    source: references.md
+    doc_path: docs/pillars/architecture/analise-de-requisitos-arquiteturais.md
+    status: documented
+    evidence:
+      - docs/pillars/architecture/analise-de-requisitos-arquiteturais.md
+  - id: architecture.escolha-de-padroes-de-arquitetura
+    pillar: architecture
+    name: "Escolha de Padroes de Arquitetura"
+    source: references.md
+    doc_path: docs/pillars/architecture/escolha-de-padroes-de-arquitetura.md
+    status: documented
+    evidence:
+      - docs/pillars/architecture/escolha-de-padroes-de-arquitetura.md
+  - id: architecture.modelagem-de-dominio-ddd
+    pillar: architecture
+    name: "Modelagem de Dominio (DDD)"
+    source: references.md
+    doc_path: docs/pillars/architecture/modelagem-de-dominio-ddd.md
+    status: documented
+    evidence:
+      - docs/pillars/architecture/modelagem-de-dominio-ddd.md
+  - id: architecture.avaliacao-de-trade-offs
+    pillar: architecture
+    name: "Avaliacao de Trade-offs"
+    source: references.md
+    doc_path: docs/pillars/architecture/avaliacao-de-trade-offs.md
+    status: documented
+    evidence:
+      - docs/pillars/architecture/avaliacao-de-trade-offs.md
+  - id: architecture.documentacao-de-arquitetura
+    pillar: architecture
+    name: "Documentacao de Arquitetura"
+    source: references.md
+    doc_path: docs/pillars/architecture/documentacao-de-arquitetura.md
+    status: documented
+    evidence:
+      - docs/pillars/architecture/documentacao-de-arquitetura.md
+  - id: architecture.design-de-microservices
+    pillar: architecture
+    name: "Design de Microservices"
+    source: references.md
+    doc_path: docs/pillars/architecture/design-de-microservices.md
+    status: documented
+    evidence:
+      - docs/pillars/architecture/design-de-microservices.md
+  - id: architecture.integracao-de-sistemas-distribuidos
+    pillar: architecture
+    name: "Integracao de Sistemas Distribuidos"
+    source: references.md
+    doc_path: docs/pillars/architecture/integracao-de-sistemas-distribuidos.md
+    status: documented
+    evidence:
+      - docs/pillars/architecture/integracao-de-sistemas-distribuidos.md
+  - id: architecture.gerenciamento-de-acoplamento
+    pillar: architecture
+    name: "Gerenciamento de Acoplamento"
+    source: references.md
+    doc_path: docs/pillars/architecture/gerenciamento-de-acoplamento.md
+    status: documented
+    evidence:
+      - docs/pillars/architecture/gerenciamento-de-acoplamento.md
+  - id: architecture.evolutionary-architecture
+    pillar: architecture
+    name: "Evolutionary Architecture"
+    source: references.md
+    doc_path: docs/pillars/architecture/evolutionary-architecture.md
+    status: documented
+    evidence:
+      - docs/pillars/architecture/evolutionary-architecture.md
+  - id: architecture.padroes-de-resiliencia
+    pillar: architecture
+    name: "Padroes de Resiliencia"
+    source: references.md
+    doc_path: docs/pillars/architecture/padroes-de-resiliencia.md
+    status: documented
+    evidence:
+      - docs/pillars/architecture/padroes-de-resiliencia.md
+  - id: architecture.otimizacao-para-escalabilidade
+    pillar: architecture
+    name: "Otimizacao para Escalabilidade"
+    source: references.md
+    doc_path: docs/pillars/architecture/otimizacao-para-escalabilidade.md
+    status: documented
+    evidence:
+      - docs/pillars/architecture/otimizacao-para-escalabilidade.md
+  - id: architecture.integracao-com-cloud-native
+    pillar: architecture
+    name: "Integracao com Cloud-Native"
+    source: references.md
+    doc_path: docs/pillars/architecture/integracao-com-cloud-native.md
+    status: documented
+    evidence:
+      - docs/pillars/architecture/integracao-com-cloud-native.md
+  - id: architecture.auditoria-arquitetural
+    pillar: architecture
+    name: "Auditoria Arquitetural"
+    source: references.md
+    doc_path: docs/pillars/architecture/auditoria-arquitetural.md
+    status: documented
+    evidence:
+      - docs/pillars/architecture/auditoria-arquitetural.md
+  - id: architecture.colaboracao-com-times
+    pillar: architecture
+    name: "Colaboracao com Times"
+    source: references.md
+    doc_path: docs/pillars/architecture/colaboracao-com-times.md
+    status: documented
+    evidence:
+      - docs/pillars/architecture/colaboracao-com-times.md
+  - id: architecture.ferramentas-de-modelagem
+    pillar: architecture
+    name: "Ferramentas de Modelagem"
+    source: references.md
+    doc_path: docs/pillars/architecture/ferramentas-de-modelagem.md
+    status: documented
+    evidence:
+      - docs/pillars/architecture/ferramentas-de-modelagem.md
+  - id: architecture.gerenciamento-de-riscos-arquiteturais
+    pillar: architecture
+    name: "Gerenciamento de Riscos Arquiteturais"
+    source: references.md
+    doc_path: docs/pillars/architecture/gerenciamento-de-riscos-arquiteturais.md
+    status: documented
+    evidence:
+      - docs/pillars/architecture/gerenciamento-de-riscos-arquiteturais.md
+  - id: architecture.integracao-de-ai-na-arquitetura
+    pillar: architecture
+    name: "Integracao de AI na Arquitetura"
+    source: references.md
+    doc_path: docs/pillars/architecture/integracao-de-ai-na-arquitetura.md
+    status: documented
+    evidence:
+      - docs/pillars/architecture/integracao-de-ai-na-arquitetura.md
+  - id: architecture.padroes-de-seguranca-arquitetural
+    pillar: architecture
+    name: "Padroes de Seguranca Arquitetural"
+    source: references.md
+    doc_path: docs/pillars/architecture/padroes-de-seguranca-arquitetural.md
+    status: documented
+    evidence:
+      - docs/pillars/architecture/padroes-de-seguranca-arquitetural.md
+  - id: architecture.testes-arquiteturais
+    pillar: architecture
+    name: "Testes Arquiteturais"
+    source: references.md
+    doc_path: docs/pillars/architecture/testes-arquiteturais.md
+    status: documented
+    evidence:
+      - docs/pillars/architecture/testes-arquiteturais.md
+  - id: architecture.migracao-e-refatoracao
+    pillar: architecture
+    name: "Migracao e Refatoracao"
+    source: references.md
+    doc_path: docs/pillars/architecture/migracao-e-refatoracao.md
+    status: documented
+    evidence:
+      - docs/pillars/architecture/migracao-e-refatoracao.md
+  - id: sre.definicao-de-slas-slos-slis
+    pillar: sre
+    name: "Definicao de SLAs/SLOs/SLIs"
+    source: references.md
+    doc_path: docs/pillars/sre/definicao-de-slas-slos-slis.md
+    status: documented
+    evidence:
+      - docs/pillars/sre/definicao-de-slas-slos-slis.md
+  - id: sre.gerenciamento-de-error-budgets
+    pillar: sre
+    name: "Gerenciamento de Error Budgets"
+    source: references.md
+    doc_path: docs/pillars/sre/gerenciamento-de-error-budgets.md
+    status: documented
+    evidence:
+      - docs/pillars/sre/gerenciamento-de-error-budgets.md
+  - id: sre.monitoramento-avancado
+    pillar: sre
+    name: "Monitoramento Avancado"
+    source: references.md
+    doc_path: docs/pillars/sre/monitoramento-avancado.md
+    status: documented
+    evidence:
+      - docs/pillars/sre/monitoramento-avancado.md
+  - id: sre.resposta-a-incidentes-ir
+    pillar: sre
+    name: "Resposta a Incidentes (IR)"
+    source: references.md
+    doc_path: docs/pillars/sre/resposta-a-incidentes-ir.md
+    status: documented
+    evidence:
+      - docs/pillars/sre/resposta-a-incidentes-ir.md
+  - id: sre.post-mortems-blameless
+    pillar: sre
+    name: "Post-Mortems Blameless"
+    source: references.md
+    doc_path: docs/pillars/sre/post-mortems-blameless.md
+    status: documented
+    evidence:
+      - docs/pillars/sre/post-mortems-blameless.md
+  - id: sre.chaos-engineering
+    pillar: sre
+    name: "Chaos Engineering"
+    source: references.md
+    doc_path: docs/pillars/sre/chaos-engineering.md
+    status: documented
+    evidence:
+      - docs/pillars/sre/chaos-engineering.md
+  - id: sre.reducao-de-toil
+    pillar: sre
+    name: "Reducao de Toil"
+    source: references.md
+    doc_path: docs/pillars/sre/reducao-de-toil.md
+    status: documented
+    evidence:
+      - docs/pillars/sre/reducao-de-toil.md
+  - id: sre.capacity-planning
+    pillar: sre
+    name: "Capacity Planning"
+    source: references.md
+    doc_path: docs/pillars/sre/capacity-planning.md
+    status: documented
+    evidence:
+      - docs/pillars/sre/capacity-planning.md
+  - id: sre.automacao-de-operacoes
+    pillar: sre
+    name: "Automacao de Operacoes"
+    source: references.md
+    doc_path: docs/pillars/sre/automacao-de-operacoes.md
+    status: documented
+    evidence:
+      - docs/pillars/sre/automacao-de-operacoes.md
+  - id: sre.gerenciamento-de-releases
+    pillar: sre
+    name: "Gerenciamento de Releases"
+    source: references.md
+    doc_path: docs/pillars/sre/gerenciamento-de-releases.md
+    status: documented
+    evidence:
+      - docs/pillars/sre/gerenciamento-de-releases.md
+  - id: sre.performance-tuning-em-producao
+    pillar: sre
+    name: "Performance Tuning em Producao"
+    source: references.md
+    doc_path: docs/pillars/sre/performance-tuning-em-producao.md
+    status: documented
+    evidence:
+      - docs/pillars/sre/performance-tuning-em-producao.md
+  - id: sre.backup-e-disaster-recovery
+    pillar: sre
+    name: "Backup e Disaster Recovery"
+    source: references.md
+    doc_path: docs/pillars/sre/backup-e-disaster-recovery.md
+    status: documented
+    evidence:
+      - docs/pillars/sre/backup-e-disaster-recovery.md
+  - id: sre.seguranca-em-sre
+    pillar: sre
+    name: "Seguranca em SRE"
+    source: references.md
+    doc_path: docs/pillars/sre/seguranca-em-sre.md
+    status: documented
+    evidence:
+      - docs/pillars/sre/seguranca-em-sre.md
+  - id: sre.metricas-de-reliability
+    pillar: sre
+    name: "Metricas de Reliability"
+    source: references.md
+    doc_path: docs/pillars/sre/metricas-de-reliability.md
+    status: documented
+    evidence:
+      - docs/pillars/sre/metricas-de-reliability.md
+  - id: sre.colaboracao-dev-sre
+    pillar: sre
+    name: "Colaboracao Dev-SRE"
+    source: references.md
+    doc_path: docs/pillars/sre/colaboracao-dev-sre.md
+    status: documented
+    evidence:
+      - docs/pillars/sre/colaboracao-dev-sre.md
+  - id: sre.ferramentas-sre
+    pillar: sre
+    name: "Ferramentas SRE"
+    source: references.md
+    doc_path: docs/pillars/sre/ferramentas-sre.md
+    status: documented
+    evidence:
+      - docs/pillars/sre/ferramentas-sre.md
+  - id: sre.escalabilidade-e-resiliencia
+    pillar: sre
+    name: "Escalabilidade e Resiliencia"
+    source: references.md
+    doc_path: docs/pillars/sre/escalabilidade-e-resiliencia.md
+    status: documented
+    evidence:
+      - docs/pillars/sre/escalabilidade-e-resiliencia.md
+  - id: sre.treinamento-e-simulacoes
+    pillar: sre
+    name: "Treinamento e Simulacoes"
+    source: references.md
+    doc_path: docs/pillars/sre/treinamento-e-simulacoes.md
+    status: documented
+    evidence:
+      - docs/pillars/sre/treinamento-e-simulacoes.md
+  - id: sre.compliance-em-producao
+    pillar: sre
+    name: "Compliance em Producao"
+    source: references.md
+    doc_path: docs/pillars/sre/compliance-em-producao.md
+    status: documented
+    evidence:
+      - docs/pillars/sre/compliance-em-producao.md
+  - id: sre.otimizacao-de-custos-com-reliability
+    pillar: sre
+    name: "Otimizacao de Custos com Reliability"
+    source: references.md
+    doc_path: docs/pillars/sre/otimizacao-de-custos-com-reliability.md
+    status: documented
+    evidence:
+      - docs/pillars/sre/otimizacao-de-custos-com-reliability.md
+  - id: it_governance.alinhamento-de-ti-com-estrategia-de-negocio
+    pillar: it_governance
+    name: "Alinhamento de TI com Estrategia de Negocio"
+    source: references.md
+    doc_path: docs/pillars/it-governance/alinhamento-de-ti-com-estrategia-de-negocio.md
+    status: documented
+    evidence:
+      - docs/pillars/it-governance/alinhamento-de-ti-com-estrategia-de-negocio.md
+  - id: it_governance.formacao-de-equipes-qualificadas
+    pillar: it_governance
+    name: "Formacao de Equipes Qualificadas"
+    source: references.md
+    doc_path: docs/pillars/it-governance/formacao-de-equipes-qualificadas.md
+    status: documented
+    evidence:
+      - docs/pillars/it-governance/formacao-de-equipes-qualificadas.md
+  - id: it_governance.monitoramento-de-performance-de-ti
+    pillar: it_governance
+    name: "Monitoramento de Performance de TI"
+    source: references.md
+    doc_path: docs/pillars/it-governance/monitoramento-de-performance-de-ti.md
+    status: documented
+    evidence:
+      - docs/pillars/it-governance/monitoramento-de-performance-de-ti.md
+  - id: it_governance.definicao-de-papeis-e-responsabilidades
+    pillar: it_governance
+    name: "Definicao de Papeis e Responsabilidades"
+    source: references.md
+    doc_path: docs/pillars/it-governance/definicao-de-papeis-e-responsabilidades.md
+    status: documented
+    evidence:
+      - docs/pillars/it-governance/definicao-de-papeis-e-responsabilidades.md
+  - id: it_governance.enfase-em-integridade-e-etica
+    pillar: it_governance
+    name: "Enfase em Integridade e Etica"
+    source: references.md
+    doc_path: docs/pillars/it-governance/enfase-em-integridade-e-etica.md
+    status: documented
+    evidence:
+      - docs/pillars/it-governance/enfase-em-integridade-e-etica.md
+  - id: it_governance.gestao-de-compliance
+    pillar: it_governance
+    name: "Gestao de Compliance"
+    source: references.md
+    doc_path: docs/pillars/it-governance/gestao-de-compliance.md
+    status: documented
+    evidence:
+      - docs/pillars/it-governance/gestao-de-compliance.md
+  - id: it_governance.gerenciamento-de-riscos-efetivo
+    pillar: it_governance
+    name: "Gerenciamento de Riscos Efetivo"
+    source: references.md
+    doc_path: docs/pillars/it-governance/gerenciamento-de-riscos-efetivo.md
+    status: documented
+    evidence:
+      - docs/pillars/it-governance/gerenciamento-de-riscos-efetivo.md
+  - id: it_governance.educacao-e-treinamento-de-equipes
+    pillar: it_governance
+    name: "Educacao e Treinamento de Equipes"
+    source: references.md
+    doc_path: docs/pillars/it-governance/educacao-e-treinamento-de-equipes.md
+    status: documented
+    evidence:
+      - docs/pillars/it-governance/educacao-e-treinamento-de-equipes.md
+  - id: it_governance.implementacao-de-frameworks-como-cobit
+    pillar: it_governance
+    name: "Implementacao de Frameworks como COBIT"
+    source: references.md
+    doc_path: docs/pillars/it-governance/implementacao-de-frameworks-como-cobit.md
+    status: documented
+    evidence:
+      - docs/pillars/it-governance/implementacao-de-frameworks-como-cobit.md
+  - id: it_governance.adocao-de-itil-para-itsm
+    pillar: it_governance
+    name: "Adocao de ITIL para ITSM"
+    source: references.md
+    doc_path: docs/pillars/it-governance/adocao-de-itil-para-itsm.md
+    status: documented
+    evidence:
+      - docs/pillars/it-governance/adocao-de-itil-para-itsm.md
+  - id: it_governance.uso-de-togaf-para-arquitetura
+    pillar: it_governance
+    name: "Uso de TOGAF para Arquitetura"
+    source: references.md
+    doc_path: docs/pillars/it-governance/uso-de-togaf-para-arquitetura.md
+    status: documented
+    evidence:
+      - docs/pillars/it-governance/uso-de-togaf-para-arquitetura.md
+  - id: it_governance.principios-de-iso-iec-38500
+    pillar: it_governance
+    name: "Principios de ISO/IEC 38500"
+    source: references.md
+    doc_path: docs/pillars/it-governance/principios-de-iso-iec-38500.md
+    status: documented
+    evidence:
+      - docs/pillars/it-governance/principios-de-iso-iec-38500.md
+  - id: it_governance.integracao-de-cmmi-para-maturidade
+    pillar: it_governance
+    name: "Integracao de CMMI para Maturidade"
+    source: references.md
+    doc_path: docs/pillars/it-governance/integracao-de-cmmi-para-maturidade.md
+    status: documented
+    evidence:
+      - docs/pillars/it-governance/integracao-de-cmmi-para-maturidade.md
+  - id: it_governance.aplicacao-de-nist-csf-para-cybersecurity
+    pillar: it_governance
+    name: "Aplicacao de NIST CSF para Cybersecurity"
+    source: references.md
+    doc_path: docs/pillars/it-governance/aplicacao-de-nist-csf-para-cybersecurity.md
+    status: documented
+    evidence:
+      - docs/pillars/it-governance/aplicacao-de-nist-csf-para-cybersecurity.md
+  - id: it_governance.auditorias-e-relatorios-regulares
+    pillar: it_governance
+    name: "Auditorias e Relatorios Regulares"
+    source: references.md
+    doc_path: docs/pillars/it-governance/auditorias-e-relatorios-regulares.md
+    status: documented
+    evidence:
+      - docs/pillars/it-governance/auditorias-e-relatorios-regulares.md
+  - id: it_governance.gestao-de-mudancas-e-evolucao
+    pillar: it_governance
+    name: "Gestao de Mudancas e Evolucao"
+    source: references.md
+    doc_path: docs/pillars/it-governance/gestao-de-mudancas-e-evolucao.md
+    status: documented
+    evidence:
+      - docs/pillars/it-governance/gestao-de-mudancas-e-evolucao.md
+  - id: it_governance.colaboracao-interdepartamental
+    pillar: it_governance
+    name: "Colaboracao Interdepartamental"
+    source: references.md
+    doc_path: docs/pillars/it-governance/colaboracao-interdepartamental.md
+    status: documented
+    evidence:
+      - docs/pillars/it-governance/colaboracao-interdepartamental.md
+  - id: it_governance.otimizacao-de-custos-e-recursos
+    pillar: it_governance
+    name: "Otimizacao de Custos e Recursos"
+    source: references.md
+    doc_path: docs/pillars/it-governance/otimizacao-de-custos-e-recursos.md
+    status: documented
+    evidence:
+      - docs/pillars/it-governance/otimizacao-de-custos-e-recursos.md
+  - id: it_governance.medicao-de-sucesso-via-kpis
+    pillar: it_governance
+    name: "Medicao de Sucesso via KPIs"
+    source: references.md
+    doc_path: docs/pillars/it-governance/medicao-de-sucesso-via-kpis.md
+    status: documented
+    evidence:
+      - docs/pillars/it-governance/medicao-de-sucesso-via-kpis.md
+  - id: it_governance.integracao-com-devops-e-sre
+    pillar: it_governance
+    name: "Integracao com DevOps e SRE"
+    source: references.md
+    doc_path: docs/pillars/it-governance/integracao-com-devops-e-sre.md
+    status: documented
+    evidence:
+      - docs/pillars/it-governance/integracao-com-devops-e-sre.md
+  - id: developer_experience.onboarding-eficiente
+    pillar: developer_experience
+    name: "Onboarding Eficiente"
+    source: references.md
+    doc_path: docs/pillars/developer-experience/onboarding-eficiente.md
+    status: documented
+    evidence:
+      - docs/pillars/developer-experience/onboarding-eficiente.md
+  - id: developer_experience.ferramentas-de-desenvolvimento-padronizadas
+    pillar: developer_experience
+    name: "Ferramentas de Desenvolvimento Padronizadas"
+    source: references.md
+    doc_path: docs/pillars/developer-experience/ferramentas-de-desenvolvimento-padronizadas.md
+    status: documented
+    evidence:
+      - docs/pillars/developer-experience/ferramentas-de-desenvolvimento-padronizadas.md
+  - id: developer_experience.automacao-de-tarefas-repetitivas
+    pillar: developer_experience
+    name: "Automacao de Tarefas Repetitivas"
+    source: references.md
+    doc_path: docs/pillars/developer-experience/automacao-de-tarefas-repetitivas.md
+    status: documented
+    evidence:
+      - docs/pillars/developer-experience/automacao-de-tarefas-repetitivas.md
+  - id: developer_experience.feedback-loops-rapidos
+    pillar: developer_experience
+    name: "Feedback Loops Rapidos"
+    source: references.md
+    doc_path: docs/pillars/developer-experience/feedback-loops-rapidos.md
+    status: documented
+    evidence:
+      - docs/pillars/developer-experience/feedback-loops-rapidos.md
+  - id: developer_experience.documentacao-interna
+    pillar: developer_experience
+    name: "Documentacao Interna"
+    source: references.md
+    doc_path: docs/pillars/developer-experience/documentacao-interna.md
+    status: documented
+    evidence:
+      - docs/pillars/developer-experience/documentacao-interna.md
+  - id: developer_experience.ambientes-de-desenvolvimento-locais
+    pillar: developer_experience
+    name: "Ambientes de Desenvolvimento Locais"
+    source: references.md
+    doc_path: docs/pillars/developer-experience/ambientes-de-desenvolvimento-locais.md
+    status: documented
+    evidence:
+      - docs/pillars/developer-experience/ambientes-de-desenvolvimento-locais.md
+  - id: developer_experience.metricas-de-produtividade
+    pillar: developer_experience
+    name: "Metricas de Produtividade"
+    source: references.md
+    doc_path: docs/pillars/developer-experience/metricas-de-produtividade.md
+    status: documented
+    evidence:
+      - docs/pillars/developer-experience/metricas-de-produtividade.md
+  - id: developer_experience.pesquisas-de-satisfacao
+    pillar: developer_experience
+    name: "Pesquisas de Satisfacao"
+    source: references.md
+    doc_path: docs/pillars/developer-experience/pesquisas-de-satisfacao.md
+    status: documented
+    evidence:
+      - docs/pillars/developer-experience/pesquisas-de-satisfacao.md
+  - id: developer_experience.treinamento-continuo
+    pillar: developer_experience
+    name: "Treinamento Continuo"
+    source: references.md
+    doc_path: docs/pillars/developer-experience/treinamento-continuo.md
+    status: documented
+    evidence:
+      - docs/pillars/developer-experience/treinamento-continuo.md
+  - id: developer_experience.ergonomia-de-codigo
+    pillar: developer_experience
+    name: "Ergonomia de Codigo"
+    source: references.md
+    doc_path: docs/pillars/developer-experience/ergonomia-de-codigo.md
+    status: documented
+    evidence:
+      - docs/pillars/developer-experience/ergonomia-de-codigo.md
+  - id: developer_experience.integracao-com-devops
+    pillar: developer_experience
+    name: "Integracao com DevOps"
+    source: references.md
+    doc_path: docs/pillars/developer-experience/integracao-com-devops.md
+    status: documented
+    evidence:
+      - docs/pillars/developer-experience/integracao-com-devops.md
+  - id: developer_experience.bem-estar-e-cultura
+    pillar: developer_experience
+    name: "Bem-Estar e Cultura"
+    source: references.md
+    doc_path: docs/pillars/developer-experience/bem-estar-e-cultura.md
+    status: documented
+    evidence:
+      - docs/pillars/developer-experience/bem-estar-e-cultura.md
+  - id: developer_experience.ferramentas-de-colaboracao
+    pillar: developer_experience
+    name: "Ferramentas de Colaboracao"
+    source: references.md
+    doc_path: docs/pillars/developer-experience/ferramentas-de-colaboracao.md
+    status: documented
+    evidence:
+      - docs/pillars/developer-experience/ferramentas-de-colaboracao.md
+  - id: developer_experience.reducao-de-tech-debt
+    pillar: developer_experience
+    name: "Reducao de Tech Debt"
+    source: references.md
+    doc_path: docs/pillars/developer-experience/reducao-de-tech-debt.md
+    status: documented
+    evidence:
+      - docs/pillars/developer-experience/reducao-de-tech-debt.md
+  - id: developer_experience.comunidade-interna
+    pillar: developer_experience
+    name: "Comunidade Interna"
+    source: references.md
+    doc_path: docs/pillars/developer-experience/comunidade-interna.md
+    status: documented
+    evidence:
+      - docs/pillars/developer-experience/comunidade-interna.md
+  - id: developer_experience.monitoramento-de-devex
+    pillar: developer_experience
+    name: "Monitoramento de DevEx"
+    source: references.md
+    doc_path: docs/pillars/developer-experience/monitoramento-de-devex.md
+    status: documented
+    evidence:
+      - docs/pillars/developer-experience/monitoramento-de-devex.md
+  - id: developer_experience.integracao-com-sre
+    pillar: developer_experience
+    name: "Integracao com SRE"
+    source: references.md
+    doc_path: docs/pillars/developer-experience/integracao-com-sre.md
+    status: documented
+    evidence:
+      - docs/pillars/developer-experience/integracao-com-sre.md
+  - id: developer_experience.personalizacao-de-workflows
+    pillar: developer_experience
+    name: "Personalizacao de Workflows"
+    source: references.md
+    doc_path: docs/pillars/developer-experience/personalizacao-de-workflows.md
+    status: documented
+    evidence:
+      - docs/pillars/developer-experience/personalizacao-de-workflows.md
+  - id: developer_experience.gamificacao-e-reconhecimento
+    pillar: developer_experience
+    name: "Gamificacao e Reconhecimento"
+    source: references.md
+    doc_path: docs/pillars/developer-experience/gamificacao-e-reconhecimento.md
+    status: documented
+    evidence:
+      - docs/pillars/developer-experience/gamificacao-e-reconhecimento.md
+  - id: developer_experience.auditoria-e-melhoria-continua
+    pillar: developer_experience
+    name: "Auditoria e Melhoria Continua"
+    source: references.md
+    doc_path: docs/pillars/developer-experience/auditoria-e-melhoria-continua.md
+    status: documented
+    evidence:
+      - docs/pillars/developer-experience/auditoria-e-melhoria-continua.md
+  - id: sustainability.medicao-de-carbon-footprint
+    pillar: sustainability
+    name: "Medicao de Carbon Footprint"
+    source: references.md
+    doc_path: docs/pillars/sustainability/medicao-de-carbon-footprint.md
+    status: documented
+    evidence:
+      - docs/pillars/sustainability/medicao-de-carbon-footprint.md
+  - id: sustainability.otimizacao-de-codigo-eficiente
+    pillar: sustainability
+    name: "Otimizacao de Codigo Eficiente"
+    source: references.md
+    doc_path: docs/pillars/sustainability/otimizacao-de-codigo-eficiente.md
+    status: documented
+    evidence:
+      - docs/pillars/sustainability/otimizacao-de-codigo-eficiente.md
+  - id: sustainability.escolha-de-provedores-verdes
+    pillar: sustainability
+    name: "Escolha de Provedores Verdes"
+    source: references.md
+    doc_path: docs/pillars/sustainability/escolha-de-provedores-verdes.md
+    status: documented
+    evidence:
+      - docs/pillars/sustainability/escolha-de-provedores-verdes.md
+  - id: sustainability.carbon-aware-computing
+    pillar: sustainability
+    name: "Carbon-Aware Computing"
+    source: references.md
+    doc_path: docs/pillars/sustainability/carbon-aware-computing.md
+    status: documented
+    evidence:
+      - docs/pillars/sustainability/carbon-aware-computing.md
+  - id: sustainability.reducao-de-dados-transferidos
+    pillar: sustainability
+    name: "Reducao de Dados Transferidos"
+    source: references.md
+    doc_path: docs/pillars/sustainability/reducao-de-dados-transferidos.md
+    status: documented
+    evidence:
+      - docs/pillars/sustainability/reducao-de-dados-transferidos.md
+  - id: sustainability.infraestrutura-eficiente
+    pillar: sustainability
+    name: "Infraestrutura Eficiente"
+    source: references.md
+    doc_path: docs/pillars/sustainability/infraestrutura-eficiente.md
+    status: documented
+    evidence:
+      - docs/pillars/sustainability/infraestrutura-eficiente.md
+  - id: sustainability.design-sustentavel-no-front-end
+    pillar: sustainability
+    name: "Design Sustentavel no Front-end"
+    source: references.md
+    doc_path: docs/pillars/sustainability/design-sustentavel-no-front-end.md
+    status: documented
+    evidence:
+      - docs/pillars/sustainability/design-sustentavel-no-front-end.md
+  - id: sustainability.ciclos-de-vida-de-hardware
+    pillar: sustainability
+    name: "Ciclos de Vida de Hardware"
+    source: references.md
+    doc_path: docs/pillars/sustainability/ciclos-de-vida-de-hardware.md
+    status: documented
+    evidence:
+      - docs/pillars/sustainability/ciclos-de-vida-de-hardware.md
+  - id: sustainability.treinamento-em-green-software
+    pillar: sustainability
+    name: "Treinamento em Green Software"
+    source: references.md
+    doc_path: docs/pillars/sustainability/treinamento-em-green-software.md
+    status: documented
+    evidence:
+      - docs/pillars/sustainability/treinamento-em-green-software.md
+  - id: sustainability.relatorios-de-sustentabilidade
+    pillar: sustainability
+    name: "Relatorios de Sustentabilidade"
+    source: references.md
+    doc_path: docs/pillars/sustainability/relatorios-de-sustentabilidade.md
+    status: documented
+    evidence:
+      - docs/pillars/sustainability/relatorios-de-sustentabilidade.md
+  - id: sustainability.integracao-com-ci-cd
+    pillar: sustainability
+    name: "Integracao com CI/CD"
+    source: references.md
+    doc_path: docs/pillars/sustainability/integracao-com-ci-cd.md
+    status: documented
+    evidence:
+      - docs/pillars/sustainability/integracao-com-ci-cd.md
+  - id: sustainability.escolha-de-linguagens-eficientes
+    pillar: sustainability
+    name: "Escolha de Linguagens Eficientes"
+    source: references.md
+    doc_path: docs/pillars/sustainability/escolha-de-linguagens-eficientes.md
+    status: documented
+    evidence:
+      - docs/pillars/sustainability/escolha-de-linguagens-eficientes.md
+  - id: sustainability.reciclagem-de-recursos
+    pillar: sustainability
+    name: "Reciclagem de Recursos"
+    source: references.md
+    doc_path: docs/pillars/sustainability/reciclagem-de-recursos.md
+    status: documented
+    evidence:
+      - docs/pillars/sustainability/reciclagem-de-recursos.md
+  - id: sustainability.governanca-de-sustentabilidade
+    pillar: sustainability
+    name: "Governanca de Sustentabilidade"
+    source: references.md
+    doc_path: docs/pillars/sustainability/governanca-de-sustentabilidade.md
+    status: documented
+    evidence:
+      - docs/pillars/sustainability/governanca-de-sustentabilidade.md
+  - id: sustainability.monitoramento-em-producao
+    pillar: sustainability
+    name: "Monitoramento em Producao"
+    source: references.md
+    doc_path: docs/pillars/sustainability/monitoramento-em-producao.md
+    status: documented
+    evidence:
+      - docs/pillars/sustainability/monitoramento-em-producao.md
+  - id: sustainability.parcerias-verdes
+    pillar: sustainability
+    name: "Parcerias Verdes"
+    source: references.md
+    doc_path: docs/pillars/sustainability/parcerias-verdes.md
+    status: documented
+    evidence:
+      - docs/pillars/sustainability/parcerias-verdes.md
+  - id: sustainability.auditoria-de-emissoes
+    pillar: sustainability
+    name: "Auditoria de Emissoes"
+    source: references.md
+    doc_path: docs/pillars/sustainability/auditoria-de-emissoes.md
+    status: documented
+    evidence:
+      - docs/pillars/sustainability/auditoria-de-emissoes.md
+  - id: sustainability.inovacao-verde
+    pillar: sustainability
+    name: "Inovacao Verde"
+    source: references.md
+    doc_path: docs/pillars/sustainability/inovacao-verde.md
+    status: documented
+    evidence:
+      - docs/pillars/sustainability/inovacao-verde.md
+  - id: sustainability.comunicacao-transparente
+    pillar: sustainability
+    name: "Comunicacao Transparente"
+    source: references.md
+    doc_path: docs/pillars/sustainability/comunicacao-transparente.md
+    status: documented
+    evidence:
+      - docs/pillars/sustainability/comunicacao-transparente.md
+  - id: sustainability.integracao-cross-pilar
+    pillar: sustainability
+    name: "Integracao Cross-Pilar"
+    source: references.md
+    doc_path: docs/pillars/sustainability/integracao-cross-pilar.md
+    status: documented
+    evidence:
+      - docs/pillars/sustainability/integracao-cross-pilar.md

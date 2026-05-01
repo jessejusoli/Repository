@@ -39,6 +39,18 @@ jobs:
       - name: Verify pillars
         run: make verify-pillars
 
+  pillar-docs:
+    name: 260 pillar item docs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6.0.2
+        with:
+          persist-credentials: false
+
+      - name: Verify pillar docs
+        run: make verify-pillar-docs
+
   contracts:
     name: API, MCP and RAG contracts
     runs-on: ubuntu-latest

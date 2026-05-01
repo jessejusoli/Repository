@@ -1,0 +1,21 @@
+{
+  "name": "@repository/repository-forge",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "CLI skeleton for generating and validating repositories from Repository blueprints.",
+  "bin": {
+    "repository-forge": "dist/index.js"
+  },
+  "scripts": {
+    "build": "node test/build.mjs",
+    "test": "node --test test/*.test.mjs",
+    "typecheck": "tsc -p tsconfig.json",
+    "forge:validate": "node test/validate.mjs",
+    "rag:index": "node test/rag-index.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.0"
+  }
+}

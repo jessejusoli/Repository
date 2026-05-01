@@ -1,0 +1,30 @@
+name: repository-blueprint
+
+x-blueprint:
+  purpose: local development template
+  owner: platform
+  secrets: use environment-specific secret stores, not committed files
+
+services:
+  app-template:
+    image: ${REPOSITORY_IMAGE:-ghcr.io/example/repository-template:latest}
+    profiles:
+      - template
+    env_file:
+      - .env.example
+    ports:
+      - "${REPOSITORY_PORT:-8080}:8080"
+    healthcheck:
+      test:
+        - CMD
+        - sh
+        - -c
+        - "wget -qO- http://localhost:8080/health || exit 1"
+      interval: 30s
+      timeout: 5s
+      retries: 3
+    read_only: true
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL

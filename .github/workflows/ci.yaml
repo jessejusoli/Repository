@@ -51,6 +51,42 @@ jobs:
       - name: Verify pillar docs
         run: make verify-pillar-docs
 
+  stacks:
+    name: Stack catalog
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6.0.2
+        with:
+          persist-credentials: false
+
+      - name: Verify stacks
+        run: make verify-stacks
+
+  blueprints:
+    name: Repository blueprints
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6.0.2
+        with:
+          persist-credentials: false
+
+      - name: Verify blueprints
+        run: make verify-blueprints
+
+  infra:
+    name: Infrastructure blueprints
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6.0.2
+        with:
+          persist-credentials: false
+
+      - name: Verify infra
+        run: make verify-infra
+
   contracts:
     name: API, MCP and RAG contracts
     runs-on: ubuntu-latest
@@ -62,6 +98,30 @@ jobs:
 
       - name: Verify contracts
         run: make verify-contracts
+
+  api-contracts:
+    name: Forge API contracts
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6.0.2
+        with:
+          persist-credentials: false
+
+      - name: Verify API contracts
+        run: make verify-api-contracts
+
+  rag-profile:
+    name: RAG profile
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6.0.2
+        with:
+          persist-credentials: false
+
+      - name: Verify RAG profile
+        run: make verify-rag-profile
 
   agents:
     name: AI agent instructions

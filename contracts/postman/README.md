@@ -12,3 +12,4 @@ Use this directory for Postman collections that exercise API workflows.
 ## Files
 
 - `repository.template.postman_collection.json`: minimal collection template.
+- `repository.forge.postman_collection.json`: future Repository Forge workflow collection.

@@ -12,3 +12,4 @@ existir artefato versionado.
 - Workflow de saude do repositorio e configuracao inicial do Dependabot.
 - CI/CD readiness, contratos universais, AGENTS.md e autoavaliacao dos 13 pilares.
 - Documentacao mestre em `docs/pillars/` com 13 pilares e 260 guias item a item.
+- Catalogos de stacks, ambientes e blueprints; blueprints Compose/Kustomize; contratos Forge/MCP/RAG; esqueletos TypeScript isolados.

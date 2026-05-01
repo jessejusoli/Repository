@@ -1,0 +1,184 @@
+openapi: 3.2.0
+info:
+  title: Repository Forge API
+  summary: API contract for generating, validating and inspecting repository templates.
+  version: 0.1.0
+servers:
+  - url: https://api.example.com/repository-forge
+    description: Replace with the real Repository Forge API URL.
+tags:
+  - name: blueprints
+    description: Repository blueprint discovery.
+  - name: plans
+    description: Repository generation planning.
+  - name: validation
+    description: Repository validation.
+paths:
+  /blueprints:
+    get:
+      operationId: listBlueprints
+      summary: List available repository blueprints.
+      tags:
+        - blueprints
+      responses:
+        "200":
+          description: Available blueprints.
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - blueprints
+                properties:
+                  blueprints:
+                    type: array
+                    items:
+                      $ref: "#/components/schemas/Blueprint"
+  /blueprints/{blueprintId}:
+    get:
+      operationId: inspectBlueprint
+      summary: Inspect a repository blueprint.
+      tags:
+        - blueprints
+      parameters:
+        - name: blueprintId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Blueprint detail.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Blueprint"
+        "404":
+          description: Blueprint not found.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+  /plans:
+    post:
+      operationId: generateRepositoryPlan
+      summary: Generate a repository creation plan.
+      tags:
+        - plans
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/RepositoryPlanRequest"
+      responses:
+        "200":
+          description: Generated plan.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/RepositoryPlan"
+  /validate:
+    post:
+      operationId: validateRepository
+      summary: Validate repository metadata and blueprint readiness.
+      tags:
+        - validation
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/RepositoryValidationRequest"
+      responses:
+        "200":
+          description: Validation result.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ValidationResult"
+components:
+  schemas:
+    Blueprint:
+      type: object
+      required:
+        - id
+        - type
+        - name
+      properties:
+        id:
+          type: string
+        type:
+          type: string
+        name:
+          type: string
+        docPath:
+          type: string
+        defaultPillars:
+          type: array
+          items:
+            type: string
+    RepositoryPlanRequest:
+      type: object
+      required:
+        - blueprintId
+        - projectName
+      properties:
+        blueprintId:
+          type: string
+        projectName:
+          type: string
+        stackId:
+          type: string
+        environments:
+          type: array
+          items:
+            type: string
+    RepositoryPlan:
+      type: object
+      required:
+        - projectName
+        - blueprintId
+        - files
+        - checks
+      properties:
+        projectName:
+          type: string
+        blueprintId:
+          type: string
+        files:
+          type: array
+          items:
+            type: string
+        checks:
+          type: array
+          items:
+            type: string
+    RepositoryValidationRequest:
+      type: object
+      required:
+        - path
+      properties:
+        path:
+          type: string
+        blueprintId:
+          type: string
+    ValidationResult:
+      type: object
+      required:
+        - ok
+        - findings
+      properties:
+        ok:
+          type: boolean
+        findings:
+          type: array
+          items:
+            type: string
+    Error:
+      type: object
+      required:
+        - message
+      properties:
+        message:
+          type: string

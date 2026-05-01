@@ -1,0 +1,45 @@
+schema_version: 1
+environments:
+  - id: local
+    purpose: Developer workstation or Codespace.
+    controls:
+      - reproducible setup
+      - no production secrets
+      - fast feedback
+  - id: dev
+    purpose: Shared development validation.
+    controls:
+      - disposable data
+      - automated deploy
+      - observability baseline
+  - id: staging
+    purpose: Production-like validation before release.
+    controls:
+      - production-like config
+      - release candidate testing
+      - rollback rehearsal
+  - id: prod
+    purpose: User-facing or business-critical production.
+    controls:
+      - change approval
+      - incident response
+      - backup and recovery
+      - least privilege
+  - id: edge
+    purpose: CDN, edge compute, IoT gateways or distributed runtime.
+    controls:
+      - latency budget
+      - regional compliance
+      - efficient transfer
+  - id: mobile
+    purpose: Mobile device runtime.
+    controls:
+      - app store release flow
+      - device compatibility
+      - offline and sync behavior
+  - id: embedded
+    purpose: Device, firmware or constrained runtime.
+    controls:
+      - hardware compatibility
+      - resource limits
+      - update and rollback strategy

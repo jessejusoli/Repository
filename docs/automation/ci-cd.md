@@ -11,6 +11,8 @@ It validates:
 
 - Repository structure.
 - 13-pillar self-assessment.
+- Stack, environment and blueprint catalogs.
+- Docker Compose and Kubernetes/Kustomize blueprints.
 - API, Postman, MCP and RAG contracts.
 - Agent instructions and registry.
 

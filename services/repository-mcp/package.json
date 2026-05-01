@@ -1,0 +1,17 @@
+{
+  "name": "@repository/repository-mcp",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "MCP server skeleton for Repository knowledge and template planning.",
+  "scripts": {
+    "build": "node test/build.mjs",
+    "test": "node --test test/*.test.mjs",
+    "typecheck": "tsc -p tsconfig.json",
+    "mcp:inspect": "node test/inspect.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.0"
+  }
+}

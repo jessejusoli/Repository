@@ -12,3 +12,4 @@ Use this directory for HTTP API descriptions.
 ## Files
 
 - `repository.template.openapi.yaml`: minimal template for new HTTP APIs.
+- `repository.forge.openapi.yaml`: future Repository Forge API contract.

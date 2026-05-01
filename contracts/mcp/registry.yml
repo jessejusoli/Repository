@@ -1,6 +1,39 @@
 schema_version: 1
-servers: []
-clients: []
+servers:
+  - id: repository-mcp
+    name: Repository MCP
+    path: services/repository-mcp
+    transport: stdio
+    protocol_version: 2025-11-25
+    capabilities:
+      - tools
+      - resources
+      - prompts
+    auth: local-user
+    data_boundaries:
+      - AGENTS.md
+      - catalog/
+      - contracts/
+      - docs/
+      - references.md
+    tools:
+      - list_templates
+      - inspect_template
+      - generate_repository_plan
+      - validate_repository
+      - search_pillars
+      - search_governance
+    resources:
+      - repository://catalog/pillars
+      - repository://catalog/stacks
+      - repository://templates
+      - repository://docs/pillars/{pillar}/{item}
+clients:
+  - id: repository-forge
+    name: Repository Forge CLI
+    path: tooling/repository-forge
+    allowed_servers:
+      - repository-mcp
 security_requirements:
   - least_privilege
   - explicit_allowlists

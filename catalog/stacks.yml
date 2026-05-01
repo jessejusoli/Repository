@@ -1,0 +1,118 @@
+schema_version: 1
+stacks:
+  - id: node-typescript
+    language: TypeScript
+    runtimes:
+      - Node.js
+    package_managers:
+      - npm
+      - pnpm
+      - yarn
+    commands:
+      build: npm run build
+      test: npm test
+      lint: npm run lint
+      deploy: project-defined
+  - id: python
+    language: Python
+    runtimes:
+      - CPython
+    package_managers:
+      - uv
+      - pip
+      - poetry
+    commands:
+      build: project-defined
+      test: pytest
+      lint: ruff check .
+      deploy: project-defined
+  - id: go
+    language: Go
+    runtimes:
+      - Go toolchain
+    package_managers:
+      - go modules
+    commands:
+      build: go build ./...
+      test: go test ./...
+      lint: golangci-lint run
+      deploy: project-defined
+  - id: rust
+    language: Rust
+    runtimes:
+      - Rust toolchain
+    package_managers:
+      - cargo
+    commands:
+      build: cargo build
+      test: cargo test
+      lint: cargo clippy
+      deploy: project-defined
+  - id: java
+    language: Java
+    runtimes:
+      - JVM
+    package_managers:
+      - maven
+      - gradle
+    commands:
+      build: ./gradlew build
+      test: ./gradlew test
+      lint: project-defined
+      deploy: project-defined
+  - id: dotnet
+    language: C#
+    runtimes:
+      - .NET
+    package_managers:
+      - dotnet
+    commands:
+      build: dotnet build
+      test: dotnet test
+      lint: dotnet format --verify-no-changes
+      deploy: project-defined
+  - id: php
+    language: PHP
+    runtimes:
+      - PHP
+    package_managers:
+      - composer
+    commands:
+      build: composer install --no-dev
+      test: composer test
+      lint: composer lint
+      deploy: project-defined
+  - id: ruby
+    language: Ruby
+    runtimes:
+      - Ruby
+    package_managers:
+      - bundler
+    commands:
+      build: bundle install
+      test: bundle exec rake test
+      lint: bundle exec rubocop
+      deploy: project-defined
+  - id: static-site
+    language: Static assets
+    runtimes:
+      - browser
+      - CDN
+    package_managers:
+      - project-defined
+    commands:
+      build: project-defined
+      test: project-defined
+      lint: project-defined
+      deploy: project-defined
+  - id: container-only
+    language: Multi-language
+    runtimes:
+      - OCI container
+    package_managers:
+      - project-defined
+    commands:
+      build: docker build .
+      test: project-defined
+      lint: project-defined
+      deploy: project-defined

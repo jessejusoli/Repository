@@ -26,6 +26,14 @@ Os guias item a item ficam em `docs/pillars/`, com rastreabilidade em
 Contratos de API, Postman, MCP e RAG vivem em `contracts/`. Instrucoes para
 agentes de IA ficam em `AGENTS.md` e `AI_AGENTS/`.
 
+## Fundacao Universal
+
+- `docs/architecture/stack-catalog.md`: como usar `catalog/stacks.yml`.
+- `docs/architecture/environment-provisioning.md`: como usar Compose e Kustomize.
+- `docs/architecture/api-mcp-rag-lifecycle.md`: ciclo de vida de API, MCP e RAG.
+- `docs/governance/enterprise-readiness.md`: criterios de prontidao enterprise.
+- `docs/governance/supply-chain-security-baseline.md`: baseline de supply chain.
+
 ## Regra pratica
 
 Se uma decisao afeta mais de um projeto, time ou pipeline, ela deve estar

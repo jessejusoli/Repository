@@ -20,6 +20,9 @@ assumption unless a project under `apps/`, `packages/`, `services/`, `infra/`,
 - Owners: `catalog/owners.yml`.
 - AI agent registry: `AI_AGENTS/registry.yml`.
 - API and integration contracts: `contracts/`.
+- Stack, environment and blueprint catalogs: `catalog/stacks.yml`, `catalog/environments.yml`, `catalog/repository-blueprints.yml`.
+- Future MCP server: `services/repository-mcp/`.
+- Future repository generator CLI: `tooling/repository-forge/`.
 - Governance documentation: `docs/governance/`.
 
 ## Required Checks
@@ -29,10 +32,16 @@ before finishing a repository-level change.
 
 ```bash
 make verify
+make verify-all
 make verify-repository
 make verify-pillars
 make verify-pillar-docs
+make verify-stacks
+make verify-blueprints
+make verify-infra
 make verify-contracts
+make verify-api-contracts
+make verify-rag-profile
 make verify-agents
 ```
 
@@ -41,6 +50,7 @@ make verify-agents
 - Keep the template universal.
 - Preserve the 13-pillar model unless the user explicitly changes it.
 - Keep `references.md`, `catalog/pillar-items.yml` and `docs/pillars/` synchronized.
+- Keep catalogs, contracts and blueprints synchronized before changing Forge or MCP behavior.
 - Add evidence when adding a new governance rule, contract type or automation.
 - Prefer simple shell checks over language-specific tooling at the root.
 - Do not commit secrets, tokens, real credentials or private endpoints.

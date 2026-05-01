@@ -1,0 +1,48 @@
+schema_version: 1
+system:
+  id: repository-knowledge-base
+  owner: platform
+  purpose: Support repository generation, maintenance and governance decisions.
+corpus:
+  sources:
+    - AGENTS.md
+    - README.md
+    - references.md
+    - catalog/
+    - contracts/
+    - docs/
+  data_classification: internal
+  retention: versioned-source-controlled-documents
+ingestion:
+  schedule: manual-or-ci
+  validation:
+    - source-allowlist
+    - document-hash
+    - markdown-h1-check
+chunking:
+  strategy: markdown-section
+  max_tokens: 800
+indexing:
+  embedding_model: project-defined
+  vector_store: local-generated-index
+  index_storage: .rag/repository-index.json
+retrieval:
+  top_k: 5
+  reranking: planned
+generation:
+  model_policy: project-defined
+  citation_policy: required
+evaluation:
+  datasets:
+    - docs/checklists/universal-project-readiness.md
+    - catalog/pillar-items.yml
+  metrics:
+    - answer-relevance
+    - groundedness
+    - retrieval-precision
+safety:
+  controls:
+    - prompt-injection-screening
+    - pii-redaction
+    - source-attribution
+    - no-generated-index-in-git

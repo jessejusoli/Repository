@@ -1,0 +1,106 @@
+{
+  "info": {
+    "name": "Repository Forge API",
+    "description": "Postman collection for Repository Forge blueprint discovery, planning and validation.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "List blueprints",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/blueprints",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "blueprints"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Inspect blueprint",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/blueprints/{{blueprintId}}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "blueprints",
+            "{{blueprintId}}"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Generate repository plan",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"blueprintId\": \"api-service\",\n  \"projectName\": \"example-api\",\n  \"stackId\": \"node-typescript\",\n  \"environments\": [\"local\", \"dev\", \"prod\"]\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/plans",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "plans"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Validate repository",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"path\": \"/workspaces/Repository\",\n  \"blueprintId\": \"api-service\"\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/validate",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "validate"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "https://api.example.com/repository-forge"
+    },
+    {
+      "key": "blueprintId",
+      "value": "api-service"
+    }
+  ]
+}

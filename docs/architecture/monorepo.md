@@ -22,6 +22,13 @@
 | `contracts/` | Contratos OpenAPI, Postman, MCP e RAG. |
 | `AI_AGENTS/` | Modos, subagentes, skills e politicas para IA. |
 
+## Roadmap executavel
+
+- `services/repository-mcp/`: servidor MCP TypeScript/Node isolado.
+- `tooling/repository-forge/`: CLI TypeScript/Node para planos, validacao e RAG.
+- `infra/compose/`: blueprint Docker Compose.
+- `infra/kubernetes/`: blueprint Kubernetes/Kustomize.
+
 ## Contrato minimo de cada projeto
 
 Cada novo projeto deve conter:

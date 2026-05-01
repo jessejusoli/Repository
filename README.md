@@ -11,6 +11,16 @@ Este projeto nasce como um template operacional: ele nao e uma aplicacao, e sim
 uma base de trabalho para novos repositorios que precisam crescer com clareza,
 padrao de qualidade, automacao e rastreabilidade.
 
+## Sumario
+
+- [Objetivos](#objetivos)
+- [Capacidades](#capacidades)
+- [Estrutura](#estrutura)
+- [Quickstart](#quickstart)
+- [Automacoes incluidas](#automacoes-incluidas)
+- [Documentacao principal](#documentacao-principal)
+- [Estado do projeto](#estado-do-projeto)
+
 ## Objetivos
 
 - Padronizar a estrutura de projetos monorepo.
@@ -19,6 +29,21 @@ padrao de qualidade, automacao e rastreabilidade.
 - Usar pilares universais para cobrir qualquer linguagem, stack ou ambiente.
 - Automatizar verificacoes basicas desde o primeiro pull request.
 - Servir como fonte de referencia para novos repositorios derivados.
+
+## Capacidades
+
+| Area | Status | Fonte |
+| --- | --- | --- |
+| 13 pilares universais | Aplicado | `docs/pillars/` e `catalog/pillar-items.yml` |
+| Stacks e linguagens | Preparado | `catalog/stacks.yml` |
+| Ambientes | Preparado | `catalog/environments.yml` |
+| Blueprints de projeto | Preparado | `catalog/repository-blueprints.yml` |
+| Docker Compose | Blueprint seguro | `infra/compose/` |
+| Kubernetes/Kustomize | Blueprint seguro | `infra/kubernetes/` |
+| OpenAPI e Postman | Contratado | `contracts/openapi/` e `contracts/postman/` |
+| MCP Server/Client | Roadmap com contrato | `contracts/mcp/registry.yml` |
+| RAG | Perfil versionado | `contracts/rag/repository.rag-profile.yml` |
+| Agentes de IA | Orientado | `AGENTS.md` e `AI_AGENTS/` |
 
 ## Estrutura
 
@@ -35,9 +60,29 @@ padrao de qualidade, automacao e rastreabilidade.
 |-- AI_AGENTS/            # Modos, subagentes, skills e politicas para IA.
 |-- docs/                 # Arquitetura, governanca, automacao e templates.
 |   `-- pillars/          # 13 pilares e 260 guias operacionais item a item.
+|-- infra/compose/        # Docker Compose blueprint.
+|-- infra/kubernetes/     # Kubernetes/Kustomize blueprint.
+|-- services/             # Servicos futuros, incluindo MCP.
+|-- tooling/              # CLIs futuros, incluindo Repository Forge.
 |-- scripts/              # Automacoes locais e scripts usados pelo CI.
 |-- AGENTS.md             # Instrucoes padrao para agentes de codigo.
 `-- .github/              # Workflows, templates, CODEOWNERS e Dependabot.
+```
+
+## Quickstart
+
+```bash
+make verify-all
+```
+
+Para validar areas especificas:
+
+```bash
+make verify-stacks
+make verify-blueprints
+make verify-infra
+make verify-api-contracts
+make verify-rag-profile
 ```
 
 ## Como usar este template
@@ -89,6 +134,11 @@ bash scripts/verify-repository.sh
 - [Sistemas de IA, MCP e RAG](docs/architecture/ai-systems.md)
 - [CI/CD](docs/automation/ci-cd.md)
 - [Agentes de IA](docs/automation/ai-agents.md)
+- [Enterprise readiness](docs/governance/enterprise-readiness.md)
+- [Supply chain/security baseline](docs/governance/supply-chain-security-baseline.md)
+- [Stack catalog](docs/architecture/stack-catalog.md)
+- [Environment provisioning](docs/architecture/environment-provisioning.md)
+- [API/MCP/RAG lifecycle](docs/architecture/api-mcp-rag-lifecycle.md)
 - [Fluxo de branches](docs/governance/branching.md)
 - [Revisao de codigo](docs/governance/code-review.md)
 - [Gestao de releases](docs/governance/release-management.md)

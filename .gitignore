@@ -45,3 +45,7 @@ target/
 # Local scratch space
 .tmp/
 tmp/
+
+# Generated repository intelligence
+.rag/
+.repository-forge/

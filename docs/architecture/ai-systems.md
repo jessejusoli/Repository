@@ -17,6 +17,8 @@ Each integration must document:
 - Tool allowlists.
 - Audit expectations.
 
+`services/repository-mcp/` contains the future TypeScript/Node server skeleton.
+
 ## RAG
 
 RAG systems use profiles based on `contracts/rag/rag-profile.template.yml`.
@@ -30,6 +32,9 @@ Each RAG system must document:
 - Retrieval strategy.
 - Evaluation metrics.
 - Safety controls.
+
+`contracts/rag/repository.rag-profile.yml` defines the repository knowledge base
+corpus. Generated indexes belong in `.rag/` and must not be committed.
 
 ## Rule
 

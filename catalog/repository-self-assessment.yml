@@ -26,6 +26,8 @@ coverage:
     status: applied
     evidence:
       - infra/.gitkeep
+      - infra/compose/compose.yaml
+      - infra/kubernetes/base/kustomization.yaml
       - docs/architecture/monorepo.md
     notes: Infrastructure lives in `infra/` and must be versioned as code when added.
   - pillar: devops
@@ -35,6 +37,8 @@ coverage:
       - .github/workflows/cd.yaml
       - .github/workflows/repository-health.yml
       - Makefile
+      - infra/compose/compose.yaml
+      - infra/kubernetes/base/kustomization.yaml
     notes: CI validates the template; CD readiness gates delivery without assuming a stack.
   - pillar: security
     status: applied
@@ -55,6 +59,7 @@ coverage:
     status: applied
     evidence:
       - contracts/rag/rag-profile.template.yml
+      - contracts/rag/repository.rag-profile.yml
       - AI_AGENTS/rag/README.md
     notes: RAG and data systems must document corpus, retention, quality and privacy.
   - pillar: product_ux
@@ -69,6 +74,7 @@ coverage:
       - docs/architecture/universal-project-model.md
       - docs/templates/ADR.md
       - docs/templates/RFC.md
+      - catalog/repository-blueprints.yml
     notes: Structural decisions should be captured with ADRs, RFCs and diagrams.
   - pillar: sre
     status: applied
@@ -89,6 +95,8 @@ coverage:
       - AGENTS.md
       - AI_AGENTS/README.md
       - Makefile
+      - tooling/repository-forge/README.md
+      - services/repository-mcp/README.md
     notes: Humans and agents get predictable commands, instructions and templates.
   - pillar: sustainability
     status: applied

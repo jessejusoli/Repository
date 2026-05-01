@@ -12,3 +12,4 @@ Use this directory for retrieval-augmented generation system profiles.
 ## Files
 
 - `rag-profile.template.yml`: profile template for a RAG system.
+- `repository.rag-profile.yml`: RAG profile for this repository documentation.

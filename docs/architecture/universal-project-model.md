@@ -16,6 +16,10 @@ e a versao estruturada dos 13 pilares. `catalog/pillar-items.yml` e a versao
 estruturada dos 260 itens. `docs/pillars/` e a versao operacional e navegavel,
 com orientacao de como seguir cada item.
 
+`catalog/standards.yml` e `docs/standards/` conectam pilares, blueprints,
+stacks e artefatos a pocket guides e fontes oficiais, sem copiar a
+documentacao externa para dentro do repositorio.
+
 ## Pilares
 
 | Pilar | Quando se aplica | Evidencia esperada |
@@ -42,7 +46,8 @@ com orientacao de como seguir cada item.
 3. Marque pilares aplicaveis no README do projeto.
 4. Registre os mesmos pilares em `catalog/projects.yml`.
 5. Consulte os itens aplicaveis em `docs/pillars/`.
-6. Use `docs/checklists/universal-project-readiness.md` para decidir o minimo
+6. Consulte os standards aplicaveis em `docs/standards/`.
+7. Use `docs/checklists/universal-project-readiness.md` para decidir o minimo
    necessario antes do primeiro PR, primeiro release e primeira producao.
 
 ## Regra de ouro

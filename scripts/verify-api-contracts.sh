@@ -40,6 +40,9 @@ if [[ -f "$MCP" ]]; then
   done
   grep -q 'repository://catalog/pillars' "$MCP" || fail "MCP registry sem recurso de pilares"
   grep -q 'repository://catalog/stacks' "$MCP" || fail "MCP registry sem recurso de stacks"
+  grep -q 'repository://catalog/standards' "$MCP" || fail "MCP registry sem recurso de standards"
+  grep -q 'repository://standards/{standard_id}' "$MCP" || fail "MCP registry sem recurso de pocket guide de standard"
+  grep -q 'repository://pillars/{pillar}/standards' "$MCP" || fail "MCP registry sem recurso de standards por pilar"
 fi
 
 if [[ "$failures" -gt 0 ]]; then

@@ -19,8 +19,11 @@ for (const tool of [
 for (const resource of [
   "repository://catalog/pillars",
   "repository://catalog/stacks",
+  "repository://catalog/standards",
   "repository://templates",
-  "repository://docs/pillars/{pillar}/{item}"
+  "repository://docs/pillars/{pillar}/{item}",
+  "repository://standards/{standard_id}",
+  "repository://pillars/{pillar}/standards"
 ]) {
   if (!resourcesSource.includes(resource)) {
     throw new Error(`Missing MCP resource: ${resource}`);

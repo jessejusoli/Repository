@@ -11,6 +11,7 @@ Every stack must define:
 - `language`
 - `runtimes`
 - `package_managers`
+- `standards_refs`
 - `commands.build`
 - `commands.test`
 - `commands.lint`
@@ -21,6 +22,10 @@ Every stack must define:
 Project READMEs should reference a stack id when implementation exists. If a
 command is not universal for the stack, use `project-defined` and document the
 real command in the project.
+
+Use `standards_refs` to link each stack to the baseline practices it normally
+needs, such as CI/CD, Dependabot, supply chain posture or agent instructions.
+The details live in `catalog/standards.yml` and `docs/standards/`.
 
 ## Rule
 

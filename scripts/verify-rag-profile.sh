@@ -19,11 +19,12 @@ info "validando perfil RAG do repositorio"
 
 if [[ -f "$PROFILE" ]]; then
   grep -q '^schema_version: 1$' "$PROFILE" || fail "schema_version ausente"
-  for source in "AGENTS.md" "README.md" "references.md" "catalog/" "contracts/" "docs/"; do
+  for source in "AGENTS.md" "README.md" "references.md" "catalog/" "contracts/" "docs/" "docs/standards/" "catalog/standards.yml"; do
     grep -q "    - $source" "$PROFILE" || fail "fonte ausente no corpus: $source"
   done
   grep -q '^retrieval:' "$PROFILE" || fail "retrieval ausente"
   grep -q '^evaluation:' "$PROFILE" || fail "evaluation ausente"
+  grep -q '    - catalog/standards.yml' "$PROFILE" || fail "dataset catalog/standards.yml ausente"
   grep -q '^safety:' "$PROFILE" || fail "safety ausente"
   grep -q 'index_storage: .rag/repository-index.json' "$PROFILE" || fail "index_storage deve apontar para .rag/"
   grep -q 'no-generated-index-in-git' "$PROFILE" || fail "controle no-generated-index-in-git ausente"

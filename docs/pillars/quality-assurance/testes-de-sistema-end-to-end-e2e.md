@@ -44,6 +44,15 @@ Nao aplicavel apenas quando a justificativa estiver registrada no README do proj
 - Pilar operacional: `docs/pillars/quality-assurance/README.md`.
 - Checklist universal: `docs/checklists/universal-project-readiness.md`.
 
+## Padroes Relacionados
+
+- [branch-protection-rulesets](../../standards/branch-protection-rulesets.md)
+- [codeowners-standard](../../standards/codeowners-standard.md)
+- [github-actions-ci-cd](../../standards/github-actions-ci-cd.md)
+- [openapi](../../standards/openapi.md)
+- [postman-collections](../../standards/postman-collections.md)
+- [rag-systems](../../standards/rag-systems.md)
+
 ## Status No Repository
 
 Este item esta documentado como orientacao operacional do template Repository.

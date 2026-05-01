@@ -44,6 +44,15 @@ Nao aplicavel apenas quando a justificativa estiver registrada no README do proj
 - Pilar operacional: `docs/pillars/it-governance/README.md`.
 - Checklist universal: `docs/checklists/universal-project-readiness.md`.
 
+## Padroes Relacionados
+
+- [branch-protection-rulesets](../../standards/branch-protection-rulesets.md)
+- [changelog-standard](../../standards/changelog-standard.md)
+- [codeowners-standard](../../standards/codeowners-standard.md)
+- [dependabot](../../standards/dependabot.md)
+- [license-spdx](../../standards/license-spdx.md)
+- [readme-standard](../../standards/readme-standard.md)
+
 ## Status No Repository
 
 Este item esta documentado como orientacao operacional do template Repository.

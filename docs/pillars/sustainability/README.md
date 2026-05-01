@@ -38,3 +38,7 @@ Se o pilar nao se aplicar, registre a justificativa no README do projeto ou no c
 - [Inovacao Verde](inovacao-verde.md)
 - [Comunicacao Transparente](comunicacao-transparente.md)
 - [Integracao Cross-Pilar](integracao-cross-pilar.md)
+
+## Padroes Relacionados
+
+- [docker-compose](../../standards/docker-compose.md)

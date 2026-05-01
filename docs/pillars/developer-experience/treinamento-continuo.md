@@ -44,6 +44,15 @@ Nao aplicavel apenas quando a justificativa estiver registrada no README do proj
 - Pilar operacional: `docs/pillars/developer-experience/README.md`.
 - Checklist universal: `docs/checklists/universal-project-readiness.md`.
 
+## Padroes Relacionados
+
+- [agents-md](../../standards/agents-md.md)
+- [changelog-standard](../../standards/changelog-standard.md)
+- [docker-compose](../../standards/docker-compose.md)
+- [github-actions-ci-cd](../../standards/github-actions-ci-cd.md)
+- [license-spdx](../../standards/license-spdx.md)
+- [mcp-server-client](../../standards/mcp-server-client.md)
+
 ## Status No Repository
 
 Este item esta documentado como orientacao operacional do template Repository.

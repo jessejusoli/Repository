@@ -1,6 +1,12 @@
 schema_version: 1
 stacks:
   - id: node-typescript
+    standards_refs:
+      - repository-baseline
+      - github-actions-ci-cd
+      - dependabot
+      - agents-md
+      - supply-chain-baseline
     language: TypeScript
     runtimes:
       - Node.js
@@ -14,6 +20,11 @@ stacks:
       lint: npm run lint
       deploy: project-defined
   - id: python
+    standards_refs:
+      - repository-baseline
+      - github-actions-ci-cd
+      - dependabot
+      - supply-chain-baseline
     language: Python
     runtimes:
       - CPython
@@ -27,6 +38,11 @@ stacks:
       lint: ruff check .
       deploy: project-defined
   - id: go
+    standards_refs:
+      - repository-baseline
+      - github-actions-ci-cd
+      - dependabot
+      - supply-chain-baseline
     language: Go
     runtimes:
       - Go toolchain
@@ -38,6 +54,11 @@ stacks:
       lint: golangci-lint run
       deploy: project-defined
   - id: rust
+    standards_refs:
+      - repository-baseline
+      - github-actions-ci-cd
+      - dependabot
+      - supply-chain-baseline
     language: Rust
     runtimes:
       - Rust toolchain
@@ -49,6 +70,11 @@ stacks:
       lint: cargo clippy
       deploy: project-defined
   - id: java
+    standards_refs:
+      - repository-baseline
+      - github-actions-ci-cd
+      - dependabot
+      - supply-chain-baseline
     language: Java
     runtimes:
       - JVM
@@ -61,6 +87,11 @@ stacks:
       lint: project-defined
       deploy: project-defined
   - id: dotnet
+    standards_refs:
+      - repository-baseline
+      - github-actions-ci-cd
+      - dependabot
+      - supply-chain-baseline
     language: C#
     runtimes:
       - .NET
@@ -72,6 +103,11 @@ stacks:
       lint: dotnet format --verify-no-changes
       deploy: project-defined
   - id: php
+    standards_refs:
+      - repository-baseline
+      - github-actions-ci-cd
+      - dependabot
+      - supply-chain-baseline
     language: PHP
     runtimes:
       - PHP
@@ -83,6 +119,11 @@ stacks:
       lint: composer lint
       deploy: project-defined
   - id: ruby
+    standards_refs:
+      - repository-baseline
+      - github-actions-ci-cd
+      - dependabot
+      - supply-chain-baseline
     language: Ruby
     runtimes:
       - Ruby
@@ -94,6 +135,11 @@ stacks:
       lint: bundle exec rubocop
       deploy: project-defined
   - id: static-site
+    standards_refs:
+      - repository-baseline
+      - readme-standard
+      - github-actions-ci-cd
+      - docker-compose
     language: Static assets
     runtimes:
       - browser
@@ -106,6 +152,11 @@ stacks:
       lint: project-defined
       deploy: project-defined
   - id: container-only
+    standards_refs:
+      - repository-baseline
+      - docker-compose
+      - kubernetes-kustomize
+      - supply-chain-baseline
     language: Multi-language
     runtimes:
       - OCI container

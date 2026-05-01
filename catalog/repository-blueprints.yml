@@ -1,6 +1,15 @@
 schema_version: 1
 blueprints:
   - id: web-app
+    standards_refs:
+      - repository-baseline
+      - readme-standard
+      - github-actions-ci-cd
+      - openapi
+      - swagger-ui
+      - docker-compose
+      - kubernetes-kustomize
+      - supply-chain-baseline
     type: app
     name: Web Application
     doc_path: docs/templates/blueprints/web-app.md
@@ -12,6 +21,17 @@ blueprints:
       - product_ux
       - developer_experience
   - id: api-service
+    standards_refs:
+      - repository-baseline
+      - readme-standard
+      - github-actions-ci-cd
+      - openapi
+      - swagger-ui
+      - postman-collections
+      - docker-compose
+      - kubernetes-kustomize
+      - secrets-management
+      - supply-chain-baseline
     type: service
     name: API Service
     doc_path: docs/templates/blueprints/api-service.md
@@ -23,6 +43,14 @@ blueprints:
       - architecture
       - sre
   - id: cli-tool
+    standards_refs:
+      - repository-baseline
+      - readme-standard
+      - license-spdx
+      - changelog-standard
+      - github-actions-ci-cd
+      - agents-md
+      - supply-chain-baseline
     type: tooling
     name: CLI Tool
     doc_path: docs/templates/blueprints/cli-tool.md
@@ -31,6 +59,15 @@ blueprints:
       - quality_assurance
       - security
   - id: package-library
+    standards_refs:
+      - repository-baseline
+      - readme-standard
+      - license-spdx
+      - changelog-standard
+      - github-actions-ci-cd
+      - dependabot
+      - supply-chain-baseline
+      - sbom-scorecard-ready
     type: package
     name: Package or Library
     doc_path: docs/templates/blueprints/package-library.md
@@ -39,6 +76,14 @@ blueprints:
       - quality_assurance
       - developer_experience
   - id: background-worker
+    standards_refs:
+      - repository-baseline
+      - readme-standard
+      - github-actions-ci-cd
+      - docker-compose
+      - kubernetes-kustomize
+      - secrets-management
+      - supply-chain-baseline
     type: service
     name: Background Worker
     doc_path: docs/templates/blueprints/background-worker.md
@@ -48,6 +93,15 @@ blueprints:
       - security
       - sre
   - id: data-pipeline
+    standards_refs:
+      - repository-baseline
+      - readme-standard
+      - github-actions-ci-cd
+      - rag-systems
+      - docker-compose
+      - kubernetes-kustomize
+      - secrets-management
+      - supply-chain-baseline
     type: service
     name: Data Pipeline
     doc_path: docs/templates/blueprints/data-pipeline.md
@@ -57,6 +111,16 @@ blueprints:
       - quality_assurance
       - sre
   - id: rag-app
+    standards_refs:
+      - repository-baseline
+      - readme-standard
+      - github-actions-ci-cd
+      - openapi
+      - postman-collections
+      - mcp-server-client
+      - rag-systems
+      - secrets-management
+      - supply-chain-baseline
     type: app
     name: RAG Application
     doc_path: docs/templates/blueprints/rag-app.md
@@ -67,6 +131,16 @@ blueprints:
       - quality_assurance
       - developer_experience
   - id: mcp-server
+    standards_refs:
+      - repository-baseline
+      - readme-standard
+      - github-actions-ci-cd
+      - mcp-server-client
+      - openapi
+      - docker-compose
+      - kubernetes-kustomize
+      - secrets-management
+      - supply-chain-baseline
     type: service
     name: MCP Server
     doc_path: docs/templates/blueprints/mcp-server.md

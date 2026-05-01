@@ -38,3 +38,8 @@ Se o pilar nao se aplicar, registre a justificativa no README do projeto ou no c
 - [Storyboarding](storyboarding.md)
 - [Ferramentas de Colaboracao](ferramentas-de-colaboracao.md)
 - [Auditoria de UX Existente](auditoria-de-ux-existente.md)
+
+## Padroes Relacionados
+
+- [readme-standard](../../standards/readme-standard.md)
+- [swagger-ui](../../standards/swagger-ui.md)

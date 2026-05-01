@@ -44,6 +44,12 @@ Nao aplicavel apenas quando a justificativa estiver registrada no README do proj
 - Pilar operacional: `docs/pillars/infrastructure/README.md`.
 - Checklist universal: `docs/checklists/universal-project-readiness.md`.
 
+## Padroes Relacionados
+
+- [docker-compose](../../standards/docker-compose.md)
+- [kubernetes-kustomize](../../standards/kubernetes-kustomize.md)
+- [secrets-management](../../standards/secrets-management.md)
+
 ## Status No Repository
 
 Este item esta documentado como orientacao operacional do template Repository.

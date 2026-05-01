@@ -38,3 +38,15 @@ Se o pilar nao se aplicar, registre a justificativa no README do projeto ou no c
 - [Testes de Seguranca Basicos (AppSec)](testes-de-seguranca-basicos-appsec.md)
 - [Auditoria de Processos de QA](auditoria-de-processos-de-qa.md)
 - [Treinamento e Colaboracao](treinamento-e-colaboracao.md)
+
+## Padroes Relacionados
+
+- [branch-protection-rulesets](../../standards/branch-protection-rulesets.md)
+- [codeowners-standard](../../standards/codeowners-standard.md)
+- [github-actions-ci-cd](../../standards/github-actions-ci-cd.md)
+- [openapi](../../standards/openapi.md)
+- [postman-collections](../../standards/postman-collections.md)
+- [rag-systems](../../standards/rag-systems.md)
+- [repository-baseline](../../standards/repository-baseline.md)
+- [sbom-scorecard-ready](../../standards/sbom-scorecard-ready.md)
+- [supply-chain-baseline](../../standards/supply-chain-baseline.md)

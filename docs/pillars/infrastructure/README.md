@@ -38,3 +38,9 @@ Se o pilar nao se aplicar, registre a justificativa no README do projeto ou no c
 - [Gerenciamento de Ambientes](gerenciamento-de-ambientes.md)
 - [Gerenciamento de Segredos](gerenciamento-de-segredos.md)
 - [Otimizacao de Performance e Energia](otimizacao-de-performance-e-energia.md)
+
+## Padroes Relacionados
+
+- [docker-compose](../../standards/docker-compose.md)
+- [kubernetes-kustomize](../../standards/kubernetes-kustomize.md)
+- [secrets-management](../../standards/secrets-management.md)

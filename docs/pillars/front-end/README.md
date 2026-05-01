@@ -38,3 +38,7 @@ Se o pilar nao se aplicar, registre a justificativa no README do projeto ou no c
 - [Integracao com WebSockets](integracao-com-websockets.md)
 - [SEO e Metatags](seo-e-metatags.md)
 - [Mobile-Specific Features](mobile-specific-features.md)
+
+## Padroes Relacionados
+
+- [`readme-standard`](../../standards/readme-standard.md)

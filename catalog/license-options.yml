@@ -1,0 +1,20 @@
+schema_version: 1
+source: https://spdx.dev/learn/handling-license-info/
+policy: choose-real-license-before-public-distribution
+options:
+  - id: MIT
+    name: MIT License
+    spdx_id: MIT
+    use_when: permissive open source distribution is intended
+  - id: Apache-2.0
+    name: Apache License 2.0
+    spdx_id: Apache-2.0
+    use_when: permissive distribution with explicit patent grant is desired
+  - id: GPL-3.0-only
+    name: GNU General Public License v3.0 only
+    spdx_id: GPL-3.0-only
+    use_when: copyleft distribution is intended
+  - id: UNLICENSED
+    name: Proprietary or private repository
+    spdx_id: UNLICENSED
+    use_when: no public license is granted

@@ -38,3 +38,13 @@ Se o pilar nao se aplicar, registre a justificativa no README do projeto ou no c
 - [Escalabilidade de Pipelines](escalabilidade-de-pipelines.md)
 - [Auditoria e Compliance](auditoria-e-compliance.md)
 - [Reducao de Toil e Post-Mortems](reducao-de-toil-e-post-mortems.md)
+
+## Padroes Relacionados
+
+- [branch-protection-rulesets](../../standards/branch-protection-rulesets.md)
+- [dependabot](../../standards/dependabot.md)
+- [docker-compose](../../standards/docker-compose.md)
+- [github-actions-ci-cd](../../standards/github-actions-ci-cd.md)
+- [kubernetes-kustomize](../../standards/kubernetes-kustomize.md)
+- [secrets-management](../../standards/secrets-management.md)
+- [supply-chain-baseline](../../standards/supply-chain-baseline.md)

@@ -38,3 +38,15 @@ Se o pilar nao se aplicar, registre a justificativa no README do projeto ou no c
 - [Otimizacao de Custos e Recursos](otimizacao-de-custos-e-recursos.md)
 - [Medicao de Sucesso via KPIs](medicao-de-sucesso-via-kpis.md)
 - [Integracao com DevOps e SRE](integracao-com-devops-e-sre.md)
+
+## Padroes Relacionados
+
+- [branch-protection-rulesets](../../standards/branch-protection-rulesets.md)
+- [changelog-standard](../../standards/changelog-standard.md)
+- [codeowners-standard](../../standards/codeowners-standard.md)
+- [dependabot](../../standards/dependabot.md)
+- [license-spdx](../../standards/license-spdx.md)
+- [readme-standard](../../standards/readme-standard.md)
+- [repository-baseline](../../standards/repository-baseline.md)
+- [sbom-scorecard-ready](../../standards/sbom-scorecard-ready.md)
+- [supply-chain-baseline](../../standards/supply-chain-baseline.md)

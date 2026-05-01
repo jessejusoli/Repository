@@ -44,6 +44,8 @@ required_files=(
   "catalog/owners.yml"
   "catalog/pillars.yml"
   "catalog/pillar-items.yml"
+  "catalog/standards.yml"
+  "catalog/license-options.yml"
   "catalog/stacks.yml"
   "catalog/environments.yml"
   "catalog/repository-blueprints.yml"
@@ -56,6 +58,7 @@ required_files=(
   "contracts/mcp/README.md"
   "contracts/rag/README.md"
   "contracts/rag/repository.rag-profile.yml"
+  "LICENSE.template.md"
   "AI_AGENTS/README.md"
   "AI_AGENTS/registry.yml"
   "services/repository-mcp/README.md"
@@ -74,6 +77,7 @@ required_files=(
   "scripts/verify-repository.sh"
   "scripts/verify-pillar-coverage.sh"
   "scripts/verify-pillar-docs.sh"
+  "scripts/verify-standards.sh"
   "scripts/verify-stacks.sh"
   "scripts/verify-blueprints.sh"
   "scripts/verify-infra.sh"
@@ -101,6 +105,8 @@ required_files=(
   "docs/automation/ai-agents.md"
   "docs/checklists/universal-project-readiness.md"
   "docs/pillars/README.md"
+  "docs/standards/README.md"
+  "docs/templates/STANDARD.md"
 )
 
 required_dirs=(
@@ -123,6 +129,8 @@ required_dirs=(
   "docs"
   "docs/diagrams"
   "docs/pillars"
+  "docs/standards"
+  "docs/templates"
   "scripts"
   ".github"
 )
@@ -166,6 +174,8 @@ grep -q '^schema_version: 1$' "$ROOT_DIR/catalog/projects.yml" || fail "catalog/
 grep -q '^schema_version: 1$' "$ROOT_DIR/catalog/owners.yml" || fail "catalog/owners.yml sem schema_version 1"
 grep -q '^schema_version: 1$' "$ROOT_DIR/catalog/pillars.yml" || fail "catalog/pillars.yml sem schema_version 1"
 grep -q '^schema_version: 1$' "$ROOT_DIR/catalog/pillar-items.yml" || fail "catalog/pillar-items.yml sem schema_version 1"
+grep -q '^schema_version: 1$' "$ROOT_DIR/catalog/standards.yml" || fail "catalog/standards.yml sem schema_version 1"
+grep -q '^schema_version: 1$' "$ROOT_DIR/catalog/license-options.yml" || fail "catalog/license-options.yml sem schema_version 1"
 grep -q '^schema_version: 1$' "$ROOT_DIR/catalog/stacks.yml" || fail "catalog/stacks.yml sem schema_version 1"
 grep -q '^schema_version: 1$' "$ROOT_DIR/catalog/environments.yml" || fail "catalog/environments.yml sem schema_version 1"
 grep -q '^schema_version: 1$' "$ROOT_DIR/catalog/repository-blueprints.yml" || fail "catalog/repository-blueprints.yml sem schema_version 1"

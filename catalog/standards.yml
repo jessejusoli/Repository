@@ -1,0 +1,422 @@
+schema_version: 1
+standards:
+  - id: repository-baseline
+    name: "Repository Baseline"
+    type: practice
+    status: recommended
+    applies_to:
+      - all-projects
+    official_url: https://docs.github.com/en/repositories
+    pocket_guide: docs/standards/repository-baseline.md
+    related_pillars:
+      - architecture
+      - it_governance
+      - developer_experience
+      - quality_assurance
+    related_blueprints:
+      - web-app
+      - api-service
+      - cli-tool
+      - package-library
+      - background-worker
+      - data-pipeline
+      - rag-app
+      - mcp-server
+    adoption_criteria:
+      - "Project has README, ownership, validation, contribution and security guidance."
+      - "Required repository artifacts are tracked and verified by CI."
+  - id: readme-standard
+    name: "README Standard"
+    type: documentation
+    status: recommended
+    applies_to:
+      - all-projects
+    official_url: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes
+    pocket_guide: docs/standards/readme-standard.md
+    related_pillars:
+      - front_end
+      - developer_experience
+      - product_ux
+      - it_governance
+    related_blueprints:
+      - web-app
+      - api-service
+      - cli-tool
+      - package-library
+      - background-worker
+      - data-pipeline
+      - rag-app
+      - mcp-server
+    adoption_criteria:
+      - "README gives orientation, commands, ownership, status and links."
+      - "README avoids duplicating long external docs."
+  - id: license-spdx
+    name: "License And SPDX"
+    type: compliance
+    status: decision-required
+    applies_to:
+      - all-projects
+    official_url: https://spdx.dev/learn/handling-license-info/
+    pocket_guide: docs/standards/license-spdx.md
+    related_pillars:
+      - it_governance
+      - security
+      - developer_experience
+    related_blueprints:
+      - package-library
+      - cli-tool
+      - web-app
+      - api-service
+    adoption_criteria:
+      - "Owner chooses a real license before public distribution."
+      - "Use SPDX identifiers where applicable."
+  - id: changelog-standard
+    name: "Changelog Standard"
+    type: documentation
+    status: recommended
+    applies_to:
+      - released-projects
+    official_url: https://keepachangelog.com/en/1.1.0/
+    pocket_guide: docs/standards/changelog-standard.md
+    related_pillars:
+      - developer_experience
+      - it_governance
+      - sre
+    related_blueprints:
+      - package-library
+      - cli-tool
+      - api-service
+      - web-app
+    adoption_criteria:
+      - "User-facing changes are recorded."
+      - "Release notes can be produced from the changelog."
+  - id: codeowners-standard
+    name: "CODEOWNERS"
+    type: governance
+    status: recommended
+    applies_to:
+      - all-projects
+    official_url: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+    pocket_guide: docs/standards/codeowners-standard.md
+    related_pillars:
+      - it_governance
+      - security
+      - quality_assurance
+    related_blueprints:
+      - web-app
+      - api-service
+      - package-library
+      - background-worker
+      - data-pipeline
+      - rag-app
+      - mcp-server
+    adoption_criteria:
+      - "Sensitive paths require owner review."
+      - "Owners point to real users or teams before enforcement."
+  - id: agents-md
+    name: "AGENTS.md"
+    type: ai-guidance
+    status: recommended
+    applies_to:
+      - agent-assisted-projects
+    official_url: https://agents.md/
+    pocket_guide: docs/standards/agents-md.md
+    related_pillars:
+      - developer_experience
+      - architecture
+      - security
+    related_blueprints:
+      - cli-tool
+      - api-service
+      - mcp-server
+      - rag-app
+      - package-library
+    adoption_criteria:
+      - "Root AGENTS.md describes setup, checks and safety rules."
+      - "Subprojects may add nested AGENTS.md when stack-specific instructions differ."
+  - id: github-actions-ci-cd
+    name: "GitHub Actions CI/CD"
+    type: automation
+    status: recommended
+    applies_to:
+      - github-hosted-projects
+    official_url: https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax
+    pocket_guide: docs/standards/github-actions-ci-cd.md
+    related_pillars:
+      - devops
+      - quality_assurance
+      - security
+      - developer_experience
+    related_blueprints:
+      - web-app
+      - api-service
+      - cli-tool
+      - package-library
+      - background-worker
+      - data-pipeline
+      - rag-app
+      - mcp-server
+    adoption_criteria:
+      - "CI validates repository health and project-specific checks."
+      - "Workflow permissions are least privilege."
+  - id: dependabot
+    name: "Dependabot"
+    type: automation
+    status: recommended
+    applies_to:
+      - github-hosted-projects
+    official_url: https://docs.github.com/en/code-security/dependabot
+    pocket_guide: docs/standards/dependabot.md
+    related_pillars:
+      - security
+      - devops
+      - it_governance
+    related_blueprints:
+      - web-app
+      - api-service
+      - cli-tool
+      - package-library
+      - background-worker
+      - data-pipeline
+      - rag-app
+      - mcp-server
+    adoption_criteria:
+      - "Dependency update automation is enabled for supported ecosystems."
+      - "Pull request volume is grouped or limited."
+  - id: branch-protection-rulesets
+    name: "Branch Protection And Rulesets"
+    type: governance
+    status: recommended
+    applies_to:
+      - github-hosted-projects
+    official_url: https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets
+    pocket_guide: docs/standards/branch-protection-rulesets.md
+    related_pillars:
+      - it_governance
+      - security
+      - quality_assurance
+      - devops
+    related_blueprints:
+      - web-app
+      - api-service
+      - package-library
+      - background-worker
+      - data-pipeline
+      - rag-app
+      - mcp-server
+    adoption_criteria:
+      - "Main branch requires pull requests and checks."
+      - "Force push and deletion are blocked for protected branches."
+  - id: openapi
+    name: "OpenAPI"
+    type: api-contract
+    status: recommended
+    applies_to:
+      - http-apis
+    official_url: https://spec.openapis.org/oas/v3.2.0.html
+    pocket_guide: docs/standards/openapi.md
+    related_pillars:
+      - back_end
+      - architecture
+      - quality_assurance
+      - developer_experience
+    related_blueprints:
+      - api-service
+      - web-app
+      - rag-app
+      - mcp-server
+    adoption_criteria:
+      - "HTTP APIs publish an OpenAPI contract before consumers depend on them."
+      - "Contract includes paths, schemas, errors and auth expectations."
+  - id: swagger-ui
+    name: "Swagger UI"
+    type: api-docs
+    status: recommended
+    applies_to:
+      - http-apis
+    official_url: https://swagger.io/tools/swagger-ui/
+    pocket_guide: docs/standards/swagger-ui.md
+    related_pillars:
+      - back_end
+      - developer_experience
+      - product_ux
+    related_blueprints:
+      - api-service
+      - web-app
+      - rag-app
+    adoption_criteria:
+      - "Humans can browse and try API operations from OpenAPI."
+      - "Documentation is generated from the contract, not manually duplicated."
+  - id: postman-collections
+    name: "Postman Collections"
+    type: api-testing
+    status: recommended
+    applies_to:
+      - http-apis
+    official_url: https://schema.postman.com/json/collection/v2.1.0/docs/index.html
+    pocket_guide: docs/standards/postman-collections.md
+    related_pillars:
+      - back_end
+      - quality_assurance
+      - developer_experience
+    related_blueprints:
+      - api-service
+      - web-app
+      - rag-app
+    adoption_criteria:
+      - "Collections exercise smoke flows or onboarding examples."
+      - "Collections do not contain real secrets."
+  - id: mcp-server-client
+    name: "MCP Server And Client"
+    type: ai-protocol
+    status: emerging-recommended
+    applies_to:
+      - ai-integrations
+    official_url: https://modelcontextprotocol.io/specification/draft/server/tools
+    pocket_guide: docs/standards/mcp-server-client.md
+    related_pillars:
+      - architecture
+      - security
+      - developer_experience
+      - back_end
+    related_blueprints:
+      - mcp-server
+      - rag-app
+      - cli-tool
+    adoption_criteria:
+      - "MCP servers declare tools, resources, prompts and transport boundaries."
+      - "Mutating tools require allowlists and human-confirmation boundaries."
+  - id: rag-systems
+    name: "RAG Systems"
+    type: ai-pattern
+    status: recommended
+    applies_to:
+      - knowledge-systems
+    official_url: https://www.promptingguide.ai/research/rag
+    pocket_guide: docs/standards/rag-systems.md
+    related_pillars:
+      - data
+      - architecture
+      - security
+      - quality_assurance
+    related_blueprints:
+      - rag-app
+      - mcp-server
+      - data-pipeline
+    adoption_criteria:
+      - "Corpus, retention, retrieval, evaluation and safety are documented."
+      - "Generated indexes are not committed to Git."
+  - id: docker-compose
+    name: "Docker Compose Specification"
+    type: runtime-blueprint
+    status: recommended
+    applies_to:
+      - local-development
+      - multi-container-projects
+    official_url: https://docs.docker.com/reference/compose-file/
+    pocket_guide: docs/standards/docker-compose.md
+    related_pillars:
+      - infrastructure
+      - devops
+      - developer_experience
+      - sustainability
+    related_blueprints:
+      - web-app
+      - api-service
+      - background-worker
+      - data-pipeline
+      - rag-app
+      - mcp-server
+    adoption_criteria:
+      - "Compose files are safe templates with no real secrets."
+      - "Optional services use profiles when appropriate."
+  - id: kubernetes-kustomize
+    name: "Kubernetes Kustomize"
+    type: runtime-blueprint
+    status: recommended
+    applies_to:
+      - kubernetes-projects
+    official_url: https://kubernetes.io/docs/tasks/manage-kubernetes-objects/kustomization/
+    pocket_guide: docs/standards/kubernetes-kustomize.md
+    related_pillars:
+      - infrastructure
+      - devops
+      - sre
+      - security
+    related_blueprints:
+      - web-app
+      - api-service
+      - background-worker
+      - data-pipeline
+      - rag-app
+      - mcp-server
+    adoption_criteria:
+      - "Kubernetes manifests use base/overlay structure."
+      - "Policies define resource, network and secret boundaries."
+  - id: supply-chain-baseline
+    name: "Supply Chain Security Baseline"
+    type: security
+    status: recommended
+    applies_to:
+      - all-projects
+    official_url: https://openssf.org/
+    pocket_guide: docs/standards/supply-chain-baseline.md
+    related_pillars:
+      - security
+      - it_governance
+      - devops
+      - quality_assurance
+    related_blueprints:
+      - web-app
+      - api-service
+      - cli-tool
+      - package-library
+      - background-worker
+      - data-pipeline
+      - rag-app
+      - mcp-server
+    adoption_criteria:
+      - "Dependencies, CI permissions, secrets and releases have baseline controls."
+      - "Project is ready to add SBOM and scorecard checks when stack exists."
+  - id: secrets-management
+    name: "Secrets Management"
+    type: security
+    status: required-when-secrets-exist
+    applies_to:
+      - projects-with-secrets
+    official_url: https://docs.github.com/en/actions/security-for-github-actions/security-guides/using-secrets-in-github-actions
+    pocket_guide: docs/standards/secrets-management.md
+    related_pillars:
+      - security
+      - infrastructure
+      - devops
+      - sre
+    related_blueprints:
+      - api-service
+      - background-worker
+      - data-pipeline
+      - rag-app
+      - mcp-server
+    adoption_criteria:
+      - "Secrets never live in Git."
+      - "Secret ownership, scope and rotation are documented."
+  - id: sbom-scorecard-ready
+    name: "SBOM And Scorecard Ready Posture"
+    type: supply-chain
+    status: planned
+    applies_to:
+      - released-projects
+    official_url: https://openssf.org/blog/2023/04/14/assessing-product-risk-using-sboms-and-openssf-scorecard/
+    pocket_guide: docs/standards/sbom-scorecard-ready.md
+    related_pillars:
+      - security
+      - it_governance
+      - quality_assurance
+    related_blueprints:
+      - package-library
+      - cli-tool
+      - api-service
+      - web-app
+    adoption_criteria:
+      - "Project can add SBOM and Scorecard automation once implementation stack exists."
+      - "Dependencies and release artifacts are identifiable."

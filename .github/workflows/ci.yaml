@@ -51,6 +51,18 @@ jobs:
       - name: Verify pillar docs
         run: make verify-pillar-docs
 
+  standards:
+    name: Standards graph and pocket guides
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6.0.2
+        with:
+          persist-credentials: false
+
+      - name: Verify standards
+        run: make verify-standards
+
   stacks:
     name: Stack catalog
     runs-on: ubuntu-latest

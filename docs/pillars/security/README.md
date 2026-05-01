@@ -38,3 +38,18 @@ Se o pilar nao se aplicar, registre a justificativa no README do projeto ou no c
 - [Treinamento de Seguranca](treinamento-de-seguranca.md)
 - [Seguranca de APIs](seguranca-de-apis.md)
 - [Configuracoes de Seguranca em Nuvem](configuracoes-de-seguranca-em-nuvem.md)
+
+## Padroes Relacionados
+
+- [agents-md](../../standards/agents-md.md)
+- [branch-protection-rulesets](../../standards/branch-protection-rulesets.md)
+- [codeowners-standard](../../standards/codeowners-standard.md)
+- [dependabot](../../standards/dependabot.md)
+- [github-actions-ci-cd](../../standards/github-actions-ci-cd.md)
+- [kubernetes-kustomize](../../standards/kubernetes-kustomize.md)
+- [license-spdx](../../standards/license-spdx.md)
+- [mcp-server-client](../../standards/mcp-server-client.md)
+- [rag-systems](../../standards/rag-systems.md)
+- [sbom-scorecard-ready](../../standards/sbom-scorecard-ready.md)
+- [secrets-management](../../standards/secrets-management.md)
+- [supply-chain-baseline](../../standards/supply-chain-baseline.md)

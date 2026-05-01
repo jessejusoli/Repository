@@ -3,6 +3,7 @@ export type RepositoryPlanInput = {
   blueprintId: string;
   stackId?: string;
   environments?: string[];
+  standardsRefs?: string[];
 };
 
 export function generateRepositoryPlan(input: RepositoryPlanInput) {
@@ -13,6 +14,11 @@ export function generateRepositoryPlan(input: RepositoryPlanInput) {
     environments: input.environments ?? [
       "local"
     ],
+    standardsRefs: input.standardsRefs ?? [
+      "repository-baseline",
+      "readme-standard",
+      "github-actions-ci-cd"
+    ],
     files: [
       "README.md",
       "catalog/projects.yml",
@@ -20,6 +26,7 @@ export function generateRepositoryPlan(input: RepositoryPlanInput) {
     ],
     checks: [
       "make verify",
+      "make verify-standards",
       "make verify-blueprints",
       "make verify-stacks"
     ]

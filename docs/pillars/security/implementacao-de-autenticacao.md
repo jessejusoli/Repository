@@ -44,6 +44,15 @@ Nao aplicavel apenas quando a justificativa estiver registrada no README do proj
 - Pilar operacional: `docs/pillars/security/README.md`.
 - Checklist universal: `docs/checklists/universal-project-readiness.md`.
 
+## Padroes Relacionados
+
+- [agents-md](../../standards/agents-md.md)
+- [branch-protection-rulesets](../../standards/branch-protection-rulesets.md)
+- [codeowners-standard](../../standards/codeowners-standard.md)
+- [dependabot](../../standards/dependabot.md)
+- [github-actions-ci-cd](../../standards/github-actions-ci-cd.md)
+- [kubernetes-kustomize](../../standards/kubernetes-kustomize.md)
+
 ## Status No Repository
 
 Este item esta documentado como orientacao operacional do template Repository.

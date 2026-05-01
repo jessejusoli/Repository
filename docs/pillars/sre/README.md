@@ -38,3 +38,9 @@ Se o pilar nao se aplicar, registre a justificativa no README do projeto ou no c
 - [Treinamento e Simulacoes](treinamento-e-simulacoes.md)
 - [Compliance em Producao](compliance-em-producao.md)
 - [Otimizacao de Custos com Reliability](otimizacao-de-custos-com-reliability.md)
+
+## Padroes Relacionados
+
+- [changelog-standard](../../standards/changelog-standard.md)
+- [kubernetes-kustomize](../../standards/kubernetes-kustomize.md)
+- [secrets-management](../../standards/secrets-management.md)

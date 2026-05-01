@@ -44,6 +44,10 @@ Nao aplicavel apenas quando a justificativa estiver registrada no README do proj
 - Pilar operacional: `docs/pillars/front-end/README.md`.
 - Checklist universal: `docs/checklists/universal-project-readiness.md`.
 
+## Padroes Relacionados
+
+- [`readme-standard`](../../standards/readme-standard.md)
+
 ## Status No Repository
 
 Este item esta documentado como orientacao operacional do template Repository.

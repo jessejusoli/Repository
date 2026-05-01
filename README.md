@@ -27,6 +27,7 @@ padrao de qualidade, automacao e rastreabilidade.
 - Separar aplicacoes, bibliotecas, servicos, infraestrutura e tooling.
 - Documentar decisoes, ownership, releases, seguranca e fluxo de contribuicao.
 - Usar pilares universais para cobrir qualquer linguagem, stack ou ambiente.
+- Curar standards, praticas e tecnicas sem espelhar documentacao oficial.
 - Automatizar verificacoes basicas desde o primeiro pull request.
 - Servir como fonte de referencia para novos repositorios derivados.
 
@@ -35,6 +36,7 @@ padrao de qualidade, automacao e rastreabilidade.
 | Area | Status | Fonte |
 | --- | --- | --- |
 | 13 pilares universais | Aplicado | `docs/pillars/` e `catalog/pillar-items.yml` |
+| Standards e pocket guides | Aplicado | `docs/standards/` e `catalog/standards.yml` |
 | Stacks e linguagens | Preparado | `catalog/stacks.yml` |
 | Ambientes | Preparado | `catalog/environments.yml` |
 | Blueprints de projeto | Preparado | `catalog/repository-blueprints.yml` |
@@ -59,7 +61,8 @@ padrao de qualidade, automacao e rastreabilidade.
 |-- contracts/            # Contratos OpenAPI, Postman, MCP e RAG.
 |-- AI_AGENTS/            # Modos, subagentes, skills e politicas para IA.
 |-- docs/                 # Arquitetura, governanca, automacao e templates.
-|   `-- pillars/          # 13 pilares e 260 guias operacionais item a item.
+|   |-- pillars/          # 13 pilares e 260 guias operacionais item a item.
+|   `-- standards/        # Pocket guides e links oficiais de standards.
 |-- infra/compose/        # Docker Compose blueprint.
 |-- infra/kubernetes/     # Kubernetes/Kustomize blueprint.
 |-- services/             # Servicos futuros, incluindo MCP.
@@ -80,6 +83,7 @@ Para validar areas especificas:
 ```bash
 make verify-stacks
 make verify-blueprints
+make verify-standards
 make verify-infra
 make verify-api-contracts
 make verify-rag-profile
@@ -130,6 +134,7 @@ bash scripts/verify-repository.sh
 - [Arquitetura do monorepo](docs/architecture/monorepo.md)
 - [Modelo universal de projetos](docs/architecture/universal-project-model.md)
 - [Pilares operacionais](docs/pillars/README.md)
+- [Standards e pocket guides](docs/standards/README.md)
 - [Contratos de API e integracao](docs/architecture/api-contracts.md)
 - [Sistemas de IA, MCP e RAG](docs/architecture/ai-systems.md)
 - [CI/CD](docs/automation/ci-cd.md)

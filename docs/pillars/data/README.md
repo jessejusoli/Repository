@@ -38,3 +38,7 @@ Se o pilar nao se aplicar, registre a justificativa no README do projeto ou no c
 - [Integracao com Ferramentas Externas](integracao-com-ferramentas-externas.md)
 - [Escalabilidade de Sistemas de Dados](escalabilidade-de-sistemas-de-dados.md)
 - [Auditoria e Relatorios de Dados](auditoria-e-relatorios-de-dados.md)
+
+## Padroes Relacionados
+
+- [rag-systems](../../standards/rag-systems.md)

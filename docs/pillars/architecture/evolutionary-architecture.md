@@ -44,6 +44,14 @@ Nao aplicavel apenas quando a justificativa estiver registrada no README do proj
 - Pilar operacional: `docs/pillars/architecture/README.md`.
 - Checklist universal: `docs/checklists/universal-project-readiness.md`.
 
+## Padroes Relacionados
+
+- [agents-md](../../standards/agents-md.md)
+- [mcp-server-client](../../standards/mcp-server-client.md)
+- [openapi](../../standards/openapi.md)
+- [rag-systems](../../standards/rag-systems.md)
+- [repository-baseline](../../standards/repository-baseline.md)
+
 ## Status No Repository
 
 Este item esta documentado como orientacao operacional do template Repository.

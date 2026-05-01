@@ -15,6 +15,8 @@ assumption unless a project under `apps/`, `packages/`, `services/`, `infra/`,
 
 - Universal pillars: `references.md` and `catalog/pillars.yml`.
 - Operational pillar item docs: `docs/pillars/` and `catalog/pillar-items.yml`.
+- Standards graph and pocket guides: `catalog/standards.yml` and `docs/standards/`.
+- License selection options: `catalog/license-options.yml` and `LICENSE.template.md`.
 - Repository self-assessment: `catalog/repository-self-assessment.yml`.
 - Project inventory: `catalog/projects.yml`.
 - Owners: `catalog/owners.yml`.
@@ -36,6 +38,7 @@ make verify-all
 make verify-repository
 make verify-pillars
 make verify-pillar-docs
+make verify-standards
 make verify-stacks
 make verify-blueprints
 make verify-infra
@@ -50,6 +53,7 @@ make verify-agents
 - Keep the template universal.
 - Preserve the 13-pillar model unless the user explicitly changes it.
 - Keep `references.md`, `catalog/pillar-items.yml` and `docs/pillars/` synchronized.
+- Keep `catalog/standards.yml`, `docs/standards/`, pillar backlinks and `standards_refs` synchronized.
 - Keep catalogs, contracts and blueprints synchronized before changing Forge or MCP behavior.
 - Add evidence when adding a new governance rule, contract type or automation.
 - Prefer simple shell checks over language-specific tooling at the root.

@@ -38,3 +38,17 @@ Se o pilar nao se aplicar, registre a justificativa no README do projeto ou no c
 - [Personalizacao de Workflows](personalizacao-de-workflows.md)
 - [Gamificacao e Reconhecimento](gamificacao-e-reconhecimento.md)
 - [Auditoria e Melhoria Continua](auditoria-e-melhoria-continua.md)
+
+## Padroes Relacionados
+
+- [agents-md](../../standards/agents-md.md)
+- [changelog-standard](../../standards/changelog-standard.md)
+- [docker-compose](../../standards/docker-compose.md)
+- [github-actions-ci-cd](../../standards/github-actions-ci-cd.md)
+- [license-spdx](../../standards/license-spdx.md)
+- [mcp-server-client](../../standards/mcp-server-client.md)
+- [openapi](../../standards/openapi.md)
+- [postman-collections](../../standards/postman-collections.md)
+- [readme-standard](../../standards/readme-standard.md)
+- [repository-baseline](../../standards/repository-baseline.md)
+- [swagger-ui](../../standards/swagger-ui.md)

@@ -38,3 +38,10 @@ Se o pilar nao se aplicar, registre a justificativa no README do projeto ou no c
 - [Gerenciamento de Sessoes](gerenciamento-de-sessoes.md)
 - [Internacionalizacao e Localizacao](internacionalizacao-e-localizacao.md)
 - [Auditoria e Compliance](auditoria-e-compliance.md)
+
+## Padroes Relacionados
+
+- [mcp-server-client](../../standards/mcp-server-client.md)
+- [openapi](../../standards/openapi.md)
+- [postman-collections](../../standards/postman-collections.md)
+- [swagger-ui](../../standards/swagger-ui.md)

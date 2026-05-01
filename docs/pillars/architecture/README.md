@@ -38,3 +38,11 @@ Se o pilar nao se aplicar, registre a justificativa no README do projeto ou no c
 - [Padroes de Seguranca Arquitetural](padroes-de-seguranca-arquitetural.md)
 - [Testes Arquiteturais](testes-arquiteturais.md)
 - [Migracao e Refatoracao](migracao-e-refatoracao.md)
+
+## Padroes Relacionados
+
+- [agents-md](../../standards/agents-md.md)
+- [mcp-server-client](../../standards/mcp-server-client.md)
+- [openapi](../../standards/openapi.md)
+- [rag-systems](../../standards/rag-systems.md)
+- [repository-baseline](../../standards/repository-baseline.md)

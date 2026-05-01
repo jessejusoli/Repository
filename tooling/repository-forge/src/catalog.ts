@@ -19,3 +19,8 @@ export function listStackIds(root: string): string[] {
   const catalog = readText(root, "catalog/stacks.yml");
   return Array.from(catalog.matchAll(/^  - id: (.+)$/gm), (match) => match[1]);
 }
+
+export function listStandardIds(root: string): string[] {
+  const catalog = readText(root, "catalog/standards.yml");
+  return Array.from(catalog.matchAll(/^  - id: (.+)$/gm), (match) => match[1]);
+}

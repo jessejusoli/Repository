@@ -6,5 +6,8 @@ test("forge source contains plan generator", () => {
   const source = readFileSync(new URL("../src/plan.ts", import.meta.url), "utf8");
 
   assert.match(source, /generateRepositoryPlan/);
+  assert.match(source, /renderRepositoryPlanMarkdown/);
+  assert.match(source, /maturityLevel/);
+  assert.match(source, /recommendedArtifacts/);
   assert.match(source, /make verify/);
 });

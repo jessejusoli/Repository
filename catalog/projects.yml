@@ -9,6 +9,7 @@ projects: []
 #     path: apps/web-portal
 #     owner: platform
 #     lifecycle: active
+#     maturity_level: M2
 #     runtime: node
 #     languages:
 #       - typescript
@@ -19,4 +20,8 @@ projects: []
 #       - front_end
 #       - devops
 #       - security
+#     artifacts:
+#       - README
+#       - BACKLOG
+#       - SETUP
 #     release_policy: independent

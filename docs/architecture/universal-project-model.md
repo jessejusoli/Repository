@@ -20,6 +20,11 @@ com orientacao de como seguir cada item.
 stacks e artefatos a pocket guides e fontes oficiais, sem copiar a
 documentacao externa para dentro do repositorio.
 
+`catalog/project-lifecycle.yml` e `catalog/project-artifacts.yml` transformam
+essa base de conhecimento em um modelo de Forge: cada projeto pode nascer em
+M0, M1, M2, M3, M4 ou M5, recebendo apenas os artefatos que fazem sentido para
+sua maturidade.
+
 ## Pilares
 
 | Pilar | Quando se aplica | Evidencia esperada |
@@ -47,7 +52,9 @@ documentacao externa para dentro do repositorio.
 4. Registre os mesmos pilares em `catalog/projects.yml`.
 5. Consulte os itens aplicaveis em `docs/pillars/`.
 6. Consulte os standards aplicaveis em `docs/standards/`.
-7. Use `docs/checklists/universal-project-readiness.md` para decidir o minimo
+7. Escolha um nivel de maturidade em `catalog/project-lifecycle.yml`.
+8. Consulte os artefatos aplicaveis em `catalog/project-artifacts.yml`.
+9. Use `docs/checklists/universal-project-readiness.md` para decidir o minimo
    necessario antes do primeiro PR, primeiro release e primeira producao.
 
 ## Regra de ouro

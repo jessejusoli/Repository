@@ -9,6 +9,8 @@ servers:
 tags:
   - name: blueprints
     description: Repository blueprint discovery.
+  - name: forge-model
+    description: Repository Forge maturity and artifact discovery.
   - name: plans
     description: Repository generation planning.
   - name: validation
@@ -59,6 +61,46 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/Error"
+  /maturity-levels:
+    get:
+      operationId: listMaturityLevels
+      summary: List Repository Forge maturity levels.
+      tags:
+        - forge-model
+      responses:
+        "200":
+          description: Available maturity levels.
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - levels
+                properties:
+                  levels:
+                    type: array
+                    items:
+                      $ref: "#/components/schemas/MaturityLevel"
+  /project-artifacts:
+    get:
+      operationId: listProjectArtifacts
+      summary: List Repository Forge project artifacts.
+      tags:
+        - forge-model
+      responses:
+        "200":
+          description: Available project artifacts.
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - artifacts
+                properties:
+                  artifacts:
+                    type: array
+                    items:
+                      $ref: "#/components/schemas/ProjectArtifact"
   /plans:
     post:
       operationId: generateRepositoryPlan
@@ -118,6 +160,50 @@ components:
           type: array
           items:
             type: string
+        minimumMaturity:
+          type: string
+        artifactRefs:
+          type: array
+          items:
+            type: string
+    MaturityLevel:
+      type: object
+      required:
+        - id
+        - name
+      properties:
+        id:
+          type: string
+          enum:
+            - M0
+            - M1
+            - M2
+            - M3
+            - M4
+            - M5
+        name:
+          type: string
+        gates:
+          type: array
+          items:
+            type: string
+    ProjectArtifact:
+      type: object
+      required:
+        - id
+        - minMaturity
+        - template
+      properties:
+        id:
+          type: string
+        minMaturity:
+          type: string
+        template:
+          type: string
+        standardsRefs:
+          type: array
+          items:
+            type: string
     RepositoryPlanRequest:
       type: object
       required:
@@ -130,27 +216,75 @@ components:
           type: string
         stackId:
           type: string
+        maturityLevel:
+          type: string
+          enum:
+            - M0
+            - M1
+            - M2
+            - M3
+            - M4
+            - M5
         environments:
           type: array
           items:
             type: string
+        standardsRefs:
+          type: array
+          items:
+            type: string
+        outputFormat:
+          type: string
+          enum:
+            - markdown
+            - json
+            - both
     RepositoryPlan:
       type: object
       required:
-        - projectName
-        - blueprintId
-        - files
+        - identity
+        - blueprint
+        - maturity
+        - recommendedArtifacts
         - checks
       properties:
-        projectName:
-          type: string
-        blueprintId:
-          type: string
-        files:
+        identity:
+          type: object
+        blueprint:
+          type: object
+        stack:
+          type: object
+        maturity:
+          type: object
+        recommendedArtifacts:
+          type: array
+          items:
+            type: string
+        standardsRefs:
+          type: array
+          items:
+            type: string
+        phases:
+          type: array
+          items:
+            type: string
+        milestones:
+          type: array
+          items:
+            type: string
+        backlog:
+          type: array
+          items:
+            type: string
+        gates:
           type: array
           items:
             type: string
         checks:
+          type: array
+          items:
+            type: string
+        nextActions:
           type: array
           items:
             type: string

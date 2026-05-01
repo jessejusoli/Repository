@@ -14,12 +14,14 @@ systems only when ownership and validation are clear.
 - Register servers and clients in `contracts/mcp/registry.yml`.
 - Document tools, resources, prompts, transport, auth and data boundaries.
 - Expose standards as resources when agents need curated guidance.
+- Expose lifecycle and artifact catalogs so clients can plan gradual adoption.
 - Validate inputs, sanitize outputs and audit tool calls.
 
 ## RAG
 
 - Define corpus and safety boundaries in `contracts/rag/`.
 - Include `catalog/standards.yml` and `docs/standards/` when answering project setup questions.
+- Include `catalog/project-lifecycle.yml`, `catalog/project-artifacts.yml` and `docs/forge/` for Forge planning answers.
 - Store generated indexes outside Git, for example `.rag/`.
 - Require citations and groundedness evaluation for user-facing answers.
 

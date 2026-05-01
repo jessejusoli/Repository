@@ -9,6 +9,11 @@ item_coverage:
   expected_pillars: 13
   expected_items: 260
   status: documented
+forge_model:
+  lifecycle_source: catalog/project-lifecycle.yml
+  artifacts_source: catalog/project-artifacts.yml
+  docs_root: docs/forge
+  status: applied
 coverage:
   - pillar: front_end
     status: applied
@@ -75,6 +80,8 @@ coverage:
       - docs/templates/ADR.md
       - docs/templates/RFC.md
       - catalog/repository-blueprints.yml
+      - catalog/project-lifecycle.yml
+      - catalog/project-artifacts.yml
     notes: Structural decisions should be captured with ADRs, RFCs and diagrams.
   - pillar: sre
     status: applied
@@ -97,6 +104,7 @@ coverage:
       - Makefile
       - tooling/repository-forge/README.md
       - services/repository-mcp/README.md
+      - docs/forge/README.md
     notes: Humans and agents get predictable commands, instructions and templates.
   - pillar: sustainability
     status: applied

@@ -17,6 +17,8 @@ servers:
       - docs/
       - references.md
     tools:
+      - list_maturity_levels
+      - list_project_artifacts
       - list_templates
       - inspect_template
       - generate_repository_plan
@@ -27,10 +29,13 @@ servers:
       - repository://catalog/pillars
       - repository://catalog/stacks
       - repository://catalog/standards
+      - repository://catalog/project-lifecycle
+      - repository://catalog/project-artifacts
       - repository://templates
       - repository://docs/pillars/{pillar}/{item}
       - repository://standards/{standard_id}
       - repository://pillars/{pillar}/standards
+      - repository://forge/maturity/{level}
 clients:
   - id: repository-forge
     name: Repository Forge CLI

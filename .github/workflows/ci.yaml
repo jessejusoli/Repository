@@ -63,6 +63,18 @@ jobs:
       - name: Verify standards
         run: make verify-standards
 
+  forge-model:
+    name: Repository Forge model
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6.0.2
+        with:
+          persist-credentials: false
+
+      - name: Verify Forge model
+        run: make verify-forge-model
+
   stacks:
     name: Stack catalog
     runs-on: ubuntu-latest

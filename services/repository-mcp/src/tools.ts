@@ -2,6 +2,24 @@ import type { ToolDefinition } from "./types.js";
 
 export const tools: ToolDefinition[] = [
   {
+    name: "list_maturity_levels",
+    title: "List Maturity Levels",
+    description: "List Repository Forge maturity levels from catalog/project-lifecycle.yml.",
+    inputSchema: {
+      type: "object",
+      additionalProperties: false
+    }
+  },
+  {
+    name: "list_project_artifacts",
+    title: "List Project Artifacts",
+    description: "List project planning artifacts from catalog/project-artifacts.yml.",
+    inputSchema: {
+      type: "object",
+      additionalProperties: false
+    }
+  },
+  {
     name: "list_templates",
     title: "List Repository Templates",
     description: "List repository blueprints from catalog/repository-blueprints.yml.",
@@ -42,6 +60,37 @@ export const tools: ToolDefinition[] = [
         },
         stackId: {
           type: "string"
+        },
+        maturityLevel: {
+          type: "string",
+          enum: [
+            "M0",
+            "M1",
+            "M2",
+            "M3",
+            "M4",
+            "M5"
+          ]
+        },
+        environments: {
+          type: "array",
+          items: {
+            type: "string"
+          }
+        },
+        standardsRefs: {
+          type: "array",
+          items: {
+            type: "string"
+          }
+        },
+        outputFormat: {
+          type: "string",
+          enum: [
+            "markdown",
+            "json",
+            "both"
+          ]
         }
       },
       required: [

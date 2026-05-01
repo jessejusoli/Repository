@@ -20,6 +20,18 @@ export const resources: ResourceDefinition[] = [
     mimeType: "application/x-yaml"
   },
   {
+    uri: "repository://catalog/project-lifecycle",
+    name: "Project Lifecycle Catalog",
+    description: "Repository Forge maturity levels from M0 to M5.",
+    mimeType: "application/x-yaml"
+  },
+  {
+    uri: "repository://catalog/project-artifacts",
+    name: "Project Artifact Catalog",
+    description: "Planning artifacts, templates, standards and pillars.",
+    mimeType: "application/x-yaml"
+  },
+  {
     uri: "repository://templates",
     name: "Repository Blueprints",
     description: "Available repository blueprints.",
@@ -41,6 +53,12 @@ export const resources: ResourceDefinition[] = [
     uri: "repository://pillars/{pillar}/standards",
     name: "Pillar Standards",
     description: "Standards related to a pillar.",
+    mimeType: "application/x-yaml"
+  },
+  {
+    uri: "repository://forge/maturity/{level}",
+    name: "Forge Maturity Level",
+    description: "Operational guidance for one Repository Forge maturity level.",
     mimeType: "application/x-yaml"
   }
 ];

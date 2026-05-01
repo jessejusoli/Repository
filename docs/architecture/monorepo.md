@@ -18,7 +18,7 @@
 | `infra/` | Terraform, Kubernetes, Helm, Docker Compose e ambientes. |
 | `tooling/` | Geradores, CLIs, presets e utilitarios internos. |
 | `examples/` | Exemplos de uso, sandboxes e referencias executaveis. |
-| `catalog/` | Inventario de projetos e ownership. |
+| `catalog/` | Inventario, ownership, blueprints, standards, maturidade e artefatos. |
 | `contracts/` | Contratos OpenAPI, Postman, MCP e RAG. |
 | `AI_AGENTS/` | Modos, subagentes, skills e politicas para IA. |
 
@@ -39,6 +39,7 @@ Cada novo projeto deve conter:
 - Registro em `catalog/projects.yml`.
 - Owner em `catalog/owners.yml` ou `.github/CODEOWNERS`.
 - Pilares aplicaveis declarados no README do projeto.
+- Nivel de maturidade e artefatos aplicaveis definidos pelo Forge.
 - Contratos em `contracts/` quando expuser APIs, MCP ou RAG.
 
 ## Quando criar um pacote compartilhado

@@ -10,6 +10,20 @@ Explique qual problema este projeto resolve e quem o utiliza.
 - Time:
 - Canal:
 
+## Maturidade
+
+- Nivel atual: M0, M1, M2, M3, M4 ou M5.
+- Nivel alvo:
+- Gate para evoluir:
+
+## Escopo
+
+- Problema:
+- Publico-alvo:
+- Dentro do escopo:
+- Fora do escopo:
+- Riscos iniciais:
+
 ## Linguagens e ambientes
 
 - Linguagens:
@@ -55,6 +69,13 @@ apps/exemplo
 - Modelo: independente ou coordenado.
 - Artefato:
 - Ambiente:
+
+## Backlog e marcos
+
+- Backlog:
+- Roadmap:
+- Milestones:
+- MVP:
 
 ## Dependencias
 

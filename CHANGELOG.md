@@ -14,3 +14,4 @@ existir artefato versionado.
 - Documentacao mestre em `docs/pillars/` com 13 pilares e 260 guias item a item.
 - Catalogos de stacks, ambientes e blueprints; blueprints Compose/Kustomize; contratos Forge/MCP/RAG; esqueletos TypeScript isolados.
 - Standards graph em `catalog/standards.yml`, pocket guides em `docs/standards/`, catalogo de licencas e validacao dedicada.
+- Repository Forge reposicionado como gerador de planos graduais com maturidade M0-M5, catalogo de artefatos e validacao dedicada.

@@ -8,7 +8,10 @@ for (const required of [
   "docs/README.md",
   "catalog/pillar-items.yml",
   "catalog/standards.yml",
-  "docs/standards/README.md"
+  "catalog/project-lifecycle.yml",
+  "catalog/project-artifacts.yml",
+  "docs/standards/README.md",
+  "docs/forge/README.md"
 ]) {
   if (!existsSync(resolve(root, required))) {
     throw new Error(`Missing RAG source: ${required}`);

@@ -23,11 +23,15 @@ if [[ -f "$CATALOG" ]]; then
   type_count="$(grep -c '^    type:' "$CATALOG")"
   name_count="$(grep -c '^    name:' "$CATALOG")"
   doc_path_count="$(grep -c '^    doc_path:' "$CATALOG")"
+  minimum_maturity_count="$(grep -c '^    minimum_maturity:' "$CATALOG")"
+  artifact_refs_count="$(grep -c '^    artifact_refs:' "$CATALOG")"
 
   [[ "$blueprint_count" -ge 8 ]] || fail "catalog/repository-blueprints.yml deve conter pelo menos 8 blueprints"
   [[ "$type_count" -eq "$blueprint_count" ]] || fail "blueprint sem type"
   [[ "$name_count" -eq "$blueprint_count" ]] || fail "blueprint sem name"
   [[ "$doc_path_count" -eq "$blueprint_count" ]] || fail "blueprint sem doc_path"
+  [[ "$minimum_maturity_count" -eq "$blueprint_count" ]] || fail "blueprint sem minimum_maturity"
+  [[ "$artifact_refs_count" -eq "$blueprint_count" ]] || fail "blueprint sem artifact_refs"
 
   while IFS= read -r doc_path; do
     [[ -f "$ROOT_DIR/$doc_path" ]] || fail "doc_path inexistente: $doc_path"

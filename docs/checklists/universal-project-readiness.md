@@ -6,14 +6,19 @@ Marque cada item como `Done`, `Planned` ou `N/A`.
 Para decisoes detalhadas, consulte tambem `docs/pillars/`, que documenta os
 260 itens derivados de `references.md`.
 
+Para planejamento gradual, consulte `docs/forge/README.md`,
+`catalog/project-lifecycle.yml` e `catalog/project-artifacts.yml`.
+
 ## Identidade
 
 - Nome, objetivo e publico-alvo definidos.
 - Tipo registrado em `catalog/projects.yml`.
 - Owner registrado em `catalog/owners.yml`.
 - Linguagens, runtimes e ambientes documentados.
+- Nivel de maturidade M0-M5 escolhido.
 - Pilares aplicaveis listados no README do projeto.
 - Itens aplicaveis consultados em `docs/pillars/`.
+- Artefatos aplicaveis consultados em `catalog/project-artifacts.yml`.
 
 ## Pilares
 
@@ -36,6 +41,7 @@ Para decisoes detalhadas, consulte tambem `docs/pillars/`, que documenta os
 ## Antes do primeiro PR
 
 - README do projeto criado a partir de `docs/templates/PROJECT.md`.
+- Escopo, backlog inicial e maturidade alvo registrados.
 - Pilares aplicaveis definidos.
 - Setup local documentado.
 - Validacao minima documentada ou automatizada.

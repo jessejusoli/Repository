@@ -1,6 +1,6 @@
 # Repository MCP
 
-Repository MCP is the future Model Context Protocol server for this template.
+Repository MCP is the future Model Context Protocol server for Repository Forge.
 
 ## Purpose
 
@@ -10,6 +10,8 @@ mutating files by default.
 ## Tools
 
 - `list_templates`
+- `list_maturity_levels`
+- `list_project_artifacts`
 - `inspect_template`
 - `generate_repository_plan`
 - `validate_repository`
@@ -20,8 +22,14 @@ mutating files by default.
 
 - `repository://catalog/pillars`
 - `repository://catalog/stacks`
+- `repository://catalog/standards`
+- `repository://catalog/project-lifecycle`
+- `repository://catalog/project-artifacts`
 - `repository://templates`
 - `repository://docs/pillars/{pillar}/{item}`
+- `repository://standards/{standard_id}`
+- `repository://pillars/{pillar}/standards`
+- `repository://forge/maturity/{level}`
 
 ## Commands
 

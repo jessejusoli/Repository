@@ -4,17 +4,19 @@
 [![CD Readiness](https://github.com/jessejusoli/Repository/actions/workflows/cd.yaml/badge.svg)](https://github.com/jessejusoli/Repository/actions/workflows/cd.yaml)
 [![Repository Health](https://github.com/jessejusoli/Repository/actions/workflows/repository-health.yml/badge.svg)](https://github.com/jessejusoli/Repository/actions/workflows/repository-health.yml)
 
-Repositorio master para criar, organizar, automatizar e governar projetos em
-formato monorepo.
+Repositorio master para planejar, criar, organizar, automatizar e governar
+repositorios de qualquer linguagem, stack ou ambiente.
 
-Este projeto nasce como um template operacional: ele nao e uma aplicacao, e sim
-uma base de trabalho para novos repositorios que precisam crescer com clareza,
-padrao de qualidade, automacao e rastreabilidade.
+Este projeto evolui como **Repository Forge + Knowledge Base**. Ele nao e um
+repositorio completo que todo mundo deve copiar por inteiro. Ele e a fonte
+canonica que cruza pilares, standards, stacks, blueprints, artefatos e
+maturidade para gerar planos graduais de repositorios.
 
 ## Sumario
 
 - [Objetivos](#objetivos)
 - [Capacidades](#capacidades)
+- [Camadas](#camadas)
 - [Estrutura](#estrutura)
 - [Quickstart](#quickstart)
 - [Automacoes incluidas](#automacoes-incluidas)
@@ -23,18 +25,22 @@ padrao de qualidade, automacao e rastreabilidade.
 
 ## Objetivos
 
-- Padronizar a estrutura de projetos monorepo.
+- Gerar planos graduais para repositorios novos ou existentes.
+- Padronizar estruturas sem impor todos os artefatos a todos os projetos.
 - Separar aplicacoes, bibliotecas, servicos, infraestrutura e tooling.
 - Documentar decisoes, ownership, releases, seguranca e fluxo de contribuicao.
 - Usar pilares universais para cobrir qualquer linguagem, stack ou ambiente.
 - Curar standards, praticas e tecnicas sem espelhar documentacao oficial.
 - Automatizar verificacoes basicas desde o primeiro pull request.
-- Servir como fonte de referencia para novos repositorios derivados.
+- Servir como base consultavel por humanos, MCP e RAG.
 
 ## Capacidades
 
 | Area | Status | Fonte |
 | --- | --- | --- |
+| Repository Forge | Aplicado | `docs/forge/`, `tooling/repository-forge/` e `services/repository-mcp/` |
+| Maturidade M0-M5 | Aplicado | `catalog/project-lifecycle.yml` |
+| Artefatos de projeto | Aplicado | `catalog/project-artifacts.yml` e `docs/templates/lifecycle/` |
 | 13 pilares universais | Aplicado | `docs/pillars/` e `catalog/pillar-items.yml` |
 | Standards e pocket guides | Aplicado | `docs/standards/` e `catalog/standards.yml` |
 | Stacks e linguagens | Preparado | `catalog/stacks.yml` |
@@ -46,6 +52,12 @@ padrao de qualidade, automacao e rastreabilidade.
 | MCP Server/Client | Roadmap com contrato | `contracts/mcp/registry.yml` |
 | RAG | Perfil versionado | `contracts/rag/repository.rag-profile.yml` |
 | Agentes de IA | Orientado | `AGENTS.md` e `AI_AGENTS/` |
+
+## Camadas
+
+- Core interno: arquivos que explicam, validam e governam o proprio Repository.
+- Knowledge Base: pilares, standards, stacks, blueprints, artefatos e maturidade.
+- Repository Forge: CLI/MCP para gerar planos em Markdown e JSON sem mutar repositorios nesta fase.
 
 ## Estrutura
 
@@ -61,6 +73,7 @@ padrao de qualidade, automacao e rastreabilidade.
 |-- contracts/            # Contratos OpenAPI, Postman, MCP e RAG.
 |-- AI_AGENTS/            # Modos, subagentes, skills e politicas para IA.
 |-- docs/                 # Arquitetura, governanca, automacao e templates.
+|   |-- forge/            # Maturidade, uso do Forge e modelo de planejamento.
 |   |-- pillars/          # 13 pilares e 260 guias operacionais item a item.
 |   `-- standards/        # Pocket guides e links oficiais de standards.
 |-- infra/compose/        # Docker Compose blueprint.
@@ -84,20 +97,20 @@ Para validar areas especificas:
 make verify-stacks
 make verify-blueprints
 make verify-standards
+make verify-forge-model
 make verify-infra
 make verify-api-contracts
 make verify-rag-profile
 ```
 
-## Como usar este template
+## Como usar
 
-1. Crie um novo repositorio a partir desta base.
-2. Atualize `.github/CODEOWNERS` com usuarios ou times reais.
-3. Registre cada novo projeto em `catalog/projects.yml`.
-4. Defina o owner tecnico em `catalog/owners.yml`.
-5. Marque os pilares aplicaveis usando `catalog/pillars.yml`.
-6. Copie `docs/templates/PROJECT.md` para a pasta do novo projeto.
-7. Rode `make verify` antes de abrir pull requests.
+1. Escolha um blueprint em `catalog/repository-blueprints.yml`.
+2. Escolha stack, ambientes e maturidade alvo de `M0` a `M5`.
+3. Gere ou revise um plano pelo `tooling/repository-forge/`.
+4. Use `docs/templates/lifecycle/` apenas para os artefatos aplicaveis.
+5. Registre owners, riscos e decisoes antes de evoluir para o proximo nivel.
+6. Rode `make verify` antes de abrir pull requests.
 
 ## Modelo de trabalho
 
@@ -132,6 +145,7 @@ bash scripts/verify-repository.sh
 ## Documentacao principal
 
 - [Arquitetura do monorepo](docs/architecture/monorepo.md)
+- [Repository Forge](docs/forge/README.md)
 - [Modelo universal de projetos](docs/architecture/universal-project-model.md)
 - [Pilares operacionais](docs/pillars/README.md)
 - [Standards e pocket guides](docs/standards/README.md)

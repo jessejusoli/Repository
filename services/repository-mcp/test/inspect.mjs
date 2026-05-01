@@ -4,6 +4,8 @@ const toolsSource = readFileSync(new URL("../src/tools.ts", import.meta.url), "u
 const resourcesSource = readFileSync(new URL("../src/resources.ts", import.meta.url), "utf8");
 
 for (const tool of [
+  "list_maturity_levels",
+  "list_project_artifacts",
   "list_templates",
   "inspect_template",
   "generate_repository_plan",
@@ -20,10 +22,13 @@ for (const resource of [
   "repository://catalog/pillars",
   "repository://catalog/stacks",
   "repository://catalog/standards",
+  "repository://catalog/project-lifecycle",
+  "repository://catalog/project-artifacts",
   "repository://templates",
   "repository://docs/pillars/{pillar}/{item}",
   "repository://standards/{standard_id}",
-  "repository://pillars/{pillar}/standards"
+  "repository://pillars/{pillar}/standards",
+  "repository://forge/maturity/{level}"
 ]) {
   if (!resourcesSource.includes(resource)) {
     throw new Error(`Missing MCP resource: ${resource}`);

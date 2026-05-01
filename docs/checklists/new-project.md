@@ -7,6 +7,7 @@ Use esta lista sempre que adicionar uma aplicacao, pacote ou servico.
 - O objetivo do projeto esta claro.
 - Nao existe projeto atual que resolva o mesmo problema.
 - O owner tecnico foi definido.
+- O nivel de maturidade M0-M5 foi escolhido.
 - O modelo de release foi escolhido.
 
 ## Criacao
@@ -16,6 +17,7 @@ Use esta lista sempre que adicionar uma aplicacao, pacote ou servico.
 - Adicionar `README.md` usando `docs/templates/PROJECT.md`.
 - Registrar em `catalog/projects.yml`.
 - Registrar ou revisar ownership em `catalog/owners.yml`.
+- Consultar `catalog/project-lifecycle.yml` e `catalog/project-artifacts.yml`.
 - Declarar pilares aplicaveis no README do projeto.
 - Criar contratos em `contracts/` quando houver API, MCP, Postman ou RAG.
 - Atualizar `.github/CODEOWNERS` quando necessario.

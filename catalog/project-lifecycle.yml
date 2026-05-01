@@ -1,0 +1,109 @@
+schema_version: 1
+model: repository-forge-maturity
+levels:
+  - id: M0
+    name: Concept
+    order: 0
+    purpose: Validate problem, audience, owner, scope, risks and decision to continue.
+    criteria:
+      - Problem and target audience are explicit.
+      - Owner and decision maker are known.
+      - Initial scope, out of scope and risks are documented.
+    required_evidence:
+      - SCOPE
+      - BACKLOG
+    gates:
+      - go-no-go-decision
+      - owner-confirmed
+      - risk-log-created
+  - id: M1
+    name: Repository Baseline
+    order: 1
+    purpose: Create the minimum governed repository baseline without assuming a stack.
+    criteria:
+      - Repository identity and ownership are documented.
+      - Core governance files and health checks exist.
+      - Initial backlog is visible and traceable.
+    required_evidence:
+      - README
+      - LICENSE_DECISION
+      - AGENTS
+      - CODEOWNERS
+      - CHANGELOG
+      - CI_HEALTH
+      - BACKLOG
+    gates:
+      - repository-health-passes
+      - license-decision-recorded
+      - owners-defined
+  - id: M2
+    name: MVP Ready
+    order: 2
+    purpose: Prepare a usable MVP path with setup, examples, milestones and minimum validation.
+    criteria:
+      - Setup and first usage are reproducible.
+      - MVP criteria and roadmap are explicit.
+      - Minimum tests or validation steps are defined.
+    required_evidence:
+      - SETUP
+      - USAGE_EXAMPLES
+      - MVP
+      - ROADMAP
+      - MILESTONES
+      - TEST_STRATEGY
+    gates:
+      - setup-reproduced
+      - mvp-scope-approved
+      - minimum-validation-defined
+  - id: M3
+    name: Beta Validation
+    order: 3
+    purpose: Validate quality, security, contracts and observability before production commitment.
+    criteria:
+      - QA and security expectations are documented.
+      - Contracts exist when interfaces exist.
+      - Release notes and observability are ready for beta users.
+    required_evidence:
+      - RELEASE_NOTES
+      - API_CONTRACT
+      - OBSERVABILITY
+      - SECURITY_REVIEW
+    gates:
+      - beta-release-reviewed
+      - critical-risks-owned
+      - observability-smoke-tested
+  - id: M4
+    name: Production Ready
+    order: 4
+    purpose: Prepare deploy, secrets, reliability, rollback, incidents and supply chain posture.
+    criteria:
+      - Deployment and rollback are known.
+      - Secrets and production access are controlled.
+      - Reliability, incidents and supply chain checks are documented.
+    required_evidence:
+      - DEPLOYMENT
+      - SECRETS
+      - SLO
+      - INCIDENT_RUNBOOK
+      - ROLLBACK
+      - SBOM_SCORECARD
+    gates:
+      - production-readiness-review
+      - rollback-tested-or-accepted
+      - secrets-not-in-repo
+  - id: M5
+    name: Scale Governance
+    order: 5
+    purpose: Scale governance with compliance, metrics, cost, sustainability and continuous improvement.
+    criteria:
+      - Compliance and accountability are explicit.
+      - Cost and sustainability are evaluated.
+      - Metrics drive continuous improvement.
+    required_evidence:
+      - COMPLIANCE
+      - COST_SUSTAINABILITY
+      - IMPROVEMENT_LOOP
+    gates:
+      - governance-review
+      - cost-and-sustainability-review
+      - improvement-loop-active

@@ -12,7 +12,11 @@ corpus:
     - contracts/
     - docs/
     - docs/standards/
+    - docs/forge/
+    - docs/templates/lifecycle/
     - catalog/standards.yml
+    - catalog/project-lifecycle.yml
+    - catalog/project-artifacts.yml
   data_classification: internal
   retention: versioned-source-controlled-documents
 ingestion:
@@ -39,6 +43,8 @@ evaluation:
     - docs/checklists/universal-project-readiness.md
     - catalog/pillar-items.yml
     - catalog/standards.yml
+    - catalog/project-lifecycle.yml
+    - catalog/project-artifacts.yml
   metrics:
     - answer-relevance
     - groundedness

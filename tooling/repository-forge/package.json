@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "CLI skeleton for generating and validating repositories from Repository blueprints.",
+  "description": "CLI skeleton for planning repositories from Repository Forge catalogs.",
   "bin": {
     "repository-forge": "dist/index.js"
   },

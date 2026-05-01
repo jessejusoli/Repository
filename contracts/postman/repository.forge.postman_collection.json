@@ -41,6 +41,40 @@
       "response": []
     },
     {
+      "name": "List maturity levels",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/maturity-levels",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "maturity-levels"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "List project artifacts",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/project-artifacts",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "project-artifacts"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
       "name": "Generate repository plan",
       "request": {
         "method": "POST",
@@ -52,7 +86,7 @@
         ],
         "body": {
           "mode": "raw",
-          "raw": "{\n  \"blueprintId\": \"api-service\",\n  \"projectName\": \"example-api\",\n  \"stackId\": \"node-typescript\",\n  \"environments\": [\"local\", \"dev\", \"prod\"]\n}"
+          "raw": "{\n  \"blueprintId\": \"api-service\",\n  \"projectName\": \"example-api\",\n  \"stackId\": \"node-typescript\",\n  \"maturityLevel\": \"M2\",\n  \"environments\": [\"local\", \"dev\", \"prod\"],\n  \"standardsRefs\": [\"repository-baseline\", \"readme-standard\", \"github-actions-ci-cd\"],\n  \"outputFormat\": \"both\"\n}"
         },
         "url": {
           "raw": "{{baseUrl}}/plans",

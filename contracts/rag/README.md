@@ -13,4 +13,4 @@ Use this directory for retrieval-augmented generation system profiles.
 
 - `rag-profile.template.yml`: profile template for a RAG system.
 - `repository.rag-profile.yml`: RAG profile for this repository documentation,
-  including pillars, standards, catalogs and contracts.
+  including pillars, standards, Forge lifecycle, catalogs and contracts.

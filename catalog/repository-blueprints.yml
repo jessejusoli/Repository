@@ -1,6 +1,34 @@
 schema_version: 1
 blueprints:
   - id: web-app
+    minimum_maturity: M1
+    artifact_refs:
+      - SCOPE
+      - BACKLOG
+      - README
+      - LICENSE_DECISION
+      - AGENTS
+      - CODEOWNERS
+      - CHANGELOG
+      - CI_HEALTH
+      - SETUP
+      - USAGE_EXAMPLES
+      - MVP
+      - ROADMAP
+      - MILESTONES
+      - TEST_STRATEGY
+      - RELEASE_NOTES
+      - OBSERVABILITY
+      - SECURITY_REVIEW
+      - DEPLOYMENT
+      - SECRETS
+      - SLO
+      - INCIDENT_RUNBOOK
+      - ROLLBACK
+      - SBOM_SCORECARD
+      - COMPLIANCE
+      - COST_SUSTAINABILITY
+      - IMPROVEMENT_LOOP
     standards_refs:
       - repository-baseline
       - readme-standard
@@ -21,6 +49,35 @@ blueprints:
       - product_ux
       - developer_experience
   - id: api-service
+    minimum_maturity: M1
+    artifact_refs:
+      - SCOPE
+      - BACKLOG
+      - README
+      - LICENSE_DECISION
+      - AGENTS
+      - CODEOWNERS
+      - CHANGELOG
+      - CI_HEALTH
+      - SETUP
+      - USAGE_EXAMPLES
+      - MVP
+      - ROADMAP
+      - MILESTONES
+      - TEST_STRATEGY
+      - RELEASE_NOTES
+      - API_CONTRACT
+      - OBSERVABILITY
+      - SECURITY_REVIEW
+      - DEPLOYMENT
+      - SECRETS
+      - SLO
+      - INCIDENT_RUNBOOK
+      - ROLLBACK
+      - SBOM_SCORECARD
+      - COMPLIANCE
+      - COST_SUSTAINABILITY
+      - IMPROVEMENT_LOOP
     standards_refs:
       - repository-baseline
       - readme-standard
@@ -43,6 +100,27 @@ blueprints:
       - architecture
       - sre
   - id: cli-tool
+    minimum_maturity: M1
+    artifact_refs:
+      - SCOPE
+      - BACKLOG
+      - README
+      - LICENSE_DECISION
+      - AGENTS
+      - CODEOWNERS
+      - CHANGELOG
+      - CI_HEALTH
+      - SETUP
+      - USAGE_EXAMPLES
+      - MVP
+      - ROADMAP
+      - MILESTONES
+      - TEST_STRATEGY
+      - RELEASE_NOTES
+      - SECURITY_REVIEW
+      - SBOM_SCORECARD
+      - COMPLIANCE
+      - IMPROVEMENT_LOOP
     standards_refs:
       - repository-baseline
       - readme-standard
@@ -59,6 +137,27 @@ blueprints:
       - quality_assurance
       - security
   - id: package-library
+    minimum_maturity: M1
+    artifact_refs:
+      - SCOPE
+      - BACKLOG
+      - README
+      - LICENSE_DECISION
+      - AGENTS
+      - CODEOWNERS
+      - CHANGELOG
+      - CI_HEALTH
+      - SETUP
+      - USAGE_EXAMPLES
+      - MVP
+      - ROADMAP
+      - MILESTONES
+      - TEST_STRATEGY
+      - RELEASE_NOTES
+      - SECURITY_REVIEW
+      - SBOM_SCORECARD
+      - COMPLIANCE
+      - IMPROVEMENT_LOOP
     standards_refs:
       - repository-baseline
       - readme-standard
@@ -76,6 +175,34 @@ blueprints:
       - quality_assurance
       - developer_experience
   - id: background-worker
+    minimum_maturity: M1
+    artifact_refs:
+      - SCOPE
+      - BACKLOG
+      - README
+      - LICENSE_DECISION
+      - AGENTS
+      - CODEOWNERS
+      - CHANGELOG
+      - CI_HEALTH
+      - SETUP
+      - USAGE_EXAMPLES
+      - MVP
+      - ROADMAP
+      - MILESTONES
+      - TEST_STRATEGY
+      - RELEASE_NOTES
+      - OBSERVABILITY
+      - SECURITY_REVIEW
+      - DEPLOYMENT
+      - SECRETS
+      - SLO
+      - INCIDENT_RUNBOOK
+      - ROLLBACK
+      - SBOM_SCORECARD
+      - COMPLIANCE
+      - COST_SUSTAINABILITY
+      - IMPROVEMENT_LOOP
     standards_refs:
       - repository-baseline
       - readme-standard
@@ -93,6 +220,34 @@ blueprints:
       - security
       - sre
   - id: data-pipeline
+    minimum_maturity: M1
+    artifact_refs:
+      - SCOPE
+      - BACKLOG
+      - README
+      - LICENSE_DECISION
+      - AGENTS
+      - CODEOWNERS
+      - CHANGELOG
+      - CI_HEALTH
+      - SETUP
+      - USAGE_EXAMPLES
+      - MVP
+      - ROADMAP
+      - MILESTONES
+      - TEST_STRATEGY
+      - RELEASE_NOTES
+      - OBSERVABILITY
+      - SECURITY_REVIEW
+      - DEPLOYMENT
+      - SECRETS
+      - SLO
+      - INCIDENT_RUNBOOK
+      - ROLLBACK
+      - SBOM_SCORECARD
+      - COMPLIANCE
+      - COST_SUSTAINABILITY
+      - IMPROVEMENT_LOOP
     standards_refs:
       - repository-baseline
       - readme-standard
@@ -111,6 +266,35 @@ blueprints:
       - quality_assurance
       - sre
   - id: rag-app
+    minimum_maturity: M1
+    artifact_refs:
+      - SCOPE
+      - BACKLOG
+      - README
+      - LICENSE_DECISION
+      - AGENTS
+      - CODEOWNERS
+      - CHANGELOG
+      - CI_HEALTH
+      - SETUP
+      - USAGE_EXAMPLES
+      - MVP
+      - ROADMAP
+      - MILESTONES
+      - TEST_STRATEGY
+      - RELEASE_NOTES
+      - API_CONTRACT
+      - OBSERVABILITY
+      - SECURITY_REVIEW
+      - DEPLOYMENT
+      - SECRETS
+      - SLO
+      - INCIDENT_RUNBOOK
+      - ROLLBACK
+      - SBOM_SCORECARD
+      - COMPLIANCE
+      - COST_SUSTAINABILITY
+      - IMPROVEMENT_LOOP
     standards_refs:
       - repository-baseline
       - readme-standard
@@ -131,6 +315,35 @@ blueprints:
       - quality_assurance
       - developer_experience
   - id: mcp-server
+    minimum_maturity: M1
+    artifact_refs:
+      - SCOPE
+      - BACKLOG
+      - README
+      - LICENSE_DECISION
+      - AGENTS
+      - CODEOWNERS
+      - CHANGELOG
+      - CI_HEALTH
+      - SETUP
+      - USAGE_EXAMPLES
+      - MVP
+      - ROADMAP
+      - MILESTONES
+      - TEST_STRATEGY
+      - RELEASE_NOTES
+      - API_CONTRACT
+      - OBSERVABILITY
+      - SECURITY_REVIEW
+      - DEPLOYMENT
+      - SECRETS
+      - SLO
+      - INCIDENT_RUNBOOK
+      - ROLLBACK
+      - SBOM_SCORECARD
+      - COMPLIANCE
+      - COST_SUSTAINABILITY
+      - IMPROVEMENT_LOOP
     standards_refs:
       - repository-baseline
       - readme-standard

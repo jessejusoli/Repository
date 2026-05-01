@@ -1,0 +1,535 @@
+schema_version: 1
+artifacts:
+  - id: SCOPE
+    name: Project Scope
+    min_maturity: M0
+    template: docs/templates/lifecycle/SCOPE.md
+    standards_refs:
+      - repository-baseline
+    pillars:
+      - product_ux
+      - architecture
+      - it_governance
+    applies_to_blueprints:
+      - web-app
+      - api-service
+      - cli-tool
+      - package-library
+      - background-worker
+      - data-pipeline
+      - rag-app
+      - mcp-server
+    purpose: Define problem, audience, in scope, out of scope, assumptions and risks.
+  - id: BACKLOG
+    name: Backlog
+    min_maturity: M0
+    template: docs/templates/lifecycle/BACKLOG.md
+    standards_refs:
+      - repository-baseline
+    pillars:
+      - product_ux
+      - developer_experience
+      - it_governance
+    applies_to_blueprints:
+      - web-app
+      - api-service
+      - cli-tool
+      - package-library
+      - background-worker
+      - data-pipeline
+      - rag-app
+      - mcp-server
+    purpose: Track epics, stories, tasks, risks and decisions from the first idea.
+  - id: README
+    name: README
+    min_maturity: M1
+    template: docs/templates/lifecycle/README.md
+    standards_refs:
+      - readme-standard
+      - repository-baseline
+    pillars:
+      - developer_experience
+      - it_governance
+    applies_to_blueprints:
+      - web-app
+      - api-service
+      - cli-tool
+      - package-library
+      - background-worker
+      - data-pipeline
+      - rag-app
+      - mcp-server
+    purpose: Explain purpose, status, setup, usage, ownership and navigation.
+  - id: LICENSE_DECISION
+    name: License Decision
+    min_maturity: M1
+    template: docs/templates/lifecycle/LICENSE_DECISION.md
+    standards_refs:
+      - license-spdx
+    pillars:
+      - it_governance
+      - security
+    applies_to_blueprints:
+      - web-app
+      - api-service
+      - cli-tool
+      - package-library
+      - background-worker
+      - data-pipeline
+      - rag-app
+      - mcp-server
+    purpose: Record the legal license decision without assuming one automatically.
+  - id: AGENTS
+    name: Agent Instructions
+    min_maturity: M1
+    template: docs/templates/lifecycle/AGENTS.md
+    standards_refs:
+      - agents-md
+    pillars:
+      - developer_experience
+      - security
+      - architecture
+    applies_to_blueprints:
+      - web-app
+      - api-service
+      - cli-tool
+      - package-library
+      - background-worker
+      - data-pipeline
+      - rag-app
+      - mcp-server
+    purpose: Guide coding agents, MCP/RAG usage, commands and safety boundaries.
+  - id: CODEOWNERS
+    name: Code Owners
+    min_maturity: M1
+    template: docs/templates/lifecycle/CODEOWNERS.md
+    standards_refs:
+      - codeowners-standard
+    pillars:
+      - it_governance
+      - quality_assurance
+      - security
+    applies_to_blueprints:
+      - web-app
+      - api-service
+      - cli-tool
+      - package-library
+      - background-worker
+      - data-pipeline
+      - rag-app
+      - mcp-server
+    purpose: Define ownership and required review boundaries.
+  - id: CHANGELOG
+    name: Changelog
+    min_maturity: M1
+    template: docs/templates/lifecycle/CHANGELOG.md
+    standards_refs:
+      - changelog-standard
+    pillars:
+      - developer_experience
+      - sre
+      - it_governance
+    applies_to_blueprints:
+      - web-app
+      - api-service
+      - cli-tool
+      - package-library
+      - background-worker
+      - data-pipeline
+      - rag-app
+      - mcp-server
+    purpose: Track meaningful changes and release notes from the beginning.
+  - id: CI_HEALTH
+    name: CI Health
+    min_maturity: M1
+    template: docs/templates/lifecycle/CI_HEALTH.md
+    standards_refs:
+      - github-actions-ci-cd
+    pillars:
+      - devops
+      - quality_assurance
+    applies_to_blueprints:
+      - web-app
+      - api-service
+      - cli-tool
+      - package-library
+      - background-worker
+      - data-pipeline
+      - rag-app
+      - mcp-server
+    purpose: Define the minimum automated checks that protect the repository.
+  - id: SETUP
+    name: Setup Guide
+    min_maturity: M2
+    template: docs/templates/lifecycle/SETUP.md
+    standards_refs:
+      - repository-baseline
+      - docker-compose
+    pillars:
+      - developer_experience
+      - devops
+    applies_to_blueprints:
+      - web-app
+      - api-service
+      - cli-tool
+      - package-library
+      - background-worker
+      - data-pipeline
+      - rag-app
+      - mcp-server
+    purpose: Document local setup and repeatable commands for the chosen stack.
+  - id: USAGE_EXAMPLES
+    name: Usage Examples
+    min_maturity: M2
+    template: docs/templates/lifecycle/USAGE_EXAMPLES.md
+    standards_refs:
+      - readme-standard
+    pillars:
+      - developer_experience
+      - product_ux
+    applies_to_blueprints:
+      - web-app
+      - api-service
+      - cli-tool
+      - package-library
+      - background-worker
+      - data-pipeline
+      - rag-app
+      - mcp-server
+    purpose: Show at least one practical example of using or running the project.
+  - id: MVP
+    name: MVP Definition
+    min_maturity: M2
+    template: docs/templates/lifecycle/MVP.md
+    standards_refs:
+      - repository-baseline
+    pillars:
+      - product_ux
+      - architecture
+    applies_to_blueprints:
+      - web-app
+      - api-service
+      - cli-tool
+      - package-library
+      - background-worker
+      - data-pipeline
+      - rag-app
+      - mcp-server
+    purpose: Define MVP levels, acceptance criteria and what is intentionally excluded.
+  - id: ROADMAP
+    name: Roadmap
+    min_maturity: M2
+    template: docs/templates/lifecycle/ROADMAP.md
+    standards_refs:
+      - repository-baseline
+    pillars:
+      - product_ux
+      - it_governance
+    applies_to_blueprints:
+      - web-app
+      - api-service
+      - cli-tool
+      - package-library
+      - background-worker
+      - data-pipeline
+      - rag-app
+      - mcp-server
+    purpose: Organize phases, near-term work and later increments.
+  - id: MILESTONES
+    name: Milestones
+    min_maturity: M2
+    template: docs/templates/lifecycle/MILESTONES.md
+    standards_refs:
+      - repository-baseline
+    pillars:
+      - product_ux
+      - sre
+      - it_governance
+    applies_to_blueprints:
+      - web-app
+      - api-service
+      - cli-tool
+      - package-library
+      - background-worker
+      - data-pipeline
+      - rag-app
+      - mcp-server
+    purpose: Define milestones, dates or sequencing and exit criteria.
+  - id: TEST_STRATEGY
+    name: Test Strategy
+    min_maturity: M2
+    template: docs/templates/lifecycle/TEST_STRATEGY.md
+    standards_refs:
+      - github-actions-ci-cd
+    pillars:
+      - quality_assurance
+      - developer_experience
+    applies_to_blueprints:
+      - web-app
+      - api-service
+      - cli-tool
+      - package-library
+      - background-worker
+      - data-pipeline
+      - rag-app
+      - mcp-server
+    purpose: Define unit, integration, contract or manual validation needed for maturity.
+  - id: RELEASE_NOTES
+    name: Release Notes
+    min_maturity: M3
+    template: docs/templates/lifecycle/RELEASE_NOTES.md
+    standards_refs:
+      - changelog-standard
+    pillars:
+      - sre
+      - developer_experience
+    applies_to_blueprints:
+      - web-app
+      - api-service
+      - cli-tool
+      - package-library
+      - background-worker
+      - data-pipeline
+      - rag-app
+      - mcp-server
+    purpose: Prepare user-facing release communication for beta or broader use.
+  - id: API_CONTRACT
+    name: API Contract
+    min_maturity: M3
+    template: docs/templates/lifecycle/API_CONTRACT.md
+    standards_refs:
+      - openapi
+      - swagger-ui
+      - postman-collections
+    pillars:
+      - back_end
+      - architecture
+      - quality_assurance
+    applies_to_blueprints:
+      - web-app
+      - api-service
+      - cli-tool
+      - package-library
+      - background-worker
+      - data-pipeline
+      - rag-app
+      - mcp-server
+    purpose: Publish OpenAPI/Postman contracts when HTTP APIs exist.
+  - id: OBSERVABILITY
+    name: Observability
+    min_maturity: M3
+    template: docs/templates/lifecycle/OBSERVABILITY.md
+    standards_refs:
+      - repository-baseline
+    pillars:
+      - sre
+      - devops
+    applies_to_blueprints:
+      - web-app
+      - api-service
+      - cli-tool
+      - package-library
+      - background-worker
+      - data-pipeline
+      - rag-app
+      - mcp-server
+    purpose: Define logs, metrics, traces, dashboards and basic alerts.
+  - id: SECURITY_REVIEW
+    name: Security Review
+    min_maturity: M3
+    template: docs/templates/lifecycle/SECURITY_REVIEW.md
+    standards_refs:
+      - supply-chain-baseline
+      - secrets-management
+    pillars:
+      - security
+      - quality_assurance
+    applies_to_blueprints:
+      - web-app
+      - api-service
+      - cli-tool
+      - package-library
+      - background-worker
+      - data-pipeline
+      - rag-app
+      - mcp-server
+    purpose: Capture threat model, dependency risk, secrets and accepted risks.
+  - id: DEPLOYMENT
+    name: Deployment Plan
+    min_maturity: M4
+    template: docs/templates/lifecycle/DEPLOYMENT.md
+    standards_refs:
+      - github-actions-ci-cd
+      - docker-compose
+      - kubernetes-kustomize
+    pillars:
+      - devops
+      - infrastructure
+      - sre
+    applies_to_blueprints:
+      - web-app
+      - api-service
+      - cli-tool
+      - package-library
+      - background-worker
+      - data-pipeline
+      - rag-app
+      - mcp-server
+    purpose: Define deploy process, environments and operational ownership.
+  - id: SECRETS
+    name: Secrets Plan
+    min_maturity: M4
+    template: docs/templates/lifecycle/SECRETS.md
+    standards_refs:
+      - secrets-management
+    pillars:
+      - security
+      - infrastructure
+    applies_to_blueprints:
+      - web-app
+      - api-service
+      - cli-tool
+      - package-library
+      - background-worker
+      - data-pipeline
+      - rag-app
+      - mcp-server
+    purpose: Define how secrets are provisioned, rotated and kept out of Git.
+  - id: SLO
+    name: SLOs And Reliability
+    min_maturity: M4
+    template: docs/templates/lifecycle/SLO.md
+    standards_refs:
+      - repository-baseline
+    pillars:
+      - sre
+      - product_ux
+    applies_to_blueprints:
+      - web-app
+      - api-service
+      - cli-tool
+      - package-library
+      - background-worker
+      - data-pipeline
+      - rag-app
+      - mcp-server
+    purpose: Define SLIs, SLOs, error budgets and reliability expectations.
+  - id: INCIDENT_RUNBOOK
+    name: Incident Runbook
+    min_maturity: M4
+    template: docs/templates/lifecycle/INCIDENT_RUNBOOK.md
+    standards_refs:
+      - repository-baseline
+    pillars:
+      - sre
+      - security
+    applies_to_blueprints:
+      - web-app
+      - api-service
+      - cli-tool
+      - package-library
+      - background-worker
+      - data-pipeline
+      - rag-app
+      - mcp-server
+    purpose: Define escalation, triage, communication and post-incident flow.
+  - id: ROLLBACK
+    name: Rollback Plan
+    min_maturity: M4
+    template: docs/templates/lifecycle/ROLLBACK.md
+    standards_refs:
+      - github-actions-ci-cd
+    pillars:
+      - sre
+      - devops
+    applies_to_blueprints:
+      - web-app
+      - api-service
+      - cli-tool
+      - package-library
+      - background-worker
+      - data-pipeline
+      - rag-app
+      - mcp-server
+    purpose: Define rollback, recovery and safe deploy failure handling.
+  - id: SBOM_SCORECARD
+    name: SBOM And Scorecard
+    min_maturity: M4
+    template: docs/templates/lifecycle/SBOM_SCORECARD.md
+    standards_refs:
+      - sbom-scorecard-ready
+      - supply-chain-baseline
+    pillars:
+      - security
+      - it_governance
+    applies_to_blueprints:
+      - web-app
+      - api-service
+      - cli-tool
+      - package-library
+      - background-worker
+      - data-pipeline
+      - rag-app
+      - mcp-server
+    purpose: Prepare dependency inventory, provenance and Scorecard-ready posture.
+  - id: COMPLIANCE
+    name: Compliance Matrix
+    min_maturity: M5
+    template: docs/templates/lifecycle/COMPLIANCE.md
+    standards_refs:
+      - branch-protection-rulesets
+      - supply-chain-baseline
+    pillars:
+      - it_governance
+      - security
+    applies_to_blueprints:
+      - web-app
+      - api-service
+      - cli-tool
+      - package-library
+      - background-worker
+      - data-pipeline
+      - rag-app
+      - mcp-server
+    purpose: Map policies, controls, audits and accountability.
+  - id: COST_SUSTAINABILITY
+    name: Cost And Sustainability
+    min_maturity: M5
+    template: docs/templates/lifecycle/COST_SUSTAINABILITY.md
+    standards_refs:
+      - kubernetes-kustomize
+      - docker-compose
+    pillars:
+      - sustainability
+      - infrastructure
+      - it_governance
+    applies_to_blueprints:
+      - web-app
+      - api-service
+      - cli-tool
+      - package-library
+      - background-worker
+      - data-pipeline
+      - rag-app
+      - mcp-server
+    purpose: Evaluate cost, right-sizing, idle resources and environmental impact.
+  - id: IMPROVEMENT_LOOP
+    name: Continuous Improvement
+    min_maturity: M5
+    template: docs/templates/lifecycle/IMPROVEMENT_LOOP.md
+    standards_refs:
+      - repository-baseline
+    pillars:
+      - developer_experience
+      - quality_assurance
+      - sre
+    applies_to_blueprints:
+      - web-app
+      - api-service
+      - cli-tool
+      - package-library
+      - background-worker
+      - data-pipeline
+      - rag-app
+      - mcp-server
+    purpose: Use metrics, retrospectives and backlog hygiene to improve over time.

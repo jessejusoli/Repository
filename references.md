@@ -1,0 +1,296 @@
+# Referencias de Arquitetura Universal
+
+Este documento e a fonte de referencia dos pilares usados pelo Repository para
+avaliar projetos de qualquer linguagem, stack, ambiente ou dominio.
+
+Agora a estrutura está **100% completa**, com **13 pilares**. É modular, escalável e cobre literalmente qualquer tipo de projeto — de apps simples a sistemas globais com IA, regulados ou eco-friendly. Sem gaps!
+
+Aqui vai a versão **final consolidada** v0.1:
+
+- **Front-end**: Responsável pelo que o usuário vê e interage, como interfaces web ou mobile. Tecnologias comuns: React, Angular, Vue.js para web; Flutter ou React Native para apps móveis.
+  - **Implementação de UI Básica**: Criação de elementos visuais fundamentais, como botões, inputs e layouts iniciais usando HTML/CSS/JS puro ou frameworks.
+  - **Gerenciamento de Estado**: Lógica para manter e atualizar dados na interface, como Redux ou Context API no React.
+  - **Roteamento e Navegação**: Configuração de rotas para páginas múltiplas, usando React Router ou similares.
+  - **Integração com APIs**: Chamadas para back-end via fetch ou Axios, incluindo handling de async/await e promises.
+  - **Design Responsivo**: Adaptação para diferentes tamanhos de tela com media queries, flexbox ou grid.
+  - **Biblioteca de Componentes**: Desenvolvimento de componentes reutilizáveis, como cards, modais ou forms padronizados (alinhado com component-based architecture de "Clean Code").
+  - **Otimização de Performance**: Técnicas como lazy loading, code splitting e memoization para reduzir tempo de carregamento.
+  - **Acessibilidade (A11y)**: Implementação de ARIA roles, keyboard navigation e contraste de cores para usuários com deficiências.
+  - **Internacionalização (i18n)**: Suporte a múltiplos idiomas e formatos locais, usando bibliotecas como i18next.
+  - **Animações e Transições**: Efeitos visuais com CSS animations, Framer Motion ou Lottie para melhorar UX.
+  - **Manipulação de Formulários**: Validação, submissão e feedback em tempo real, com libs como Formik ou React Hook Form.
+  - **Integração com Temas/Estilos**: Uso de CSS-in-JS (Styled Components) ou frameworks como Tailwind CSS para estilização dinâmica.
+  - **Testes Unitários e de Integração**: Cobertura com Jest, React Testing Library para componentes e fluxos de usuário.
+  - **Ferramentas de Build e Bundling**: Configuração de Webpack, Vite ou Parcel para empacotamento e minificação.
+  - **Segurança no Front-end**: Proteção contra XSS, CSRF e gerenciamento de tokens (ex: JWT no localStorage).
+  - **Monitoramento e Logging**: Integração com ferramentas como Sentry ou Google Analytics para rastrear erros e uso.
+  - **Progressive Web Apps (PWA)**: Recursos como service workers para offline support e instalação como app nativo.
+  - **Integração com WebSockets**: Para real-time updates, como chat ou notificações, usando Socket.io.
+  - **SEO e Metatags**: Otimização para motores de busca com tags dinâmicas e server-side rendering se aplicável.
+  - **Mobile-Specific Features**: Para apps, handling de gestos, push notifications e integração com hardware (câmera, GPS).
+
+- **Back-end**: Cuida da lógica de negócio, APIs, bancos de dados e processamento server-side. Linguagens típicas: Node.js, Python (Django/Flask), Java (Spring), Ruby on Rails.
+  - **Desenvolvimento de APIs**: Criação de endpoints RESTful ou GraphQL para comunicação com o front-end, incluindo rotas, métodos HTTP e documentação com Swagger ou Postman.
+  - **Modelagem de Banco de Dados**: Design de esquemas, tabelas, relacionamentos e índices usando SQL (PostgreSQL, MySQL) ou NoSQL (MongoDB, Redis).
+  - **Autenticação e Autorização**: Implementação de login, JWT, OAuth, roles e permissões para controlar acesso a recursos.
+  - **Validação de Dados**: Verificação de inputs do usuário, schemas com Joi ou Pydantic para prevenir erros e injeções.
+  - **Tratamento de Erros**: Lógica para capturar exceções, retornar respostas HTTP apropriadas (400, 500) e mensagens claras para o cliente.
+  - **Logging e Monitoramento**: Registro de eventos, erros e métricas com ferramentas como Winston, ELK Stack ou Sentry para depuração.
+  - **Caching**: Uso de Redis ou Memcached para armazenar dados frequentes e reduzir carga no banco de dados.
+  - **Filas e Jobs em Background**: Processamento assíncrono com RabbitMQ, Celery ou Bull para tarefas como envio de emails ou processamentos longos.
+  - **Integração com Serviços Terceiros**: Conexão com APIs externas, como pagamentos (Stripe), autenticação (Google Auth) ou storage (S3).
+  - **Medidas de Segurança**: Proteção contra SQL Injection, XSS, CSRF; hashing de senhas com bcrypt e validação de entradas.
+  - **Otimização de Performance**: Queries eficientes, indexing, load balancing e profiling com ferramentas como New Relic.
+  - **Testes Unitários e de Integração**: Cobertura com Jest, Mocha ou PyTest para funções, APIs e interações com DB.
+  - **Configuração de Deploy**: Setup de ambientes (dev, staging, prod) com Docker, Kubernetes e variáveis de ambiente.
+  - **Escalabilidade**: Design para horizontal scaling, sharding de DB e microservices para lidar com alto tráfego.
+  - **Uso de ORM/ODM**: Abstração de banco de dados com Sequelize, TypeORM ou Mongoose para queries seguras e produtivas.
+  - **WebSockets para Real-time**: Implementação de comunicação bidirecional com Socket.io ou WebSocket nativo para chats ou updates ao vivo.
+  - **Manipulação de Arquivos e Storage**: Upload, download e processamento de arquivos com integração a clouds como AWS S3 ou Google Cloud Storage.
+  - **Gerenciamento de Sessões**: Controle de estados de usuário com cookies, sessions ou tokens para apps stateful.
+  - **Internacionalização e Localização**: Suporte a múltiplos idiomas nos responses e formatação de datas/moedas.
+  - **Auditoria e Compliance**: Registro de ações sensíveis para rastreabilidade, conforme normas como GDPR ou LGPD.
+
+- **Infraestrutura (Infra)**: Gerencia servidores, nuvem, redes e escalabilidade. Ferramentas: AWS, Google Cloud Platform (GCP), Azure; orquestração com Kubernetes ou Docker Swarm.
+  - **Provisionamento de Recursos em Nuvem**: Configuração inicial de contas e projetos em provedores como AWS, GCP ou Azure, incluindo setup de regiões e zonas de disponibilidade.
+  - **Gerenciamento de Instâncias e VMs**: Criação, dimensionamento e manutenção de máquinas virtuais ou instâncias computacionais, com ferramentas como EC2 ou Compute Engine.
+  - **Soluções de Armazenamento**: Implementação de storage persistente, como S3 para objetos, EBS para blocos ou Cloud Storage para arquivos, com gerenciamento de backups.
+  - **Configuração de Redes**: Definição de VPCs, subnets, gateways e rotas para isolamento e conectividade segura entre recursos.
+  - **Balanceamento de Carga**: Setup de load balancers (ELB, ALB) para distribuir tráfego e garantir alta disponibilidade.
+  - **Auto-escalabilidade**: Configuração de grupos de auto-scaling para ajustar recursos automaticamente com base em métricas como CPU ou tráfego.
+  - **Infraestrutura de Bancos de Dados**: Provisionamento e gerenciamento de DBs gerenciados como RDS, DynamoDB ou Cloud SQL, incluindo replicação e sharding.
+  - **Grupos de Segurança e Firewalls**: Regras de acesso, ACLs e firewalls para controlar tráfego inbound/outbound e proteger contra ameaças.
+  - **Backup e Recuperação de Desastres**: Estratégias de snapshot, replication cross-region e planos de DR para continuidade de negócios.
+  - **Monitoramento de Recursos**: Integração com ferramentas como CloudWatch, Prometheus ou Datadog para métricas, alertas e dashboards em tempo real.
+  - **Sistemas de Logging Centralizado**: Coleta e análise de logs com ELK Stack (Elasticsearch, Logstash, Kibana) ou Splunk para troubleshooting.
+  - **Infraestrutura como Código (IaC)**: Uso de Terraform, Ansible ou CloudFormation para automação e versionamento de setups de infra.
+  - **Containerização**: Empacotamento de aplicações em containers com Docker, incluindo criação de images e gerenciamento de registries como ECR.
+  - **Orquestração de Containers**: Deploy e gerenciamento de clusters com Kubernetes, Helm para charts e EKS/GKE para serviços gerenciados.
+  - **Integração com CDN**: Configuração de Content Delivery Networks como CloudFront ou Akamai para cache e entrega rápida de conteúdo estático.
+  - **Gerenciamento de Custos**: Monitoramento e otimização de gastos com ferramentas como AWS Cost Explorer ou GCP Billing, incluindo reservas e budgets.
+  - **Conformidade e Auditoria**: Implementação de políticas para compliance (GDPR, HIPAA) com audits regulares e ferramentas como AWS Config.
+  - **Gerenciamento de Ambientes**: Separação de dev, staging e prod com namespaces, contas isoladas e promoções controladas.
+  - **Gerenciamento de Segredos**: Armazenamento seguro de chaves e credenciais com Vault, AWS Secrets Manager ou Kubernetes Secrets.
+  - **Otimização de Performance e Energia**: Análise de bottlenecks, tuning de redes e escolha de regiões de baixa emissão para sustentabilidade (link com Sustainability pillar).
+
+- **DevOps**: Foca em automação de deploy, CI/CD, monitoração e pipelines. Ferramentas: GitHub Actions, Jenkins, Terraform para IaC, Prometheus/Grafana para monitoramento.
+  - **Configuração de Pipelines CI/CD**: Criação de fluxos automatizados para build, test e deploy, usando ferramentas como GitHub Actions, GitLab CI ou Jenkins.
+  - **Automação de Builds**: Scripts para compilar código, gerar artefatos e gerenciar dependências com ferramentas como Maven, Gradle ou npm.
+  - **Testes Automatizados no Pipeline**: Integração de suites de testes (unit, integration) para rodar automaticamente em cada commit ou PR.
+  - **Deploy Contínuo**: Estratégias como blue-green deployment ou canary releases para atualizar aplicações sem downtime.
+  - **Gerenciamento de Configurações**: Uso de ferramentas como Ansible, Puppet ou Chef para provisionar e configurar ambientes de forma consistente.
+  - **Monitoramento de Aplicações**: Setup de métricas, traces e logs com Prometheus, Grafana ou New Relic para saúde do sistema em tempo real.
+  - **Alertas e Notificações**: Configuração de thresholds para disparar alertas via Slack, PagerDuty ou email em caso de falhas.
+  - **Logging Centralizado**: Coleta e análise de logs de múltiplos serviços com ELK Stack ou Splunk.
+  - **Otimização de Desempenho**: Profiling e tuning de pipelines para reduzir tempos de build/deploy com caching e parallelização.
+  - **Segurança no Pipeline (DevSecOps)**: Integração de scans de vulnerabilidades (SAST, DAST) com SonarQube ou Snyk em etapas de CI.
+  - **Gerenciamento de Ambientes**: Criação de ambientes isolados (dev, staging, prod) com promoções controladas e rollbacks.
+  - **Containerização e Orquestração**: Integração com Docker e Kubernetes para empacotar e gerenciar apps em escala.
+  - **Infraestrutura como Código (IaC)**: Definição de infra via código com Terraform ou Pulumi para versionamento e automação.
+  - **Colaboração e Versionamento**: Uso de Git workflows (GitFlow, trunk-based) para merges, reviews e branching strategies.
+  - **Backup e Recuperação Automatizados**: Scripts para snapshots e restores de dados e configs em nuvens como AWS Backup.
+  - **Análise de Métricas de DevOps**: Cálculo de DORA metrics (deployment frequency, lead time) para medir eficiência e produtividade (link com DevEx).
+  - **Integração com Ferramentas de Colaboração**: Hooks para Jira, Trello ou Slack para updates automáticos de status de builds.
+  - **Escalabilidade de Pipelines**: Design para lidar com múltiplos projetos/times, usando runners compartilhados ou auto-scaling.
+  - **Auditoria e Compliance**: Logs de ações no pipeline para rastreabilidade, atendendo normas como SOC2 ou ISO 27001.
+  - **Redução de Toil e Post-Mortems**: Automação de tarefas repetitivas e análises blameless para melhoria contínua (link forte com DevEx).
+
+- **Segurança (Security)**: Lida com autenticação, criptografia, proteção contra vulnerabilidades e compliance. Práticas: JWT/OAuth para auth, OWASP guidelines, scans com ferramentas como SonarQube ou pentests regulares.
+  - **Implementação de Autenticação**: Configuração de mecanismos como JWT, OAuth2 ou SAML para verificar identidades de usuários e serviços.
+  - **Gerenciamento de Autorização**: Definição de papéis e permissões (RBAC/ABAC) para controlar acesso a recursos específicos.
+  - **Criptografia de Dados em Trânsito**: Uso de protocolos como TLS/SSL para proteger comunicações entre cliente e servidor.
+  - **Criptografia de Dados em Repouso**: Aplicação de algoritmos como AES para armazenar dados sensíveis de forma segura em bancos ou arquivos.
+  - **Proteção contra Injeções**: Validações e prepared statements para prevenir SQL Injection, XSS ou outras injeções de código.
+  - **Scans de Vulnerabilidades Estáticas (SAST)**: Análise de código fonte com ferramentas como SonarQube para detectar falhas precocemente.
+  - **Scans de Vulnerabilidades Dinâmicas (DAST)**: Testes em runtime com ferramentas como OWASP ZAP para simular ataques em aplicações rodando.
+  - **Testes de Penetração (Pentests)**: Simulações de ataques éticos por especialistas para identificar brechas reais no sistema.
+  - **Monitoramento de Segurança (SIEM)**: Coleta e análise de logs com ferramentas como Splunk ou ELK para detectar ameaças em tempo real.
+  - **Gerenciamento de Segredos**: Armazenamento seguro de chaves e credenciais usando Vault, AWS Secrets Manager ou Kubernetes Secrets.
+  - **Conformidade e Auditorias**: Implementação de políticas para normas como GDPR, LGPD ou PCI-DSS, com audits regulares.
+  - **Proteção contra Ataques DDoS**: Configuração de mitigação com serviços como Cloudflare ou AWS Shield para bloquear tráfego malicioso.
+  - **Firewalls e WAF**: Regras de Web Application Firewall (ModSecurity) para filtrar requests suspeitos e bloquear exploits.
+  - **Práticas de Codificação Segura**: Adoção de guidelines OWASP para evitar erros comuns como buffer overflows ou race conditions.
+  - **Resposta a Incidentes**: Planos de IR (Incident Response) com ferramentas como TheHive para investigar e mitigar breaches.
+  - **Autenticação Multi-Fator (MFA)**: Integração de fatores adicionais como SMS, apps ou biometria para reforçar o login.
+  - **Gerenciamento de Vulnerabilidades**: Rastreamento e patching de CVEs com ferramentas como Nessus ou OpenVAS.
+  - **Treinamento de Segurança**: Programas para equipes sobre phishing, secure coding e conscientização geral.
+  - **Segurança de APIs**: Proteção com rate limiting, API keys e validação de schemas para endpoints expostos.
+  - **Configurações de Segurança em Nuvem**: Hardening de ambientes com IAM policies, encryption e least privilege em AWS/GCP/Azure.
+
+- **Qualidade/Assurance (QA)**: Responsável por testes automatizados e manuais, incluindo unit tests, integração, E2E e performance. Ferramentas: Jest, Cypress, Selenium; load testing com JMeter.
+  - **Planejamento de Estratégia de Testes**: Definição de escopo, objetivos, recursos e cronograma para o ciclo de testes, incluindo matriz de rastreabilidade.
+  - **Criação de Casos de Teste**: Desenvolvimento de scripts detalhados baseados em requisitos, com condições de entrada, saída esperada e critérios de aceitação.
+  - **Testes Unitários**: Verificação de componentes individuais do código, como funções ou classes, usando frameworks como Jest ou JUnit.
+  - **Testes de Integração**: Avaliação da interação entre módulos ou serviços, detectando falhas em interfaces e APIs.
+  - **Testes de Sistema/End-to-End (E2E)**: Simulação de fluxos completos do usuário, do front ao back, com ferramentas como Cypress ou Selenium.
+  - **Testes de Performance**: Medição de velocidade, escalabilidade e estabilidade sob carga, usando JMeter ou Locust para simulações.
+  - **Testes de Regressão**: Reexecução de testes anteriores para garantir que novas mudanças não quebrem funcionalidades existentes.
+  - **Testes Exploratórios/Manuais**: Exploração ad-hoc da aplicação para encontrar defeitos imprevisíveis, sem scripts pré-definidos.
+  - **Automação de Testes**: Criação de suites automatizadas para rodar repetidamente, integrando com CI/CD pipelines.
+  - **Gerenciamento de Defeitos**: Uso de ferramentas como Jira ou Bugzilla para rastrear, priorizar e resolver bugs reportados.
+  - **Cobertura de Código**: Análise de quanto do código é exercitado pelos testes, com métricas de branch e line coverage via Istanbul ou JaCoCo.
+  - **Testes de Usabilidade/UX**: Avaliação da interface quanto a intuitividade, eficiência e satisfação do usuário, com sessões de user testing.
+  - **Testes de Acessibilidade**: Verificação de conformidade com WCAG, incluindo suporte a screen readers e keyboard navigation.
+  - **Testes de Compatibilidade**: Checagem em diferentes browsers, dispositivos e OS, usando BrowserStack ou Sauce Labs.
+  - **Mocking e Stubbing**: Criação de simulações para dependências externas, como APIs ou DBs, com ferramentas como WireMock ou Sinon.
+  - **Relatórios e Métricas de Qualidade**: Geração de dashboards com taxas de falha, tempo de resolução e KPIs para stakeholders.
+  - **Integração com CI/CD**: Configuração para rodar testes automaticamente em builds, com gates de qualidade para deploys.
+  - **Testes de Segurança Básicos (AppSec)**: Identificação de vulnerabilidades comuns, complementando o time de Security com scans iniciais.
+  - **Auditoria de Processos de QA**: Revisão contínua das práticas para melhoria, alinhando com padrões como ISO 9001 ou CMMI.
+  - **Treinamento e Colaboração**: Sessões para devs sobre TDD/BDD e integração de QA no ciclo de desenvolvimento ágil.
+
+- **Dados (Data)**: Gerencia analytics, big data, BI e possivelmente ML/IA. Ferramentas: BigQuery, Snowflake para storage; Tableau/Power BI para dashboards; TensorFlow ou Scikit-learn para machine learning.
+  - **Modelagem de Dados**: Design de estruturas como schemas relacionais, data lakes ou grafos para organizar informações de forma eficiente.
+  - **Processos ETL/ELT**: Extração, transformação e carga de dados de fontes variadas, usando ferramentas como Apache Airflow ou Talend.
+  - **Armazenamento de Dados**: Configuração de data warehouses como BigQuery ou Snowflake para queries escaláveis e armazenamento otimizado.
+  - **Gerenciamento de Big Data**: Uso de frameworks como Hadoop, Spark ou Kafka para processar volumes massivos de dados em batch ou streaming.
+  - **Análise de Dados Exploratória (EDA)**: Técnicas para investigar datasets, identificar padrões e outliers com pandas, NumPy ou R.
+  - **Visualização de Dados**: Criação de dashboards interativos com Tableau, Power BI ou Matplotlib para insights visuais.
+  - **Business Intelligence (BI)**: Desenvolvimento de relatórios e KPIs para decisões de negócio, integrando com fontes como SQL databases.
+  - **Machine Learning Pipelines**: Construção de fluxos para treinamento, validação e deploy de modelos com MLflow ou Kubeflow.
+  - **Feature Engineering**: Criação e seleção de variáveis preditivas para melhorar performance de modelos de ML.
+  - **Modelos de Previsão**: Implementação de algoritmos como regressão, classificação ou clustering com Scikit-learn ou TensorFlow.
+  - **Integração de IA**: Aplicação de deep learning para tarefas como NLP (com Hugging Face) ou visão computacional (com OpenCV).
+  - **Governança de Dados**: Políticas para qualidade, privacidade e lineage, usando ferramentas como Collibra ou Apache Atlas.
+  - **Segurança de Dados**: Criptografia, anonimização e acesso controlado para compliance com GDPR ou LGPD.
+  - **Otimização de Queries**: Tuning de SQL ou NoSQL para performance, com indexing e partitioning em bancos como PostgreSQL ou MongoDB.
+  - **Data Streaming em Tempo Real**: Processamento de fluxos contínuos com Kafka ou Flink para analytics instantâneos.
+  - **Testes de Dados**: Validação de integridade, consistência e precisão com Great Expectations ou Deequ.
+  - **Monitoramento de Dados**: Rastreamento de métricas como volume, latência e erros com Prometheus ou Datadog.
+  - **Integração com Ferramentas Externas**: Conexão com APIs de dados como Google Analytics ou Salesforce para enriquecimento.
+  - **Escalabilidade de Sistemas de Dados**: Design para sharding, replication e auto-scaling em ambientes de big data.
+  - **Auditoria e Relatórios de Dados**: Geração de logs e relatórios para rastreabilidade e análise de uso de dados.
+
+- **Produto/UX**: Embora não seja puramente dev, é essencial para pesquisa de usuário, wireframes e jornada do cliente. Ferramentas: Figma para design, Jira ou Trello para gerenciamento de features.
+  - **Pesquisa de Usuário**: Coleta de dados sobre necessidades, comportamentos e dores dos usuários via entrevistas, surveys ou análise de dados com ferramentas como Google Forms ou Typeform.
+  - **Criação de Personas**: Desenvolvimento de perfis fictícios representando usuários típicos, baseados em pesquisa, para guiar decisões de design.
+  - **Mapeamento de Jornada do Usuário**: Visualização de passos que o usuário percorre no produto, identificando pontos de fricção e oportunidades.
+  - **Definição de Requisitos de Produto**: Criação de user stories, épicos e backlogs priorizados no Jira ou Asana para alinhar com objetivos de negócio.
+  - **Wireframing**: Esboços iniciais de interfaces com ferramentas como Figma, Sketch ou Balsamiq para layout e fluxo básico.
+  - **Protótipos Interativos**: Construção de mockups clicáveis para simular a experiência real, testando navegação e interações.
+  - **Testes de Usabilidade**: Sessões com usuários reais para observar uso, coletar feedback e medir métricas como tempo de tarefa ou taxa de erro.
+  - **Design de Interface (UI)**: Criação de elementos visuais como cores, tipografia e ícones, seguindo guidelines como Material Design ou Human Interface.
+  - **Design Responsivo**: Adaptação de layouts para diferentes dispositivos e tamanhos de tela, priorizando mobile-first.
+  - **Acessibilidade no Design**: Incorporação de padrões WCAG para suporte a deficiências, como alt text em imagens e contraste de cores.
+  - **Colaboração com Devs**: Handover de designs via Zeplin ou Figma, com specs detalhados para implementação precisa.
+  - **Iteração Baseada em Feedback**: Refinamento contínuo do produto com base em métricas A/B testing ou heatmaps de ferramentas como Hotjar.
+  - **Gerenciamento de Produto**: Priorização de features com frameworks como RICE ou MoSCoW, alinhando com roadmap e MVPs.
+  - **Análise de Métricas de UX**: Rastreamento de KPIs como NPS, CSAT ou taxa de retenção com Google Analytics ou Mixpanel.
+  - **Design Thinking Workshops**: Facilitação de sessões para ideação, prototipagem rápida e validação com stakeholders.
+  - **Integração de Brand Guidelines**: Aplicação de identidade visual da marca para consistência em todos os touchpoints.
+  - **Pesquisa Competitiva**: Análise de produtos similares para identificar diferenciais e melhores práticas.
+  - **Storyboarding**: Sequências visuais narrando cenários de uso para comunicar visões de produto.
+  - **Ferramentas de Colaboração**: Uso de Miro ou Mural para brainstorms remotos e mapas mentais.
+  - **Auditoria de UX Existente**: Avaliação de produtos atuais para identificar melhorias, com heurísticas como as de Nielsen.
+
+- **Architecture**: Foca em decisões high-level de design, padrões arquiteturais e trade-offs para sistemas escaláveis e maintainable.
+  - **Análise de Requisitos Arquiteturais**: Identificação de non-functional requirements como escalabilidade, performance e segurança para guiar o design.
+  - **Escolha de Padrões de Arquitetura**: Seleção de estilos como monolithic, microservices, serverless ou event-driven baseado em trade-offs.
+  - **Modelagem de Domínio (DDD)**: Aplicação de Domain-Driven Design para mapear bounded contexts, aggregates e entities.
+  - **Avaliação de Trade-offs**: Análise de decisões como buy vs. build, sync vs. async, usando frameworks como ATAM ou QAW.
+  - **Documentação de Arquitetura**: Criação de diagramas C4 (Context, Containers, Components, Code) e ADRs (Architecture Decision Records).
+  - **Design de Microservices**: Decomposição em serviços independentes, com API gateways e service discovery.
+  - **Integração de Sistemas Distribuídos**: Estratégias para consistência eventual, sagas ou two-phase commit em ambientes distribuídos.
+  - **Gerenciamento de Acoplamento**: Técnicas para reduzir dependências, como modular monoliths ou feature toggles.
+  - **Evolutionary Architecture**: Design para mudanças incrementais, com fitness functions para validar evoluções.
+  - **Padrões de Resiliência**: Implementação de circuit breakers, retries e bulkheads para fault tolerance.
+  - **Otimização para Escalabilidade**: Planejamento de partitioning, replication e caching em nível arquitetural.
+  - **Integração com Cloud-Native**: Adoção de princípios 12-factor app para apps em nuvem.
+  - **Auditoria Arquitetural**: Revisões regulares para alinhamento com objetivos de negócio e detecção de debt.
+  - **Colaboração com Times**: Workshops para alinhar arquitetura com produto, dev e ops.
+  - **Ferramentas de Modelagem**: Uso de Lucidchart, Draw.io ou PlantUML para visualização de designs.
+  - **Gerenciamento de Riscos Arquiteturais**: Identificação e mitigação de riscos como vendor lock-in ou tech debt.
+  - **Integração de AI na Arquitetura**: Design para ML-infused systems, como feature stores.
+  - **Padrões de Segurança Arquitetural**: Incorporação de zero-trust e secure by design desde o início.
+  - **Testes Arquiteturais**: Validação de conformidade com tools como ArchUnit ou fitness functions.
+  - **Migração e Refatoração**: Estratégias para evoluir legados para novas arquiteturas, como strangler pattern.
+
+- **SRE (Site Reliability Engineering)**: Gerencia reliability, SLAs e operações de produção para sistemas robustos.
+  - **Definição de SLAs/SLOs/SLIs**: Estabelecimento de objetivos de serviço, indicators e agreements para medir reliability.
+  - **Gerenciamento de Error Budgets**: Alocação de "budgets" para downtime, balanceando inovação e estabilidade.
+  - **Monitoramento Avançado**: Setup de golden signals (latency, traffic, errors, saturation) com Prometheus ou Datadog.
+  - **Resposta a Incidentes (IR)**: Processos para detecção, triagem e resolução, com on-call rotations e paging.
+  - **Post-Mortems Blameless**: Análises de incidentes para aprendizados, sem culpas, documentando root causes.
+  - **Chaos Engineering**: Testes controlados de falhas (ex.: com Chaos Monkey) para validar resiliência.
+  - **Redução de Toil**: Automação de tarefas manuais repetitivas para focar em engenharia (link com DevEx).
+  - **Capacity Planning**: Previsão de demanda e provisionamento proativo para evitar overloads.
+  - **Automação de Operações**: Scripts e tools para self-healing systems e auto-remediation.
+  - **Gerenciamento de Releases**: Estratégias para rollouts seguros, com feature flags e progressive delivery.
+  - **Performance Tuning em Produção**: Análise de bottlenecks com tracing (Jaeger) e profiling.
+  - **Backup e Disaster Recovery**: Planos para RTO/RPO, com drills regulares.
+  - **Segurança em SRE**: Integração de secops para threat modeling em produção.
+  - **Métricas de Reliability**: Cálculo de MTBF/MTTR e DORA metrics para melhoria contínua.
+  - **Colaboração Dev-SRE**: Práticas como you-build-it-you-run-it para ownership compartilhado.
+  - **Ferramentas SRE**: Uso de PagerDuty, Incident.io ou Google Stackdriver para ops.
+  - **Escalabilidade e Resiliência**: Design para fault domains e geo-redundancy.
+  - **Treinamento e Simulações**: Game days para preparar times para cenários reais.
+  - **Compliance em Produção**: Auditorias para uptime e data sovereignty.
+  - **Otimização de Custos com Reliability**: Balanceamento de over-provisioning vs. efficiency (link com Sustainability).
+
+- **IT Governance**: Foca em alinhar TI com estratégias de negócio, gerenciar riscos, garantir compliance e otimizar recursos.
+  - **Alinhamento de TI com Estratégia de Negócio**: Integração de infraestrutura e ferramentas de dev aos objetivos organizacionais, priorizando recursos para transformação digital.
+  - **Formação de Equipes Qualificadas**: Recrutamento e seleção de talentos inovadores, com foco em habilidades ágeis e avaliações para adaptabilidade em projetos de software.
+  - **Monitoramento de Performance de TI**: Uso de métricas e dashboards para avaliar eficiência, incluindo bem-estar de devs e impacto ambiental (links com DevEx e Sustainability).
+  - **Definição de Papéis e Responsabilidades**: Criação de estruturas claras, como comitês de governança, para decisão e accountability em squads de dev.
+  - **Ênfase em Integridade e Ética**: Desenvolvimento de visões e missões que promovam práticas éticas, como código limpo e transparência em revisões.
+  - **Gestão de Compliance**: Revisão de políticas de segurança e audits regulares para aderência a regulamentações, integrados a pipelines CI/CD.
+  - **Gerenciamento de Riscos Efetivo**: Identificação e mitigação de riscos operacionais, financeiros e regulatórios via threat modeling em fases de planejamento.
+  - **Educação e Treinamento de Equipes**: Workshops sobre segurança, compliance e melhores práticas para reduzir erros humanos em dev.
+  - **Implementação de Frameworks como COBIT**: Uso para equilibrar riscos e benefícios, separando governança de gerenciamento em equipes de software.
+  - **Adoção de ITIL para ITSM**: Aplicação de ciclos de serviço (estratégia, design, transição, operação) para alinhar entregas de software com necessidades de negócio.
+  - **Uso de TOGAF para Arquitetura**: Planejamento de arquiteturas empresariais via ADM para roadmaps de software alinhados a metas.
+  - **Princípios de ISO/IEC 38500**: Avaliação, direção e monitoramento de TI para accountability em projetos de dev.
+  - **Integração de CMMI para Maturidade**: Melhoria de processos de dev através de níveis de maturidade, focando em qualidade e otimização.
+  - **Aplicação de NIST CSF para Cybersecurity**: Funções de identificar, proteger, detectar, responder e recuperar para governança de riscos cibernéticos.
+  - **Auditorias e Relatórios Regulares**: Geração de relatórios para rastreabilidade e conformidade, alinhados a padrões como GDPR ou SOX.
+  - **Gestão de Mudanças e Evolução**: Processos para adaptar governança a novas tecnologias, como IA, em ambientes ágeis.
+  - **Colaboração Interdepartamental**: Workshops para alinhar TI com negócios, promovendo integração cross-functional.
+  - **Otimização de Custos e Recursos**: Análise de investimentos em ferramentas de dev para maximizar ROI e eficiência.
+  - **Medição de Sucesso via KPIs**: Rastreamento de métricas como redução de incidentes, compliance rates e alinhamento estratégico.
+  - **Integração com DevOps e SRE**: Incorporação de governança em pipelines para automação de compliance e monitoramento contínuo.
+
+- **Developer Experience (DevEx)**: Foca na produtividade, bem-estar e felicidade dos desenvolvedores, reduzindo fricção e aumentando velocidade de entrega. Alinhado com tendências 2025 como DORA metrics e AI-assisted coding.
+  - **Onboarding Eficiente**: Guias, templates e pares de programação para novos devs se integrarem rápido.
+  - **Ferramentas de Desenvolvimento Padronizadas**: Setup de IDEs (VS Code), linters, formatters e extensões para consistência.
+  - **Automação de Tarefas Repetitivas**: Uso de AI (GitHub Copilot) e scripts para boilerplate, refatoração e code reviews.
+  - **Feedback Loops Rápidos**: Pull requests leves, code reviews automatizados e pair programming.
+  - **Documentação Interna**: Wikis, READMEs vivos e ferramentas como Notion ou Confluence para conhecimento compartilhado.
+  - **Ambientes de Desenvolvimento Locais**: Docker Compose e dev containers para setups idênticos ao prod.
+  - **Métricas de Produtividade**: Acompanhamento de DORA (lead time, deployment frequency) sem microgerenciamento.
+  - **Pesquisas de Satisfação**: Quartely surveys sobre dor, burnout e sugestões de melhoria.
+  - **Treinamento Contínuo**: Cursos, hackathons e tempo dedicado para aprendizado (20% time).
+  - **Ergonomia de Código**: Code owners, branch protection e conventional commits para fluxo suave.
+  - **Integração com DevOps**: Pipelines rápidas (<10 min) para evitar espera e frustração.
+  - **Bem-Estar e Cultura**: Horários flexíveis, blameless culture e suporte psicológico.
+  - **Ferramentas de Colaboração**: Slack bots, linear.app ou Jira otimizados para devs.
+  - **Redução de Tech Debt**: Sprints dedicados para refatoração e limpeza de código.
+  - **Comunidade Interna**: Guilds técnicas, tech talks e compartilhamento de boas práticas.
+  - **Monitoramento de DevEx**: Dashboards com cycle time, PR size e happiness score.
+  - **Integração com SRE**: Alertas que não acordam devs desnecessariamente.
+  - **Personalização de Workflows**: Suporte a preferências individuais (ex.: Vim vs. VS Code).
+  - **Gamificação e Reconhecimento**: Badges, kudos e celebrações de entregas.
+  - **Auditoria e Melhoria Contínua**: Retrospectivas focadas em ferramentas e processos de dev.
+
+- **Sustainability/Green Software**: Foca em reduzir impacto ambiental do software, otimizando energia, carbono e recursos. Tendência forte em 2025 com regulamentações e metas ESG.
+  - **Medição de Carbon Footprint**: Uso de ferramentas como Cloud Carbon Footprint ou Green Algorithms para rastrear emissões.
+  - **Otimização de Código Eficiente**: Técnicas para menos CPU/GPU, como algoritmos leves e caching agressivo.
+  - **Escolha de Provedores Verdes**: Priorizar AWS regions, GCP ou Azure com energia renovável.
+  - **Carbon-Aware Computing**: Agendar jobs pesados em horários de energia limpa (ex.: Green Software Foundation tools).
+  - **Redução de Dados Transferidos**: Compressão, lazy loading e minimização de requests.
+  - **Infraestrutura Eficiente**: Right-sizing de instâncias, serverless e auto-scaling para evitar idle.
+  - **Design Sustentável no Front-end**: Dark mode por default, imagens otimizadas e menos animações.
+  - **Ciclos de Vida de Hardware**: Preferir clouds a data centers próprios e estender vida útil de devices.
+  - **Treinamento em Green Software**: Workshops sobre princípios da Green Software Foundation.
+  - **Relatórios de Sustentabilidade**: Dashboards com emissões por feature ou squad.
+  - **Integração com CI/CD**: Scans de eficiência energética nos pipelines.
+  - **Escolha de Linguagens Eficientes**: Preferir Rust/Go sobre Python quando possível para menos consumo.
+  - **Reciclagem de Recursos**: Reuso de modelos ML treinados e shutdown de ambientes idle.
+  - **Governança de Sustentabilidade**: Políticas ESG no IT Governance e metas anuais de redução.
+  - **Monitoramento em Produção**: Alertas para picos de consumo energético.
+  - **Parcerias Verdes**: Uso de provedores com compromissos net-zero.
+  - **Auditoria de Emissões**: Relatórios anuais para stakeholders e compliance.
+  - **Inovação Verde**: Experimentação com edge computing para reduzir latência e energia.
+  - **Comunicação Transparente**: Relatórios públicos de impacto ambiental do produto.
+  - **Integração Cross-Pilar**: Revisões de sustentabilidade em Architecture, Infra e DevOps.
+
+Pronto! Essa é a estrutura **definitiva**, consolidada, equilibrada e pronta pra usar. Você pode copiar isso direto pra um doc, Notion ou Jira e começar a montar squads em cima.

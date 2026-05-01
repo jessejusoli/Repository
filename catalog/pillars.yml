@@ -1,0 +1,106 @@
+schema_version: 1
+pillars:
+  - id: front_end
+    name: Front-end
+    scope: Interfaces de usuario, experiencia visual e interacao.
+    evidence:
+      - design responsivo
+      - acessibilidade
+      - testes de interface
+      - integracao com APIs
+  - id: back_end
+    name: Back-end
+    scope: Regras de negocio, APIs, persistencia e processamento server-side.
+    evidence:
+      - contratos de API
+      - modelo de dados
+      - autenticacao e autorizacao
+      - testes de integracao
+  - id: infrastructure
+    name: Infraestrutura
+    scope: Recursos de computacao, rede, armazenamento e ambientes.
+    evidence:
+      - infraestrutura como codigo
+      - configuracao de ambientes
+      - backup e recuperacao
+      - gestao de custos
+  - id: devops
+    name: DevOps
+    scope: CI/CD, automacao, releases e operacao de entrega.
+    evidence:
+      - pipelines
+      - estrategia de deploy
+      - automacao de builds
+      - metricas DORA
+  - id: security
+    name: Seguranca
+    scope: Protecao de identidades, dados, codigo, infraestrutura e operacao.
+    evidence:
+      - threat model
+      - gestao de segredos
+      - scans de vulnerabilidade
+      - resposta a incidentes
+  - id: quality_assurance
+    name: Qualidade/Assurance
+    scope: Validacao automatizada e manual da qualidade do produto.
+    evidence:
+      - estrategia de testes
+      - cobertura minima
+      - testes de regressao
+      - relatorios de defeitos
+  - id: data
+    name: Dados
+    scope: Dados analiticos, operacionais, BI, ML e IA.
+    evidence:
+      - modelagem de dados
+      - governanca de dados
+      - qualidade de dados
+      - pipelines de dados
+  - id: product_ux
+    name: Produto/UX
+    scope: Necessidades de usuario, jornada, descoberta e valor de produto.
+    evidence:
+      - problema validado
+      - personas ou publico-alvo
+      - criterios de aceite
+      - metricas de produto
+  - id: architecture
+    name: Architecture
+    scope: Decisoes estruturais, trade-offs, integracao e evolucao tecnica.
+    evidence:
+      - ADRs
+      - diagramas
+      - requisitos nao funcionais
+      - riscos arquiteturais
+  - id: sre
+    name: SRE
+    scope: Confiabilidade, operacao de producao, incidentes e resiliencia.
+    evidence:
+      - SLIs/SLOs
+      - alertas
+      - plano de incidentes
+      - disaster recovery
+  - id: it_governance
+    name: IT Governance
+    scope: Alinhamento estrategico, compliance, riscos e accountability.
+    evidence:
+      - ownership
+      - matriz de riscos
+      - politicas aplicaveis
+      - relatorios de conformidade
+  - id: developer_experience
+    name: Developer Experience
+    scope: Produtividade, onboarding, ferramentas e reducao de friccao.
+    evidence:
+      - guia de setup
+      - comandos padronizados
+      - ambiente reproduzivel
+      - feedback loops rapidos
+  - id: sustainability
+    name: Sustainability/Green Software
+    scope: Eficiencia energetica, carbono, uso de recursos e ESG tecnico.
+    evidence:
+      - right-sizing
+      - otimizacao de transferencia
+      - shutdown de ambientes idle
+      - medicao de impacto

@@ -1,0 +1,56 @@
+name: Repository Health
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/**"
+      - "catalog/**"
+      - "docs/**"
+      - "contracts/**"
+      - "AI_AGENTS/**"
+      - "scripts/**"
+      - "AGENTS.md"
+      - "README.md"
+      - "CONTRIBUTING.md"
+      - "SECURITY.md"
+      - "CODE_OF_CONDUCT.md"
+      - "CHANGELOG.md"
+      - "Makefile"
+  pull_request:
+    paths:
+      - ".github/**"
+      - "catalog/**"
+      - "docs/**"
+      - "contracts/**"
+      - "AI_AGENTS/**"
+      - "scripts/**"
+      - "AGENTS.md"
+      - "README.md"
+      - "CONTRIBUTING.md"
+      - "SECURITY.md"
+      - "CODE_OF_CONDUCT.md"
+      - "CHANGELOG.md"
+      - "Makefile"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: repository-health-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: Validate repository structure
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6.0.2
+        with:
+          persist-credentials: false
+
+      - name: Verify repository
+        run: make verify

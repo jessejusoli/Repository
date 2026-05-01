@@ -1,0 +1,38 @@
+openapi: 3.2.0
+info:
+  title: Repository Template API
+  summary: Minimal HTTP API contract template for projects in this monorepo.
+  version: 0.1.0
+servers:
+  - url: https://api.example.com
+    description: Replace with the real environment URL.
+tags:
+  - name: health
+    description: Operational health endpoints.
+paths:
+  /health:
+    get:
+      operationId: getHealth
+      summary: Return API health status.
+      tags:
+        - health
+      responses:
+        "200":
+          description: API is healthy.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HealthStatus"
+components:
+  schemas:
+    HealthStatus:
+      type: object
+      required:
+        - status
+      properties:
+        status:
+          type: string
+          enum:
+            - ok
+            - degraded
+            - unavailable

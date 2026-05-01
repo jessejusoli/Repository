@@ -1,0 +1,41 @@
+name: Novo projeto no monorepo
+description: Solicite a criacao de app, pacote, servico ou tooling.
+title: "proposal: "
+labels:
+  - proposal
+body:
+  - type: input
+    id: project-name
+    attributes:
+      label: Nome do projeto
+    validations:
+      required: true
+  - type: dropdown
+    id: project-type
+    attributes:
+      label: Tipo
+      options:
+        - app
+        - package
+        - service
+        - infra
+        - tooling
+        - example
+    validations:
+      required: true
+  - type: textarea
+    id: goal
+    attributes:
+      label: Objetivo
+    validations:
+      required: true
+  - type: input
+    id: owner
+    attributes:
+      label: Owner tecnico
+    validations:
+      required: true
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencias e riscos

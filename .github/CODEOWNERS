@@ -1,0 +1,13 @@
+# Substitua os placeholders por usuarios ou times reais antes de exigir review.
+#
+# Exemplos:
+# * @sua-org/platform
+# /apps/web/ @sua-org/frontend
+# /infra/ @sua-org/devops
+
+* @sua-org/platform
+/.github/ @sua-org/platform
+/scripts/ @sua-org/platform
+/tooling/ @sua-org/platform
+/infra/ @sua-org/devops
+/docs/ @sua-org/platform

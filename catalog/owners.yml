@@ -1,0 +1,12 @@
+schema_version: 1
+owners: []
+
+# Exemplo:
+# owners:
+#   - id: platform
+#     name: Platform Team
+#     github: "@sua-org/platform"
+#     areas:
+#       - .github/
+#       - scripts/
+#       - tooling/

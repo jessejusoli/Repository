@@ -1,0 +1,39 @@
+schema_version: 1
+modes:
+  - id: discovery
+    name: Discovery
+    purpose: Understand repository context, constraints and unknowns.
+  - id: planning
+    name: Planning
+    purpose: Define scope, risks, sequence and validation.
+  - id: implementation
+    name: Implementation
+    purpose: Make scoped changes following repository conventions.
+  - id: review
+    name: Review
+    purpose: Identify defects, regressions, security issues and test gaps.
+  - id: verification
+    name: Verification
+    purpose: Run checks and explain residual risk.
+subagents:
+  - id: architecture
+    purpose: Evaluate structure, ADRs, trade-offs and pillar coverage.
+  - id: security
+    purpose: Evaluate secrets, permissions, threat model and supply chain risk.
+  - id: devops
+    purpose: Evaluate CI/CD, release, environments and automation.
+  - id: docs
+    purpose: Evaluate documentation, diagrams, templates and discoverability.
+  - id: ai-systems
+    purpose: Evaluate MCP, RAG, prompts, tools and model-facing contracts.
+skills:
+  - id: repository-governance
+    purpose: Apply monorepo rules, ownership, catalog and 13-pillar coverage.
+  - id: api-contracts
+    purpose: Maintain OpenAPI, Swagger UI, Postman and integration contracts.
+  - id: mcp
+    purpose: Design MCP clients and servers with least privilege.
+  - id: rag
+    purpose: Design RAG ingestion, retrieval, evaluation and safety controls.
+  - id: documentation
+    purpose: Maintain READMEs, ADRs, RFCs, diagrams, badges and checklists.

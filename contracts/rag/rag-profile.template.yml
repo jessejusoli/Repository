@@ -1,0 +1,37 @@
+schema_version: 1
+system:
+  id: example-rag-system
+  owner: platform
+  purpose: Explain what this RAG system helps users do.
+corpus:
+  sources: []
+  data_classification: internal
+  retention: define-retention-policy
+ingestion:
+  schedule: manual
+  validation:
+    - source-allowlist
+    - document-hash
+chunking:
+  strategy: semantic
+  max_tokens: 800
+indexing:
+  embedding_model: define-model
+  vector_store: define-store
+retrieval:
+  top_k: 5
+  reranking: planned
+generation:
+  model_policy: define-model-policy
+  citation_policy: required
+evaluation:
+  datasets: []
+  metrics:
+    - answer-relevance
+    - groundedness
+    - retrieval-precision
+safety:
+  controls:
+    - prompt-injection-screening
+    - pii-redaction
+    - source-attribution

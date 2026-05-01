@@ -1,0 +1,47 @@
+# Operating systems
+.DS_Store
+Thumbs.db
+
+# Editors
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Dependencies and build outputs
+node_modules/
+dist/
+build/
+coverage/
+.turbo/
+.nx/
+.next/
+out/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Caches
+.cache/
+.eslintcache
+.parcel-cache/
+
+# Language/tool outputs
+__pycache__/
+*.py[cod]
+.pytest_cache/
+target/
+.gradle/
+
+# Local scratch space
+.tmp/
+tmp/

@@ -1,0 +1,39 @@
+name: CD Readiness
+
+on:
+  workflow_dispatch:
+    inputs:
+      project_id:
+        description: Project id from catalog/projects.yml
+        required: true
+        type: string
+      environment:
+        description: Target environment name
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: cd-readiness-${{ inputs.project_id }}-${{ inputs.environment }}
+  cancel-in-progress: false
+
+jobs:
+  readiness:
+    name: Delivery readiness
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6.0.2
+        with:
+          persist-credentials: false
+
+      - name: Verify repository baseline
+        run: make verify
+
+      - name: Report delivery scope
+        run: |
+          printf 'Project: %s\n' '${{ inputs.project_id }}'
+          printf 'Environment: %s\n' '${{ inputs.environment }}'
+          printf 'This template workflow validates readiness only. Add project deploy steps explicitly.\n'

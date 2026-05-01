@@ -1,0 +1,22 @@
+schema_version: 1
+projects: []
+
+# Exemplo:
+# projects:
+#   - id: web-portal
+#     name: Web Portal
+#     type: app
+#     path: apps/web-portal
+#     owner: platform
+#     lifecycle: active
+#     runtime: node
+#     languages:
+#       - typescript
+#     environments:
+#       - local
+#       - production
+#     pillars:
+#       - front_end
+#       - devops
+#       - security
+#     release_policy: independent

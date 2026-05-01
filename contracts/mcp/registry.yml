@@ -1,0 +1,19 @@
+schema_version: 1
+servers: []
+clients: []
+security_requirements:
+  - least_privilege
+  - explicit_allowlists
+  - no_secrets_in_prompts
+  - audit_tool_invocations
+
+# Example:
+# servers:
+#   - id: docs-search
+#     transport: streamable-http
+#     capabilities:
+#       - resources
+#       - tools
+#     auth: oauth
+#     data_boundaries:
+#       - docs/
